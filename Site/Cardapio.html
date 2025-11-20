@@ -1,11 +1,339 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Cardapio - Tre Fratelli</title>
 </head>
+
 <body>
-    
+
+    <!-- ========================= HEADER ========================= -->
+    <header class="top-header">
+        <!-- LANGUAGE SELECTOR -->
+        <div class="language-selector">
+            <button class="lang-btn">
+                <img src="imagens/it.png" alt="Italiano"> It ▼
+            </button>
+
+            <div class="lang-dropdown">
+                <button><img src="imagens/it.png" alt=""> It</button>
+                <button><img src="imagens/en.png" alt=""> En</button>
+                <button><img src="imagens/pt.png" alt=""> Pt</button>
+            </div>
+        </div>
+
+        <!-- ÍCONES SUPERIORES / NAVEGAÇÃO -->
+        <div class="header-icons">
+            <a href="" class="navegacao-btn">
+                <!-- Colocar o icone de localizacao pelo Bootstrap aqui -->
+            </a>
+
+            <div class="top-menu-icons">
+                <a href="Storia.html"><!-- Colocar o icone de ampulheta pelo Bootstrap aqui --></a>
+                <a href="AttrazioniTuristiche.html"><!-- Colocar o icone de localizacao pelo Bootstrap aqui --></a>
+                <a href="index.html"><!-- Colocar o icone de casa pelo Bootstrap aqui --></a>
+                <a href="vini.html"><img src="imagens/iconeVinho.png" alt="Vini"></a>
+                <a href="Cardapio.html"><!-- Colocar o icone de garfo e faca pelo Bootstrap aqui --></a>
+                <a href="Chatbot.html"><!-- Colocar o icone de robo pelo Bootstrap aqui --></a>
+            </div>
+        </div>
+
+        <!-- LOGO -->
+        <p>
+            <img src="imagens/logo-completa.jpeg" alt="Tre Fratelli" class="logo">
+            Tre Fratelli
+        </p>
+    </header>
+
+
+    <!-- ========================= PÁGINA: CARDÁPIO ========================= -->
+
+    <main class="menu-page">
+
+        <!-- ====== SEÇÃO: ANTIPASTI & FORMAGGI ====== -->
+        <section id="antipasti" class="menu-section menu-antipasti">
+            <div class="container">
+
+                <div class="menu-hero">
+                    <h1>il nostro<br>menu degli antipasti</h1>
+                    <h2>Antipasti & Formaggi</h2>
+                </div>
+
+                <div class="menu-layout">
+                    <!-- Imagem à esquerda -->
+                    <div class="menu-image">
+                        <img src="imagens/bruschetta.jpg" alt="Bruschetta">
+                    </div>
+
+                    <!-- Lista de pratos à direita -->
+                    <div class="menu-list">
+                        <div class="menu-column-head">
+                            <span class="col-piatti">Piatti</span>
+                            <span class="col-armonia">Armonizzazione suggerita</span>
+                        </div>
+
+                        <div class="menu-item">
+                            <h3>Bruschetta al Pomodoro <span class="suggest">Pinot Grigio, Tre Chardonnay 2022</span>
+                            </h3>
+                            <p>Pane rustico con pomodoro, olio d'oliva e basilico</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <h3>Antipasto Misto della Casa <span class="suggest">Valpolicella Tre Fratelli 2019</span>
+                            </h3>
+                            <p>Selezione di formaggi, salumi e verdure</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <h3>Prosciutto e Melone <span class="suggest">Prosecco</span></h3>
+                            <p>Prosciutto crudo e melone maturo</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <h3>Caprese alla Tirano <span class="suggest">Tre Chardonnay 2022, Verdicchio</span></h3>
+                            <p>Mozzarella, pomodoro e basilico</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <h3>Tabla Tre Fratelli <span class="suggest">Merlot Tre Fratelli 2020</span></h3>
+                            <p>Formaggi lombardi, noci e miele</p>
+                        </div>
+
+                        <!-- botão de avançar -->
+                        <a class="next-section" href="#paste"><!--Colocar aqui o icone de avancar pelo bootstrap --></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ====== SEÇÃO: PASTE E RISOTTI ====== -->
+        <section id="paste" class="menu-section menu-paste">
+            <div class="container">
+
+                <div class="menu-hero right">
+                    <h1>Paste e<br>Risotti</h1>
+                    <h2>Sapori di Casa</h2>
+                </div>
+
+                <div class="menu-layout reverse">
+                    <!-- Lista de pratos à esquerda -->
+                    <div class="menu-list">
+                        <div class="menu-column-head">
+                            <span class="col-piatti">Piatti</span>
+                            <span class="col-armonia">Armonizzazione suggerita</span>
+                        </div>
+
+                        <div class="menu-item">
+                            <h3>Spaghetti alla Bolognese <span class="suggest">Chianti Classico, Merlot Tre Fratelli
+                                    2020</span></h3>
+                            <p>Pane rustico con pomodoro, olio d'oliva e basilico</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <h3>Lasagna alla Napoletana <span class="suggest">Nero d'Avola, Merlot Tre Fratelli
+                                    2020</span></h3>
+                            <p>Strati con carne e formaggio</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <h3>Limonata Italiana <span class="suggest">Giorni caldi</span></h3>
+                            <p>Bibita artigianale. Dolce e leggermente acidula.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <h3>Crodino <span class="suggest">Prima dei pasti</span></h3>
+                            <p>Aperitivo analcolico. Amaro ed elegante.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <h3>Acqua Frizzante / Naturale <span class="suggest">Accompagno ai pasti</span></h3>
+                            <p>Acqua minerale. Neutra e purificante.</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Imagem à direita -->
+                    <div class="menu-image">
+                        <img src="imagens/macarrão.jpg" alt="Pasta - Spaghetti">
+                    </div>
+                    
+                        <!-- botão de avançar -->
+                        <a class="next-section" href="#desserts"><!--Colocar aqui o icone de avancar pelo bootstrap --></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ====== SEÇÃO: DESSERTS ====== -->
+        <section id="desserts" class="menu-section menu-desserts">
+            <div class="container">
+
+                <div class="menu-hero">
+                    <h1>Desserts</h1>
+                </div>
+
+                <div class="menu-layout">
+                    <!-- Conteúdo à esquerda, imagem à direita -->
+                    <div class="menu-list">
+                        <div class="menu-column-head">
+                            <span class="col-piatti">Piatti</span>
+                            <span class="col-armonia">Armonizzazione suggerita</span>
+                        </div>
+
+                        <div class="menu-item">
+                            <h3>Tiramisù Tradizionale <span class="suggest">Vin Santo ou Espresso</span></h3>
+                            <p>Classico italiano con caffè e mascarpone</p>
+                        </div>
+
+                        <hr>
+
+                        <div class="menu-item">
+                            <h3>Panna Cotta ai Frutti di Bosco <span class="suggest">Limonata italiana, Moscato
+                                    Rosé</span></h3>
+                            <p>Crema con frutti rossi</p>
+                        </div>
+
+                        <hr>
+
+                        <div class="menu-item">
+                            <h3>Cannoli Siciliani <span class="suggest">Marsala dolce</span></h3>
+                            <p>Pasta croccante con ricotta dolce</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-image">
+                        <img src="imagens/tiramisu.jpg" alt="Tiramisù">
+                    </div>
+                </div>
+                <!-- botão de avançar -->
+                <a class="next-section" href="#carni"><!--Colocar aqui o icone de avancar pelo bootstrap --></a>
+
+            </div>
+        </section>
+
+
+        <!-- ====== SEÇÃO: CARNI E POLLAME ====== -->
+        <section id="carni" class="menu-section menu-carni">
+            <div class="container">
+
+                <div class="menu-hero">
+                    <h1>CARNI E POLLAME</h1>
+                </div>
+
+                <div class="menu-layout reverse">
+                    <!-- Lista de pratos à esquerda -->
+                    <div class="menu-list">
+                        <div class="menu-column-head">
+                            <span class="col-piatti">Piatti</span>
+                        </div>
+
+                        <div class="menu-item">
+                            <h3>Saltimbocca alla Romana <span class="suggest">Merlot Tre Fratelli 2020, Chianti</span>
+                            </h3>
+                            <p>Vitello con prosciutto e salvia</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <h3>Pollo al Vino Bianco <span class="suggest">Tre Chardonnay 2022, Verdicchio</span></h3>
+                            <p>Pollo con salsa al vino bianco.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <h3>Brasato al Vino Rosso <span class="suggest">Barolo, Valpolicella Tre Fratelli
+                                    2019</span></h3>
+                            <p>Carne cotta lentamente nel vino rosso.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <h3>BCostata alla Griglia <span class="suggest">Amarone della Valpolicella</span></h3>
+                            <p>Grigliata sulla legna.</p>
+                        </div>
+                        <!-- botão de avançar -->
+                        <a class="next-section" href="#bevande"><!--Colocar aqui o icone de avancar pelo bootstrap --></a>
+
+                    </div>
+
+                    <!-- Imagem à direita -->
+                    <div class="menu-image">
+                        <img src="imagens/saltibocca.jpg" alt="Carni e Pollame">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="bevande">
+            <div class="menu-layout">
+                <!-- Tabela a esquerda -->
+                <div>
+                    <h1>BEVANDE ANALCOLICHE</h1>
+                    <table class="beverages-table">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Categoria</th>
+                                <th>Caratteristiche / Gusto</th>
+                                <th>Quando Consumma</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Caffè Espresso</td>
+                                <td>Caffè</td>
+                                <td>Forte e aromatico</td>
+                                <td>Dopo i pasti</td>
+                            </tr>
+                            <tr>
+                                <td>Cappuccino</td>
+                                <td>Caffè con latte</td>
+                                <td>Cremoso ed equilibrato</td>
+                                <td>Colazione</td>
+                            </tr>
+                            <tr>
+                                <td>Spremuta d'Arancia</td>
+                                <td>Succo naturale</td>
+                                <td>Agrumato e rinfrescante</td>
+                                <td>Estate e mattina</td>
+                            </tr>
+                            <tr>
+                                <td>Limonata Italiana</td>
+                                <td>Bibita artigianale</td>
+                                <td>Dolce e leggermente acidula</td>
+                                <td>Giorni caldi</td>
+                            </tr>
+                            <tr>
+                                <td>Crodino</td>
+                                <td>Aperitivo analcolico</td>
+                                <td>Amaro ed elegante</td>
+                                <td>Prima dei pasti</td>
+                            </tr>
+                            <tr>
+                                <td>Acqua Frizzante</td>
+                                <td>Acqua minerale</td>
+                                <td>Neutra e purificante</td>
+                                <td>Durante i pasti</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Immagine a direita -->
+                <!-- Added coffee image on the right side -->
+                <div class="menu-image">
+                    <img src="imagens/café.jpg" alt="Caffè Cappuccino con biscotto">
+                </div>
+            </div>
+             <!-- botão de voltar ao inicio -->
+                        <a class="next-section" href="#antipaste"><!--Colocar aqui o icone de avancar pelo bootstrap --></a>
+            </div>
+
+        </section>
+
+    </main>
+
 </body>
+
 </html>
