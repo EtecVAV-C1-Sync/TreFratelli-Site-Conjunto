@@ -10,6 +10,19 @@ header{
     justify-content: space-between;
 }
 
+/*--- setinha ---*/
+i.ph-triangle{
+    display: inline-block;
+    transform: rotate(90deg);
+    transition: 0.3s ease;
+}
+
+i.ph-triangle.rotate{
+    transform: rotate(180deg);
+}
+
+
+
 /*--- Dropdow menu ---*/
 .top-menu-icons {
     display: none;
