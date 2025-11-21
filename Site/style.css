@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*--- Dropdow menu ---*/
+.top-menu-icons {
+    display: none;
+}
+
+.top-menu-icons.show {
+    display: block;
+}
+
+
+
+/* -------- dropdown tradução --------- */
+.lang-dropdown {
+    display: none;
+}
+
+.lang-dropdown.show {
+    display: block;
+}

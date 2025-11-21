@@ -3,40 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cantina e Ristorante Tre Fratelli</title>
-</head>
+  <title id="titulo">Cantina e Ristorante Tre Fratelli</title>
 
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
+
+</head>
 <body>
 
-  <!-- ========================== HEADER ========================== -->
-  <header class="top-header">
-    <div class="language-selector">
-      <button class="lang-btn">
-        <img src="imagens/italia.png" alt="Italiano"> It ▼
-      </button>
+    <!-- HEADER -->
+    <header>
+        <div class="language-selector">
+            <button class="lang-btn">
+                <img src="imagens/italia.png" alt="Italiano"> It ▼
+            </button>
 
-      <div class="lang-dropdown">
-        <button><img src="imagens/italia.png" alt=""> It</button>
-        <button><img src="imagens/reinounido.png" alt=""> En</button>
-        <button><img src="imagens/Brasil.png" alt=""> Pt</button>
-      </div>
-    </div>
+            <div class="lang-dropdown">
+                <button onclick="setLanguage('it')"><img src="imagens/italia.png" alt=""> It</button>
+                <button onclick="setLanguage('en_uk')"><img src="imagens/reinounido.png" alt=""> En-Uk</button>
+                <button onclick="setLanguage('pt_br')"><img src="imagens/Brasil.png" alt=""> Pt-Br</button>
+            </div>
 
-    <div class="header-icons">
-      <a href="#inizio" class="home-btn">
-        <!--Colocar o icone de casa pelo bootstrap aqui -->
-      </a>
+        </div>
+        <div class="header-icons">
+            <button class="navegacao-btn">
+                <i class="ph-fill ph-house"></i>
+            </button>
 
-      <div class="top-menu-icons">
-        <a href="Storia.html"><!--Colocar o icone de ampulheta pelo bootstrap aqui --></a>
-        <a href="AttrazioniTuristiche.html"><!--Colocar o icone de localizacao pelo bootstrap aqui --></a>
-        <a href="index.html"><!--Colocar o icone de casa pelo bootstrap aqui --></a>
-        <a href="vini.html"><img src="imagens/iconeVinho.png" alt="Vini"></a>
-        <a href="Cardapio.html"><!--Colocar o icone de garfo e faca pelo bootstrap aqui --></a>
-        <a href="index.html"><!--Colocar o icone de robo pelo bootstrap aqui --></a>
-      </div>
-    </div>
-    <p><img src="imagens/logo completa.jpeg" alt="Tre Fratelli" class="logo">Tre Fratelli</p>
+            <div class="top-menu-icons">
+                <a href="Storia.html"><i class="ph-fill ph-hourglass-low"></i></a>
+                <a href="AttrazioniTuristiche.html"><i class="ph-fill ph-map-pin"></i></a>
+                <a href="index.html"><i class="ph-fill ph-house"></i></a>
+                <a href="vini.html"><img src="imagens/iconeVinho.png" alt="Vini"></a> <!-- To achando esse imagem mt estranha se nao conseguirem padronizar usem essa <i class="ph-fill ph-wine"></i> -->
+                <a href="Cardapio.html"><i class="ph-fill ph-fork-knife"></i></a>
+                <a href="chatbot.html"><i class="ph-fill ph-robot"></i></a>
+            </div>
+        </div>
+    <p><img src="imagens/Logo Completa.jpeg" alt="Tre Fratelli" class="logo">Tre Fratelli</p>
   </header>
 
   <!-- ========================== SLIDE 1 — INIZIO ========================== -->
@@ -134,10 +139,6 @@
   </section>
 
 </body>
-</html>
-
-</body>
-
 <script>
     const i18n = {
         it: {
@@ -146,15 +147,15 @@
         },
 
         en_uk: {
-
+            titulo: "Tre Fratelli Winery and Restaurant",
         },
 
-        pt_br: {
-
+        pt_br: {  
+            titulo: "Vinícola e Restaurante Tre Fratelli",
         }
     }
 
-    function setLanguage(lang) {
+ function setLanguage(lang) {
     const elements = document.querySelectorAll('[id]');
     const translations = i18n[lang];
 
@@ -172,9 +173,12 @@
     localStorage.setItem('lang', lang);
   }
 
+
   document.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('lang') || 'it';
     setLanguage(savedLang);
   });
 </script>
+
 </html>
+
