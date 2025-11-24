@@ -9,56 +9,56 @@
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
 </head>
 
 <body>
 
     <!-- HEADER -->
- <header>
-    <div class="language-selector">
-    <button class="lang-btn" id="btn_1" onclick="toggleDropdown()">
-      <span id="flag"></span>
-      <span id="langName">It</span>
-      <i class="ph-fill ph-triangle" id="lang-arrow"></i>
-    </button>
-    <div class="lang-dropdown" id="langMenu">
-      <button onclick="setLanguage('it')" id="btn_2"><span class="fi fi-it"></span> It</button>
-      <button onclick="setLanguage('en_uk')" id="btn_3"><span class="fi fi-gb"></span> En-Uk</button>
-      <button onclick="setLanguage('pt_br')" id="btn_4"><span class="fi fi-br"></span> Pt-Br</button>
+    <header>
+        <div class="language-selector">
+            <button class="lang-btn" id="btn_1" onclick="toggleDropdown()">
+                <span id="flag"></span>
+                <span id="langName">It</span>
+                <i class="ph-fill ph-triangle" id="lang-arrow"></i>
+            </button>
+            <div class="lang-dropdown" id="langMenu">
+                <button onclick="setLanguage('it')" id="btn_2"><span class="fi fi-it"></span> It</button>
+                <button onclick="setLanguage('en_uk')" id="btn_3"><span class="fi fi-gb"></span> En-Uk</button>
+                <button onclick="setLanguage('pt_br')" id="btn_4"><span class="fi fi-br"></span> Pt-Br</button>
+            </div>
+        </div>
+        <div class="header-icons">
+            <button class="navegacao-btn">
+                <i class="ph-fill ph-fork-knife"></i>
+            </button>
+            <div class="top-menu-icons">
+                <div class="big-circle"></div>
+                <a href="Storia.html" class="menu-item"><i class="ph-fill ph-hourglass-low"></i></a>
+                <a href="AttrazioniTuristiche.html" class="menu-item"><i class="ph-fill ph-map-pin"></i></a>
+                <a href="index.html" class="menu-item"><i class="ph-fill ph-house"></i></a>
+                <a href="vini.html" class="menu-item"><i class="ph-fill ph-wine"></i></a>
+                <a href="Cardapio.html" class="menu-item"><i class="ph-fill ph-fork-knife"></i></a>
+                <a href="chatbot.html" class="menu-item"><i class="ph-fill ph-robot"></i></a>
+            </div>
+        </div>
+        <div class="sup-direita">
+            <img src="imagens/Logo Completa.png" alt="Tre Fratelli" class="logo" />
+            <div class="texto-ao-lado">
+                <p>Tre Fratelli</p>
+            </div>
+        </div>
+    </header>
+    <div class="avancar-pagina">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" fill="currentColor"
+                class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+            </svg>
+        </a>
     </div>
-  </div>
-  <div class="header-icons">
-    <button class="navegacao-btn">
-      <i class="ph-fill ph-fork-knife"></i>
-    </button>
-    <div class="top-menu-icons">
-      <div class="big-circle"></div>
-      <a href="Storia.html" class="menu-item"><i class="ph-fill ph-hourglass-low"></i></a>
-      <a href="AttrazioniTuristiche.html" class="menu-item"><i class="ph-fill ph-map-pin"></i></a>
-      <a href="index.html" class="menu-item"><i class="ph-fill ph-house"></i></a>
-      <a href="vini.html" class="menu-item"><i class="ph-fill ph-wine"></i></a>
-      <a href="Cardapio.html" class="menu-item"><i class="ph-fill ph-fork-knife"></i></a>
-      <a href="chatbot.html" class="menu-item"><i class="ph-fill ph-robot"></i></a>
-    </div>
-  </div>
-  <div class="sup-direita">
-    <img src="imagens/Logo Completa.png" alt="Tre Fratelli" class="logo" />
-    <div class="texto-ao-lado">
-      <p>Tre Fratelli</p>
-    </div>
-  </div>
-  </header>
-  <div class="avancar-pagina">
-    <a href="index.html">
-      <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" fill="currentColor"
-        class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-        <path fill-rule="evenodd"
-          d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
-      </svg>
-    </a>
-  </div>
 
     <!-- ========================= PÁGINA: CARDÁPIO ========================= -->
     <main class="menu-page">
@@ -84,12 +84,14 @@
                         </div>
 
                         <div class="menu-item">
-                            <h3 id="h3_3">Bruschetta al Pomodoro <span class="suggest" id="p_1">Pinot Grigio, Tre Chardonnay 2022</span></h3>
+                            <h3 id="h3_3">Bruschetta al Pomodoro <span class="suggest" id="p_1">Pinot Grigio, Tre
+                                    Chardonnay 2022</span></h3>
                             <p id="p_2">Pane rustico con pomodoro, olio d'oliva e basilico</p>
                         </div>
 
                         <div class="menu-item">
-                            <h3 id="h3_4">Antipasto Misto della Casa <span class="suggest" id="p_3">Valpolicella Tre Fratelli 2019</span></h3>
+                            <h3 id="h3_4">Antipasto Misto della Casa <span class="suggest" id="p_3">Valpolicella Tre
+                                    Fratelli 2019</span></h3>
                             <p id="p_4">Selezione di formaggi, salumi e verdure</p>
                         </div>
 
@@ -99,12 +101,14 @@
                         </div>
 
                         <div class="menu-item">
-                            <h3 id="h3_6">Caprese alla Tirano <span class="suggest" id="p_7">Tre Chardonnay 2022, Verdicchio</span></h3>
+                            <h3 id="h3_6">Caprese alla Tirano <span class="suggest" id="p_7">Tre Chardonnay 2022,
+                                    Verdicchio</span></h3>
                             <p id="p_8">Mozzarella, pomodoro e basilico</p>
                         </div>
 
                         <div class="menu-item">
-                            <h3 id="h3_7">Tabla Tre Fratelli <span class="suggest" id="p_9">Merlot Tre Fratelli 2020</span></h3>
+                            <h3 id="h3_7">Tabla Tre Fratelli <span class="suggest" id="p_9">Merlot Tre Fratelli
+                                    2020</span></h3>
                             <p id="p_10">Formaggi lombardi, noci e miele</p>
                         </div>
 
@@ -131,12 +135,14 @@
                         </div>
 
                         <div class="menu-item">
-                            <h3 id="h3_10">Spaghetti alla Bolognese <span class="suggest" id="p_11">Chianti Classico, Merlot Tre Fratelli 2020</span></h3>
+                            <h3 id="h3_10">Spaghetti alla Bolognese <span class="suggest" id="p_11">Chianti Classico,
+                                    Merlot Tre Fratelli 2020</span></h3>
                             <p id="p_12">Pane rustico con pomodoro, olio d'oliva e basilico</p>
                         </div>
 
                         <div class="menu-item">
-                            <h3 id="h3_11">Lasagna alla Napoletana <span class="suggest" id="p_13">Nero d'Avola, Merlot Tre Fratelli 2020</span></h3>
+                            <h3 id="h3_11">Lasagna alla Napoletana <span class="suggest" id="p_13">Nero d'Avola, Merlot
+                                    Tre Fratelli 2020</span></h3>
                             <p id="p_14">Strati con carne e formaggio</p>
                         </div>
 
@@ -151,7 +157,8 @@
                         </div>
 
                         <div class="menu-item">
-                            <h3 id="h3_14">Acqua Frizzante / Naturale <span class="suggest" id="p_19">Accompagno ai pasti</span></h3>
+                            <h3 id="h3_14">Acqua Frizzante / Naturale <span class="suggest" id="p_19">Accompagno ai
+                                    pasti</span></h3>
                             <p id="p_20">Acqua minerale. Neutra e purificante.</p>
                         </div>
                     </div>
@@ -181,14 +188,16 @@
                         </div>
 
                         <div class="menu-item">
-                            <h3 id="h3_17">Tiramisù Tradizionale <span class="suggest" id="p_21">Vin Santo ou Espresso</span></h3>
+                            <h3 id="h3_17">Tiramisù Tradizionale <span class="suggest" id="p_21">Vin Santo ou
+                                    Espresso</span></h3>
                             <p id="p_22">Classico italiano con caffè e mascarpone</p>
                         </div>
 
                         <hr>
 
                         <div class="menu-item">
-                            <h3 id="h3_18">Panna Cotta ai Frutti di Bosco <span class="suggest" id="p_23">Limonata italiana, Moscato Rosé</span></h3>
+                            <h3 id="h3_18">Panna Cotta ai Frutti di Bosco <span class="suggest" id="p_23">Limonata
+                                    italiana, Moscato Rosé</span></h3>
                             <p id="p_24">Crema con frutti rossi</p>
                         </div>
 
@@ -224,22 +233,26 @@
                         </div>
 
                         <div class="menu-item">
-                            <h3 id="h3_21">Saltimbocca alla Romana <span class="suggest" id="p_27">Merlot Tre Fratelli 2020, Chianti</span></h3>
+                            <h3 id="h3_21">Saltimbocca alla Romana <span class="suggest" id="p_27">Merlot Tre Fratelli
+                                    2020, Chianti</span></h3>
                             <p id="p_28">Vitello con prosciutto e salvia</p>
                         </div>
 
                         <div class="menu-item">
-                            <h3 id="h3_22">Pollo al Vino Bianco <span class="suggest" id="p_29">Tre Chardonnay 2022, Verdicchio</span></h3>
+                            <h3 id="h3_22">Pollo al Vino Bianco <span class="suggest" id="p_29">Tre Chardonnay 2022,
+                                    Verdicchio</span></h3>
                             <p id="p_30">Pollo con salsa al vino bianco.</p>
                         </div>
 
                         <div class="menu-item">
-                            <h3 id="h3_23">Brasato al Vino Rosso <span class="suggest" id="p_31">Barolo, Valpolicella Tre Fratelli 2019</span></h3>
+                            <h3 id="h3_23">Brasato al Vino Rosso <span class="suggest" id="p_31">Barolo, Valpolicella
+                                    Tre Fratelli 2019</span></h3>
                             <p id="p_32">Carne cotta lentamente nel vino rosso.</p>
                         </div>
 
                         <div class="menu-item">
-                            <h3 id="h3_24">BCostata alla Griglia <span class="suggest" id="p_33">Amarone della Valpolicella</span></h3>
+                            <h3 id="h3_24">BCostata alla Griglia <span class="suggest" id="p_33">Amarone della
+                                    Valpolicella</span></h3>
                             <p id="p_34">Grigliata sulla legna.</p>
                         </div>
                         <a class="next-section" href="#bevande" id="btn_next_4"></a>
@@ -317,7 +330,7 @@
 
 
 
-                <!-- INFORMAZIONI ORARIO E SCONTO -->
+        <!-- INFORMAZIONI ORARIO E SCONTO -->
         <section id="info">
             <div>
                 <h2 id="h2_4">Orario</h2>
@@ -350,728 +363,721 @@
 
         <!-- FAÇA SUA RESERVA -->
         <section id="prenotazione">
-        
-<img src="imagens/stradadelvini.png"
-     alt="img_2"
-     style="width: 35%; height: auto; object-fit: contain; border-radius: 12px;" >
-
-
-        <h1 id="h1_8">FAI LA TUA<br>PRENOTAZIONE</h1>
-
-
-    <div id="step1">
-        <div>
-            
-            <div id="form-container-step1">
-                
-                <label id="h3_7" for="numPeople">Numero di persone</label>
-                <div class="input-wrapper select-like"> 
-                    <input type="number" id="numPeople" placeholder="Es. 2" min="1" value="1">
-                    <span class="icon arrow">&#x2304;</span> 
+            <div id="step1" class="layout-container" style="display: flex; flex-direction: row;">
+                <div>
+                    <h1 id="h1_8">FAI LA TUA<br>PRENOTAZIONE</h1>
+                    <img src="imagens/stradadelvini.png" alt="img_2"
+                        style="width: 100%; height: auto; object-fit: contain; border-radius: 12px;">
                 </div>
 
-                <label id="h3_8" for="date">Data</label>
-                <div class="input-wrapper">
-                    <input type="date" id="date">
-                    <span class="icon calendar">&#x1F4C5;</span>
+                <div id="form-container-step1">
+
+                    <label id="h3_7" for="numPeople">Numero di persone</label>
+                    <div class="input-wrapper select-like">
+                        <input type="number" id="numPeople" placeholder="Es. 2" min="1" value="1">
+                        <span class="icon arrow">&#x2304;</span>
+                    </div>
+
+                    <label id="h3_8" for="date">Data</label>
+                    <div class="input-wrapper">
+                        <input type="date" id="date">
+                        <span class="icon calendar">&#x1F4C5;</span>
+                    </div>
+
+                    <label id="h3_9" for="time">Orario</label>
+                    <div class="input-wrapper">
+                        <input type="time" id="time">
+                        <span class="icon clock">&#x23F1;</span>
+                    </div>
+
+                    <label id="h3_10" for="agency">Agenzia</label>
+                    <div class="input-wrapper">
+                        <select id="agency">
+                            <option id="p_7" value="" disabled selected>Seleziona agenzia</option>
+                            <option value="agency1" id="p_8">Agenzia 1</option>
+                            <option value="agency2" id="p_9">Agenzia 2</option>
+                            <option value="agency3" id="p_10">Agenzia 3</option>
+                        </select>
+                        <span class="icon building">&#x1F3E2;</span>
+                    </div>
+
+                    <button id="btn_5" class="main-button" onclick="goToStep(2)">Avanzare</button>
                 </div>
+            </div>
+        </section>
+        <section id="prenotazione">
+            <div id="step2" class="layout-container" style="display: flex; flex-direction: row;">
+                <div>
+                    <h2 id="h2_2">FAI LA TUA<br>PRENOTAZIONE</h2>
+                    <img src="imagens/stradadelvini.png" alt="img_3"
+                        style="width: 100%; height: auto; object-fit: contain; border-radius: 12px;">
 
-                <label id="h3_9" for="time">Orario</label>
-                <div class="input-wrapper">
-                    <input type="time" id="time">
-                    <span class="icon clock">&#x23F1;</span>
                 </div>
+                <div id="form-container-step2">
 
-                <label id="h3_10" for="agency">Agenzia</label>
-                <div class="input-wrapper">
-                    <select id="agency">
-                        <option id="p_7" value="" disabled selected>Seleziona agenzia</option>
-                        <option value="agency1" id="p_8">Agenzia 1</option>
-                        <option value="agency2" id="p_9">Agenzia 2</option>
-                        <option value="agency3" id="p_10">Agenzia 3</option>
-                    </select>
-                    <span class="icon building">&#x1F3E2;</span> 
+
+
+                    <label id="h3_11" for="fullName">Nome completo</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="fullName" placeholder="Es. Giovanni Rossi">
+                        <span class="icon person">&#x1F464;</span>
+                    </div>
+
+                    <label id="h3_12" for="cpf">CPF</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="cpf" placeholder="Es. 123.456.789-00">
+                        <span class="icon id-card">&#x1F4B3;</span>
+                    </div>
+
+                    <label id="h3_13" for="phone">Telefono</label>
+                    <div class="input-wrapper">
+                        <input type="tel" id="phone" placeholder="Es. +39 123 456 7890">
+                        <span class="icon phone-icon">&#x1F4DE;</span>
+                    </div>
+
+                    <label id="h3_14" for="email">Email</label>
+                    <div class="input-wrapper">
+                        <input type="email" id="email" placeholder="Es. giovanni@example.com">
+                        <span class="icon envelope">&#x2709;</span>
+                    </div>
+
+                    <div class="buttons-group">
+                        <button id="btn_7" class="main-button" onclick="goToStep(3)">Prenotare</button>
+                    </div>
+
                 </div>
-
-                <button id="btn_5" class="main-button" onclick="goToStep(2)">Avanzare</button>
             </div>
-        </div>
-    </div>
+        </section>
+        <section id="pagamento">
 
-           <div id="step2">
-    <div>
-       <img src="imagens/stradadelvini.png"
-     alt="img_3"
-     style="width: 35%; height: auto; object-fit: contain; border-radius: 12px;">
-        
-        <div id="form-container-step2">
-            
-            <h2 id="h2_2">FAI LA TUA<br>PRENOTAZIONE</h2>
+            <div id="step3" class="layout-container" style="display: flex; flex-direction: row;">
+                <div>
+                    <h2 id="h2_3">FAI LA TUA<br>PRENOTAZIONE</h2>
+                    <img src="imagens/stradadelvini.png" alt="img_4"
+                        style="width: 100%; height: auto; object-fit: contain; border-radius: 12px;">
 
-            <label id="h3_11" for="fullName">Nome completo</label>
-            <div class="input-wrapper">
-                <input type="text" id="fullName" placeholder="Es. Giovanni Rossi">
-                <span class="icon person">&#x1F464;</span> 
+                </div>
+                <div style="display: flex; flex-direction: column;">
+
+                    <label id="h3_15" for="total">Totale</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="total" placeholder="€ 0.00">
+                        <span class="icon currency">&#x1F4B0;</span>
+                    </div>
+
+                    <p id="p_11" class="payment-title" style="color: white;">Metodo di pagamento</p>
+
+                    <div class="payment-options">
+
+                        <label id="h3_16" class="payment-card">
+                            <input type="radio" name="payment" value="anticipato" checked>
+                            <span class="card-content">
+                                Anticipato
+                                <span class="check-icon">&#x2713;</span>
+                            </span>
+                        </label>
+
+                        <label id="h3_17" class="payment-card">
+                            <input type="radio" name="payment" value="sul_posto">
+                            <span class="card-content">
+                                Sul posto
+                                <span class="check-icon">&#x2713;</span>
+                            </span>
+                        </label>
+
+                    </div>
+                </div>
             </div>
-
-            <label id="h3_12" for="cpf">CPF</label>
-            <div class="input-wrapper">
-                <input type="text" id="cpf" placeholder="Es. 123.456.789-00">
-                <span class="icon id-card">&#x1F4B3;</span> 
-            </div>
-
-            <label id="h3_13" for="phone">Telefono</label>
-            <div class="input-wrapper">
-                <input type="tel" id="phone" placeholder="Es. +39 123 456 7890">
-                <span class="icon phone-icon">&#x1F4DE;</span> 
-            </div>
-
-            <label id="h3_14" for="email">Email</label>
-            <div class="input-wrapper">
-                <input type="email" id="email" placeholder="Es. giovanni@example.com">
-                <span class="icon envelope">&#x2709;</span> 
-            </div>
-
-            <div class="buttons-group">
-                <button id="btn_7" class="main-button" onclick="goToStep(3)">Prenotare</button>
-            </div>
-            
-        </div>
-    </div>
-</div>
-
-                        <div id="step3">
-    <div>
-        <img src="imagens/stradadelvini.png"
-     alt="img_4"
-     style="width: 35%; height: auto; object-fit: contain; border-radius: 12px;">
-        
-        <div id="form-container-step3">
-            
-            <h2 id="h2_3">FAI LA TUA<br>PRENOTAZIONE</h2>
-
-            <label id="h3_15" for="total">Totale</label>
-            <div class="input-wrapper">
-                <input type="text" id="total" placeholder="€ 0.00" >
-                <span class="icon currency">&#x1F4B0;</span> 
-            </div>
-
-            <p id="p_11" class="payment-title" style="color: white;">Metodo di pagamento</p>
-
-            <div class="payment-options">
-                
-                <label id="h3_16" class="payment-card">
-                    <input type="radio" name="payment" value="anticipato" checked>
-                    <span class="card-content">
-                        Anticipato
-                        <span class="check-icon">&#x2713;</span>
-                    </span>
-                </label>
-                
-                <label id="h3_17" class="payment-card">
-                    <input type="radio" name="payment" value="sul_posto">
-                    <span class="card-content">
-                        Sul posto
-                        <span class="check-icon">&#x2713;</span>
-                    </span>
-                </label>
-                
-            </div>
-
-
-            
-        </div>
-    </div>
-</div>
         </section>
 
 
     </main>
-<footer class="site-footer">
-    <div class="footer-bottom">
-        &copy; 2025 Tre Fratelli. Todos os direitos reservados.
-    </div>
-</footer>
-<script>
-const i18n = {
-    it: {
-        /* HEADER */
-        titulo: "Cantina e Ristorante Tre Fratelli",
-        flag: "<span class='fi fi-it'></span>",
-        langName: "It",
-        btn_2: "<span class='fi fi-it'></span> It",
-        btn_3: "<span class='fi fi-gb'></span> En-Uk",
-        btn_4: "<span class='fi fi-br'></span> Pt-Br",
+    <footer class="site-footer">
+        <div class="footer-bottom">
+            &copy; 2025 Tre Fratelli. Todos os direitos reservados.
+        </div>
+    </footer>
+    <script>
+        const i18n = {
+            it: {
+                /* HEADER */
+                titulo: "Cantina e Ristorante Tre Fratelli",
+                flag: "<span class='fi fi-it'></span>",
+                langName: "It",
+                btn_2: "<span class='fi fi-it'></span> It",
+                btn_3: "<span class='fi fi-gb'></span> En-Uk",
+                btn_4: "<span class='fi fi-br'></span> Pt-Br",
 
-        /* SEÇÃO ANTIPASTI & FORMAGGI */
-        h1_1: "Il nostro<br>   Menu degli antipasti",
-        h2_1: "Antipasti & Formaggi",
-        h3_1: "Piatti",
-        h3_2: "Armonizzazione suggerita",
-        h3_3: "Bruschetta al Pomodoro",
-        p_1: "Pinot Grigio, Tre Chardonnay 2022",
-        p_2: "Pane rustico con pomodoro, olio d'oliva e basilico",
-        h3_4: "Antipasto Misto della Casa",
-        p_3: "Valpolicella Tre Fratelli 2019",
-        p_4: "Selezione di formaggi, salumi e verdure",
-        h3_5: "Prosciutto e Melone",
-        p_5: "Prosecco",
-        p_6: "Prosciutto crudo e melone maturo",
-        h3_6: "Caprese alla Tirano",
-        p_7: "Tre Chardonnay 2022, Verdicchio",
-        p_8: "Mozzarella, pomodoro e basilico",
-        h3_7: "Tabla Tre Fratelli",
-        p_9: "Merlot Tre Fratelli 2020",
-        p_10: "Formaggi lombardi, noci e miele",
+                /* SEÇÃO ANTIPASTI & FORMAGGI */
+                h1_1: "Il nostro<br>   Menu degli antipasti",
+                h2_1: "Antipasti & Formaggi",
+                h3_1: "Piatti",
+                h3_2: "Armonizzazione suggerita",
+                h3_3: "Bruschetta al Pomodoro",
+                p_1: "Pinot Grigio, Tre Chardonnay 2022",
+                p_2: "Pane rustico con pomodoro, olio d'oliva e basilico",
+                h3_4: "Antipasto Misto della Casa",
+                p_3: "Valpolicella Tre Fratelli 2019",
+                p_4: "Selezione di formaggi, salumi e verdure",
+                h3_5: "Prosciutto e Melone",
+                p_5: "Prosecco",
+                p_6: "Prosciutto crudo e melone maturo",
+                h3_6: "Caprese alla Tirano",
+                p_7: "Tre Chardonnay 2022, Verdicchio",
+                p_8: "Mozzarella, pomodoro e basilico",
+                h3_7: "Tabla Tre Fratelli",
+                p_9: "Merlot Tre Fratelli 2020",
+                p_10: "Formaggi lombardi, noci e miele",
 
-        /* SEÇÃO PASTE & RISOTTI */
-        h1_2: "Paste e<br>Risotti",
-        h2_2: "Sapori di Casa",
-        h3_8: "Piatti",
-        h3_9: "Armonizzazione suggerita",
-        h3_10: "Spaghetti alla Bolognese",
-        p_11: "Chianti Classico, Merlot Tre Fratelli 2020",
-        p_12: "Pasta con ragù di carne",
-        h3_11: "Lasagna alla Napoletana",
-        p_13: "Nero d'Avola, Merlot Tre Fratelli 2020",
-        p_14: "Strati con carne e formaggio",
-        h3_12: "Limonata Italiana",
-        p_15: "Giorni caldi",
-        p_16: "Bibita artigianale. Dolce e leggermente acidula.",
-        h3_13: "Crodino",
-        p_17: "Prima dei pasti",
-        p_18: "Aperitivo analcolico. Amaro ed elegante.",
-        h3_14: "Acqua Frizzante / Naturale",
-        p_19: "Accompagno ai pasti",
-        p_20: "Acqua minerale. Neutra e purificante.",
+                /* SEÇÃO PASTE & RISOTTI */
+                h1_2: "Paste e<br>Risotti",
+                h2_2: "Sapori di Casa",
+                h3_8: "Piatti",
+                h3_9: "Armonizzazione suggerita",
+                h3_10: "Spaghetti alla Bolognese",
+                p_11: "Chianti Classico, Merlot Tre Fratelli 2020",
+                p_12: "Pasta con ragù di carne",
+                h3_11: "Lasagna alla Napoletana",
+                p_13: "Nero d'Avola, Merlot Tre Fratelli 2020",
+                p_14: "Strati con carne e formaggio",
+                h3_12: "Limonata Italiana",
+                p_15: "Giorni caldi",
+                p_16: "Bibita artigianale. Dolce e leggermente acidula.",
+                h3_13: "Crodino",
+                p_17: "Prima dei pasti",
+                p_18: "Aperitivo analcolico. Amaro ed elegante.",
+                h3_14: "Acqua Frizzante / Naturale",
+                p_19: "Accompagno ai pasti",
+                p_20: "Acqua minerale. Neutra e purificante.",
 
-        /* SEÇÃO DESSERTS */
-        h1_3: "Desserts",
-        h3_15: "Piatti",
-        h3_16: "Armonizzazione suggerita",
-        h3_17: "Tiramisù Tradizionale",
-        p_21: "Vin Santo ou Espresso",
-        p_22: "Classico italiano con caffè e mascarpone",
-        h3_18: "Panna Cotta ai Frutti di Bosco",
-        p_23: "Limonata italiana, Moscato Rosé",
-        p_24: "Crema con frutti rossi",
-        h3_19: "Cannoli Siciliani",
-        p_25: "Marsala dolce",
-        p_26: "Pasta croccante con ricotta dolce",
+                /* SEÇÃO DESSERTS */
+                h1_3: "Desserts",
+                h3_15: "Piatti",
+                h3_16: "Armonizzazione suggerita",
+                h3_17: "Tiramisù Tradizionale",
+                p_21: "Vin Santo ou Espresso",
+                p_22: "Classico italiano con caffè e mascarpone",
+                h3_18: "Panna Cotta ai Frutti di Bosco",
+                p_23: "Limonata italiana, Moscato Rosé",
+                p_24: "Crema con frutti rossi",
+                h3_19: "Cannoli Siciliani",
+                p_25: "Marsala dolce",
+                p_26: "Pasta croccante con ricotta dolce",
 
-        /* SEÇÃO CARNI & POLLAME */
-        h1_4: "CARNI E POLLAME",
-        h3_20: "Piatti",
-        h3_21: "Saltimbocca alla Romana",
-        p_27: "Merlot Tre Fratelli 2020, Chianti",
-        p_28: "Vitello con prosciutto e salvia",
-        h3_22: "Pollo al Vino Bianco",
-        p_29: "Tre Chardonnay 2022, Verdicchio",
-        p_30: "Pollo con salsa al vino bianco.",
-        h3_23: "Brasato al Vino Rosso",
-        p_31: "Barolo, Valpolicella Tre Fratelli 2019",
-        p_32: "Carne cotta lentamente nel vino rosso.",
-        h3_24: "BCostata alla Griglia",
-        p_33: "Amarone della Valpolicella",
-        p_34: "Grigliata sulla legna.",
+                /* SEÇÃO CARNI & POLLAME */
+                h1_4: "CARNI E POLLAME",
+                h3_20: "Piatti",
+                h3_21: "Saltimbocca alla Romana",
+                p_27: "Merlot Tre Fratelli 2020, Chianti",
+                p_28: "Vitello con prosciutto e salvia",
+                h3_22: "Pollo al Vino Bianco",
+                p_29: "Tre Chardonnay 2022, Verdicchio",
+                p_30: "Pollo con salsa al vino bianco.",
+                h3_23: "Brasato al Vino Rosso",
+                p_31: "Barolo, Valpolicella Tre Fratelli 2019",
+                p_32: "Carne cotta lentamente nel vino rosso.",
+                h3_24: "BCostata alla Griglia",
+                p_33: "Amarone della Valpolicella",
+                p_34: "Grigliata sulla legna.",
 
-        /* SEÇÃO BEVANDE */
-        h1_5: "BEVANDE ANALCOLICHE",
-        th_1: "Nome",
-        th_2: "Categoria",
-        th_3: "Caratteristiche / Gusto",
-        th_4: "Quando Consumma",
-        td_1: "Caffè Espresso",
-        td_2: "Caffè",
-        td_3: "Forte e aromatico",
-        td_4: "Dopo i pasti",
-        td_5: "Cappuccino",
-        td_6: "Caffè con latte",
-        td_7: "Cremoso ed equilibrato",
-        td_8: "Colazione",
-        td_9: "Spremuta d'Arancia",
-        td_10: "Succo naturale",
-        td_11: "Agrumato e rinfrescante",
-        td_12: "Estate e mattina",
-        td_13: "Limonata Italiana",
-        td_14: "Bibita artigianale",
-        td_15: "Dolce e leggermente acidula",
-        td_16: "Giorni caldi",
-        td_17: "Crodino",
-        td_18: "Aperitivo analcolico",
-        td_19: "Amaro ed elegante",
-        td_20: "Prima dei pasti",
-        td_21: "Acqua Frizzante",
-        td_22: "Acqua minerale",
-        td_23: "Neutra e purificante",
-        td_24: "Durante i pasti",
+                /* SEÇÃO BEVANDE */
+                h1_5: "BEVANDE ANALCOLICHE",
+                th_1: "Nome",
+                th_2: "Categoria",
+                th_3: "Caratteristiche / Gusto",
+                th_4: "Quando Consumma",
+                td_1: "Caffè Espresso",
+                td_2: "Caffè",
+                td_3: "Forte e aromatico",
+                td_4: "Dopo i pasti",
+                td_5: "Cappuccino",
+                td_6: "Caffè con latte",
+                td_7: "Cremoso ed equilibrato",
+                td_8: "Colazione",
+                td_9: "Spremuta d'Arancia",
+                td_10: "Succo naturale",
+                td_11: "Agrumato e rinfrescante",
+                td_12: "Estate e mattina",
+                td_13: "Limonata Italiana",
+                td_14: "Bibita artigianale",
+                td_15: "Dolce e leggermente acidula",
+                td_16: "Giorni caldi",
+                td_17: "Crodino",
+                td_18: "Aperitivo analcolico",
+                td_19: "Amaro ed elegante",
+                td_20: "Prima dei pasti",
+                td_21: "Acqua Frizzante",
+                td_22: "Acqua minerale",
+                td_23: "Neutra e purificante",
+                td_24: "Durante i pasti",
 
-        p_35: "Tre Fratelli",
+                p_35: "Tre Fratelli",
 
-        // BEVANDE
-    h1_7: "BEVANDE ANALCOLICHE",
-    th_1: "Nome",
-    th_2: "Categoria",
-    th_3: "Caratteristiche / Gusto",
-    th_4: "Quando Consumare",
-    td_1: "Caffè Espresso",
-    td_2: "Caffè",
-    td_3: "Forte e aromatico",
-    td_4: "Dopo i pasti",
-    td_5: "Cappuccino",
-    td_6: "Caffè con latte",
-    td_7: "Crema e equilibrato",
-    td_8: "Colazione",
-    td_9: "Spremuta d'Arancia",
-    td_10: "Succo naturale",
-    td_11: "Citrico e rinfrescante",
-    td_12: "Estate e mattina",
-    td_13: "Limonata Italiana",
-    td_14: "Bevanda artigianale",
-    td_15: "Dolce e leggermente acidula",
-    td_16: "Giorni caldi",
-    td_17: "Crodino",
-    td_18: "Aperitivo analcolico",
-    td_19: "Amaro ed elegante",
-    td_20: "Prima dei pasti",
-    td_21: "Acqua Frizzante",
-    td_22: "Acqua minerale",
-    td_23: "Neutra e purificante",
-    td_24: "Durante i pasti",
-    p_35: "Tre Fratelli",
+                // BEVANDE
+                h1_7: "BEVANDE ANALCOLICHE",
+                th_1: "Nome",
+                th_2: "Categoria",
+                th_3: "Caratteristiche / Gusto",
+                th_4: "Quando Consumare",
+                td_1: "Caffè Espresso",
+                td_2: "Caffè",
+                td_3: "Forte e aromatico",
+                td_4: "Dopo i pasti",
+                td_5: "Cappuccino",
+                td_6: "Caffè con latte",
+                td_7: "Crema e equilibrato",
+                td_8: "Colazione",
+                td_9: "Spremuta d'Arancia",
+                td_10: "Succo naturale",
+                td_11: "Citrico e rinfrescante",
+                td_12: "Estate e mattina",
+                td_13: "Limonata Italiana",
+                td_14: "Bevanda artigianale",
+                td_15: "Dolce e leggermente acidula",
+                td_16: "Giorni caldi",
+                td_17: "Crodino",
+                td_18: "Aperitivo analcolico",
+                td_19: "Amaro ed elegante",
+                td_20: "Prima dei pasti",
+                td_21: "Acqua Frizzante",
+                td_22: "Acqua minerale",
+                td_23: "Neutra e purificante",
+                td_24: "Durante i pasti",
+                p_35: "Tre Fratelli",
 
-    // PRENOTAZIONI
-    h1_8: "FAI LA TUA PRENOTAZIONE",
-    h2_2: "FAI LA TUA PRENOTAZIONE",
-    h2_3: "FAI LA TUA PRENOTAZIONE",
-    h3_7: "Numero di persone",
-    h3_8: "Data",
-    h3_9: "Orario",
-    h3_10: "Agenzia",
-    p_7: "Seleziona agenzia",
-    p_8: "Agenzia 1",
-    p_9: "Agenzia 2",
-    p_10: "Agenzia 3",
-    btn_5: "Avanzare",
-    btn_6: "Indietro",
-    btn_7: "Prenotare",
-    h3_11: "Nome completo",
-    h3_12: "CPF",
-    h3_13: "Telefono",
-    h3_14: "Email",
-    h3_15: "Totale",
-    p_11: "Metodo di pagamento",
-    h3_16: "Anticipato",
-    h3_17: "Sul posto",
-    btn_8: "Indietro",
-    btn_9: "Confermare",
-    img_2: "",
-    img_3: "",
-    img_4: "",
+                // PRENOTAZIONI
+                h1_8: "FAI LA TUA PRENOTAZIONE",
+                h2_2: "FAI LA TUA PRENOTAZIONE",
+                h2_3: "FAI LA TUA PRENOTAZIONE",
+                h3_7: "Numero di persone",
+                h3_8: "Data",
+                h3_9: "Orario",
+                h3_10: "Agenzia",
+                p_7: "Seleziona agenzia",
+                p_8: "Agenzia 1",
+                p_9: "Agenzia 2",
+                p_10: "Agenzia 3",
+                btn_5: "Avanzare",
+                btn_6: "Indietro",
+                btn_7: "Prenotare",
+                h3_11: "Nome completo",
+                h3_12: "CPF",
+                h3_13: "Telefono",
+                h3_14: "Email",
+                h3_15: "Totale",
+                p_11: "Metodo di pagamento",
+                h3_16: "Anticipato",
+                h3_17: "Sul posto",
+                btn_8: "Indietro",
+                btn_9: "Confermare",
+                img_2: "",
+                img_3: "",
+                img_4: "",
 
-    // INFORMAZIONI
-    h2_4: "Orario",
-    p_12: "La nostra prenotazione include la scelta anticipata del piatto e dell'orario. Gli orari disponibili sono:",
-    p_13: "11:00",
-    p_14: "12:00",
-    p_15: "13:00",
-    p_16: "Ogni pranzo ha una durata di 45 minuti.",
-    h2_5: "Sconto",
-    p_17: "I clienti del ristorante e dei pacchetti gastronomici avranno uno sconto del 5% sugli acquisti nel negozio, dove vengono venduti i prodotti degustati e alcuni souvenir esclusivi.",
-    h2_6: "Prenota con i nostri partner",
-    p_18: "Prenotando tramite una delle nostre agenzie partner – come il Bernina Express – hai diritto a vantaggi esclusivi."
-    },
+                // INFORMAZIONI
+                h2_4: "Orario",
+                p_12: "La nostra prenotazione include la scelta anticipata del piatto e dell'orario. Gli orari disponibili sono:",
+                p_13: "11:00",
+                p_14: "12:00",
+                p_15: "13:00",
+                p_16: "Ogni pranzo ha una durata di 45 minuti.",
+                h2_5: "Sconto",
+                p_17: "I clienti del ristorante e dei pacchetti gastronomici avranno uno sconto del 5% sugli acquisti nel negozio, dove vengono venduti i prodotti degustati e alcuni souvenir esclusivi.",
+                h2_6: "Prenota con i nostri partner",
+                p_18: "Prenotando tramite una delle nostre agenzie partner – come il Bernina Express – hai diritto a vantaggi esclusivi."
+            },
 
-    en_uk: {
-        titulo: "Tre Fratelli Winery & Restaurant",
-        flag: "<span class='fi fi-gb'></span>",
-        langName: "En-Uk",
-        btn_2: "<span class='fi fi-it'></span> It",
-        btn_3: "<span class='fi fi-gb'></span> En-Uk",
-        btn_4: "<span class='fi fi-br'></span> Pt-Br",
+            en_uk: {
+                titulo: "Tre Fratelli Winery & Restaurant",
+                flag: "<span class='fi fi-gb'></span>",
+                langName: "En-Uk",
+                btn_2: "<span class='fi fi-it'></span> It",
+                btn_3: "<span class='fi fi-gb'></span> En-Uk",
+                btn_4: "<span class='fi fi-br'></span> Pt-Br",
 
-        h1_1: "Our<br>Appetizers Menu",
-        h2_1: "Appetizers & Cheeses",
-        h3_1: "Dishes",
-        h3_2: "Suggested Pairing",
-        h3_3: "Tomato Bruschetta",
-        p_1: "Pinot Grigio, Tre Chardonnay 2022",
-        p_2: "Rustic bread with tomato, olive oil, and basil",
-        h3_4: "Mixed Starter",
-        p_3: "Valpolicella Tre Fratelli 2019",
-        p_4: "Selection of cheeses, cured meats, and vegetables",
-        h3_5: "Prosciutto and Melon",
-        p_5: "Prosecco",
-        p_6: "Cured ham and ripe melon",
-        h3_6: "Caprese alla Tirano",
-        p_7: "Tre Chardonnay 2022, Verdicchio",
-        p_8: "Mozzarella, tomato, and basil",
-        h3_7: "Tre Fratelli Cheese Board",
-        p_9: "Merlot Tre Fratelli 2020",
-        p_10: "Lombard cheeses, nuts, and honey",
+                h1_1: "Our<br>Appetizers Menu",
+                h2_1: "Appetizers & Cheeses",
+                h3_1: "Dishes",
+                h3_2: "Suggested Pairing",
+                h3_3: "Tomato Bruschetta",
+                p_1: "Pinot Grigio, Tre Chardonnay 2022",
+                p_2: "Rustic bread with tomato, olive oil, and basil",
+                h3_4: "Mixed Starter",
+                p_3: "Valpolicella Tre Fratelli 2019",
+                p_4: "Selection of cheeses, cured meats, and vegetables",
+                h3_5: "Prosciutto and Melon",
+                p_5: "Prosecco",
+                p_6: "Cured ham and ripe melon",
+                h3_6: "Caprese alla Tirano",
+                p_7: "Tre Chardonnay 2022, Verdicchio",
+                p_8: "Mozzarella, tomato, and basil",
+                h3_7: "Tre Fratelli Cheese Board",
+                p_9: "Merlot Tre Fratelli 2020",
+                p_10: "Lombard cheeses, nuts, and honey",
 
-        h1_2: "Pasta & Risotto",
-        h2_2: "Home Flavors",
-        h3_8: "Dishes",
-        h3_9: "Suggested Pairing",
-        h3_10: "Spaghetti Bolognese",
-        p_11: "Chianti Classico, Merlot Tre Fratelli 2020",
-        p_12: "Pasta with meat ragù",
-        h3_11: "Neapolitan Lasagna",
-        p_13: "Nero d'Avola, Merlot Tre Fratelli 2020",
-        p_14: "Layers of meat and cheese",
-        h3_12: "Italian Lemonade",
-        p_15: "Hot days",
-        p_16: "Handmade drink. Sweet and slightly tangy.",
-        h3_13: "Crodino",
-        p_17: "Before meals",
-        p_18: "Non-alcoholic aperitif. Bitter and elegant.",
-        h3_14: "Sparkling / Still Water",
-        p_19: "Accompanies meals",
-        p_20: "Neutral mineral water",
+                h1_2: "Pasta & Risotto",
+                h2_2: "Home Flavors",
+                h3_8: "Dishes",
+                h3_9: "Suggested Pairing",
+                h3_10: "Spaghetti Bolognese",
+                p_11: "Chianti Classico, Merlot Tre Fratelli 2020",
+                p_12: "Pasta with meat ragù",
+                h3_11: "Neapolitan Lasagna",
+                p_13: "Nero d'Avola, Merlot Tre Fratelli 2020",
+                p_14: "Layers of meat and cheese",
+                h3_12: "Italian Lemonade",
+                p_15: "Hot days",
+                p_16: "Handmade drink. Sweet and slightly tangy.",
+                h3_13: "Crodino",
+                p_17: "Before meals",
+                p_18: "Non-alcoholic aperitif. Bitter and elegant.",
+                h3_14: "Sparkling / Still Water",
+                p_19: "Accompanies meals",
+                p_20: "Neutral mineral water",
 
-        h1_3: "Desserts",
-        h3_15: "Dishes",
-        h3_16: "Suggested Pairing",
-        h3_17: "Traditional Tiramisu",
-        p_21: "Vin Santo or Espresso",
-        p_22: "Classic Italian with coffee and mascarpone",
-        h3_18: "Berry Panna Cotta",
-        p_23: "Italian Lemonade, Moscato Rosé",
-        p_24: "Cream with red berries",
-        h3_19: "Sicilian Cannoli",
-        p_25: "Sweet Marsala",
-        p_26: "Crispy pastry with sweet ricotta",
+                h1_3: "Desserts",
+                h3_15: "Dishes",
+                h3_16: "Suggested Pairing",
+                h3_17: "Traditional Tiramisu",
+                p_21: "Vin Santo or Espresso",
+                p_22: "Classic Italian with coffee and mascarpone",
+                h3_18: "Berry Panna Cotta",
+                p_23: "Italian Lemonade, Moscato Rosé",
+                p_24: "Cream with red berries",
+                h3_19: "Sicilian Cannoli",
+                p_25: "Sweet Marsala",
+                p_26: "Crispy pastry with sweet ricotta",
 
-        h1_4: "MEATS & POULTRY",
-        h3_20: "Dishes",
-        h3_21: "Saltimbocca alla Romana",
-        p_27: "Merlot Tre Fratelli 2020, Chianti",
-        p_28: "Veal with ham and sage",
-        h3_22: "Chicken in White Wine",
-        p_29: "Tre Chardonnay 2022, Verdicchio",
-        p_30: "Chicken with white wine sauce",
-        h3_23: "Braised Beef in Red Wine",
-        p_31: "Barolo, Valpolicella Tre Fratelli 2019",
-        p_32: "Slow-cooked beef in red wine",
-        h3_24: "Grilled Ribeye",
-        p_33: "Amarone della Valpolicella",
-        p_34: "Grilled over wood fire",
+                h1_4: "MEATS & POULTRY",
+                h3_20: "Dishes",
+                h3_21: "Saltimbocca alla Romana",
+                p_27: "Merlot Tre Fratelli 2020, Chianti",
+                p_28: "Veal with ham and sage",
+                h3_22: "Chicken in White Wine",
+                p_29: "Tre Chardonnay 2022, Verdicchio",
+                p_30: "Chicken with white wine sauce",
+                h3_23: "Braised Beef in Red Wine",
+                p_31: "Barolo, Valpolicella Tre Fratelli 2019",
+                p_32: "Slow-cooked beef in red wine",
+                h3_24: "Grilled Ribeye",
+                p_33: "Amarone della Valpolicella",
+                p_34: "Grilled over wood fire",
 
-        h1_5: "NON-ALCOHOLIC DRINKS",
-        th_1: "Name",
-        th_2: "Category",
-        th_3: "Characteristics / Taste",
-        th_4: "When to Drink",
-        td_1: "Espresso Coffee",
-        td_2: "Coffee",
-        td_3: "Strong and aromatic",
-        td_4: "After meals",
-        td_5: "Cappuccino",
-        td_6: "Coffee with milk",
-        td_7: "Creamy and balanced",
-        td_8: "Breakfast",
-        td_9: "Orange Juice",
-        td_10: "Natural Juice",
-        td_11: "Citrus and refreshing",
-        td_12: "Summer mornings",
-        td_13: "Italian Lemonade",
-        td_14: "Handmade drink",
-        td_15: "Sweet and slightly tangy",
-        td_16: "Hot days",
-        td_17: "Crodino",
-        td_18: "Non-alcoholic aperitif",
-        td_19: "Bitter and elegant",
-        td_20: "Before meals",
-        td_21: "Sparkling Water",
-        td_22: "Mineral Water",
-        td_23: "Neutral and purifying",
-        td_24: "During meals",
+                h1_5: "NON-ALCOHOLIC DRINKS",
+                th_1: "Name",
+                th_2: "Category",
+                th_3: "Characteristics / Taste",
+                th_4: "When to Drink",
+                td_1: "Espresso Coffee",
+                td_2: "Coffee",
+                td_3: "Strong and aromatic",
+                td_4: "After meals",
+                td_5: "Cappuccino",
+                td_6: "Coffee with milk",
+                td_7: "Creamy and balanced",
+                td_8: "Breakfast",
+                td_9: "Orange Juice",
+                td_10: "Natural Juice",
+                td_11: "Citrus and refreshing",
+                td_12: "Summer mornings",
+                td_13: "Italian Lemonade",
+                td_14: "Handmade drink",
+                td_15: "Sweet and slightly tangy",
+                td_16: "Hot days",
+                td_17: "Crodino",
+                td_18: "Non-alcoholic aperitif",
+                td_19: "Bitter and elegant",
+                td_20: "Before meals",
+                td_21: "Sparkling Water",
+                td_22: "Mineral Water",
+                td_23: "Neutral and purifying",
+                td_24: "During meals",
 
-        p_35: "Tre Fratelli",
+                p_35: "Tre Fratelli",
 
-            // BEVANDE
-    h1_7: "NON-ALCOHOLIC DRINKS",
-    th_1: "Name",
-    th_2: "Category",
-    th_3: "Characteristics / Taste",
-    th_4: "When Consumed",
-    td_1: "Espresso Coffee",
-    td_2: "Coffee",
-    td_3: "Strong and aromatic",
-    td_4: "After meals",
-    td_5: "Cappuccino",
-    td_6: "Coffee with milk",
-    td_7: "Creamy and balanced",
-    td_8: "Breakfast",
-    td_9: "Fresh Orange Juice",
-    td_10: "Natural juice",
-    td_11: "Citrus and refreshing",
-    td_12: "Summer mornings",
-    td_13: "Italian Lemonade",
-    td_14: "Artisanal drink",
-    td_15: "Sweet and slightly tart",
-    td_16: "Hot days",
-    td_17: "Crodino",
-    td_18: "Non-alcoholic aperitif",
-    td_19: "Bitter and elegant",
-    td_20: "Before meals",
-    td_21: "Sparkling Water",
-    td_22: "Mineral Water",
-    td_23: "Neutral and purifying",
-    td_24: "During meals",
-    p_35: "Tre Fratelli",
+                // BEVANDE
+                h1_7: "NON-ALCOHOLIC DRINKS",
+                th_1: "Name",
+                th_2: "Category",
+                th_3: "Characteristics / Taste",
+                th_4: "When Consumed",
+                td_1: "Espresso Coffee",
+                td_2: "Coffee",
+                td_3: "Strong and aromatic",
+                td_4: "After meals",
+                td_5: "Cappuccino",
+                td_6: "Coffee with milk",
+                td_7: "Creamy and balanced",
+                td_8: "Breakfast",
+                td_9: "Fresh Orange Juice",
+                td_10: "Natural juice",
+                td_11: "Citrus and refreshing",
+                td_12: "Summer mornings",
+                td_13: "Italian Lemonade",
+                td_14: "Artisanal drink",
+                td_15: "Sweet and slightly tart",
+                td_16: "Hot days",
+                td_17: "Crodino",
+                td_18: "Non-alcoholic aperitif",
+                td_19: "Bitter and elegant",
+                td_20: "Before meals",
+                td_21: "Sparkling Water",
+                td_22: "Mineral Water",
+                td_23: "Neutral and purifying",
+                td_24: "During meals",
+                p_35: "Tre Fratelli",
 
-    // RESERVAS
-    h1_8: "MAKE YOUR RESERVATION",
-    h2_2: "MAKE YOUR RESERVATION",
-    h2_3: "MAKE YOUR RESERVATION",
-    h3_7: "Number of people",
-    h3_8: "Date",
-    h3_9: "Time",
-    h3_10: "Agency",
-    p_7: "Select agency",
-    p_8: "Agency 1",
-    p_9: "Agency 2",
-    p_10: "Agency 3",
-    btn_5: "Next",
-    btn_6: "Back",
-    btn_7: "Book",
-    h3_11: "Full Name",
-    h3_12: "CPF",
-    h3_13: "Phone",
-    h3_14: "Email",
-    h3_15: "Total",
-    p_11: "Payment method",
-    h3_16: "Prepaid",
-    h3_17: "On site",
-    btn_8: "Back",
-    btn_9: "Confirm",
-    img_2: "",
-    img_3: "",
-    img_4: "",
+                // RESERVAS
+                h1_8: "MAKE YOUR RESERVATION",
+                h2_2: "MAKE YOUR RESERVATION",
+                h2_3: "MAKE YOUR RESERVATION",
+                h3_7: "Number of people",
+                h3_8: "Date",
+                h3_9: "Time",
+                h3_10: "Agency",
+                p_7: "Select agency",
+                p_8: "Agency 1",
+                p_9: "Agency 2",
+                p_10: "Agency 3",
+                btn_5: "Next",
+                btn_6: "Back",
+                btn_7: "Book",
+                h3_11: "Full Name",
+                h3_12: "CPF",
+                h3_13: "Phone",
+                h3_14: "Email",
+                h3_15: "Total",
+                p_11: "Payment method",
+                h3_16: "Prepaid",
+                h3_17: "On site",
+                btn_8: "Back",
+                btn_9: "Confirm",
+                img_2: "",
+                img_3: "",
+                img_4: "",
 
-    // INFORMAÇÕES
-    h2_4: "Schedule",
-    p_12: "Our reservation includes selecting the dish and time in advance. Available times:",
-    p_13: "11:00",
-    p_14: "12:00",
-    p_15: "13:00",
-    p_16: "Each lunch lasts 45 minutes.",
-    h2_5: "Discount",
-    p_17: "Restaurant and gastronomic package customers receive a 5% discount on store purchases, where products tasted and some exclusive souvenirs are sold.",
-    h2_6: "Book with our partners",
-    p_18: "Booking through one of our partner agencies – like the Bernina Express – gives you exclusive benefits."
-    },
+                // INFORMAÇÕES
+                h2_4: "Schedule",
+                p_12: "Our reservation includes selecting the dish and time in advance. Available times:",
+                p_13: "11:00",
+                p_14: "12:00",
+                p_15: "13:00",
+                p_16: "Each lunch lasts 45 minutes.",
+                h2_5: "Discount",
+                p_17: "Restaurant and gastronomic package customers receive a 5% discount on store purchases, where products tasted and some exclusive souvenirs are sold.",
+                h2_6: "Book with our partners",
+                p_18: "Booking through one of our partner agencies – like the Bernina Express – gives you exclusive benefits."
+            },
 
-    pt_br: {
-        titulo: "Cantina e Restaurante Tre Fratelli",
-        flag: "<span class='fi fi-br'></span>",
-        langName: "Pt-Br",
-        btn_2: "<span class='fi fi-it'></span> It",
-        btn_3: "<span class='fi fi-gb'></span> En-Uk",
-        btn_4: "<span class='fi fi-br'></span> Pt-Br",
+            pt_br: {
+                titulo: "Cantina e Restaurante Tre Fratelli",
+                flag: "<span class='fi fi-br'></span>",
+                langName: "Pt-Br",
+                btn_2: "<span class='fi fi-it'></span> It",
+                btn_3: "<span class='fi fi-gb'></span> En-Uk",
+                btn_4: "<span class='fi fi-br'></span> Pt-Br",
 
-        h1_1: "Nosso<br>Menu de Entradas",
-        h2_1: "Entradas & Queijos",
-        h3_1: "Pratos",
-        h3_2: "Harmonização Sugerida",
-        h3_3: "Bruschetta de Tomate",
-        p_1: "Pinot Grigio, Tre Chardonnay 2022",
-        p_2: "Pão rústico com tomate, azeite e manjericão",
-        h3_4: "Entrada Mista da Casa",
-        p_3: "Valpolicella Tre Fratelli 2019",
-        p_4: "Seleção de queijos, embutidos e vegetais",
-        h3_5: "Presunto e Melão",
-        p_5: "Prosecco",
-        p_6: "Presunto cru e melão maduro",
-        h3_6: "Caprese alla Tirano",
-        p_7: "Tre Chardonnay 2022, Verdicchio",
-        p_8: "Mozzarella, tomate e manjericão",
-        h3_7: "Tábua Tre Fratelli",
-        p_9: "Merlot Tre Fratelli 2020",
-        p_10: "Queijos da Lombardia, nozes e mel",
+                h1_1: "Nosso<br>Menu de Entradas",
+                h2_1: "Entradas & Queijos",
+                h3_1: "Pratos",
+                h3_2: "Harmonização Sugerida",
+                h3_3: "Bruschetta de Tomate",
+                p_1: "Pinot Grigio, Tre Chardonnay 2022",
+                p_2: "Pão rústico com tomate, azeite e manjericão",
+                h3_4: "Entrada Mista da Casa",
+                p_3: "Valpolicella Tre Fratelli 2019",
+                p_4: "Seleção de queijos, embutidos e vegetais",
+                h3_5: "Presunto e Melão",
+                p_5: "Prosecco",
+                p_6: "Presunto cru e melão maduro",
+                h3_6: "Caprese alla Tirano",
+                p_7: "Tre Chardonnay 2022, Verdicchio",
+                p_8: "Mozzarella, tomate e manjericão",
+                h3_7: "Tábua Tre Fratelli",
+                p_9: "Merlot Tre Fratelli 2020",
+                p_10: "Queijos da Lombardia, nozes e mel",
 
-        h1_2: "Massas e Risottos",
-        h2_2: "Sabores Caseiros",
-        h3_8: "Pratos",
-        h3_9: "Harmonização Sugerida",
-        h3_10: "Espaguete à Bolonhesa",
-        p_11: "Chianti Classico, Merlot Tre Fratelli 2020",
-        p_12: "Massa com ragù de carne",
-        h3_11: "Lasanha Napolitana",
-        p_13: "Nero d'Avola, Merlot Tre Fratelli 2020",
-        p_14: "Camadas de carne e queijo",
-        h3_12: "Limonada Italiana",
-        p_15: "Dias quentes",
-        p_16: "Bebida artesanal. Doce e levemente ácida.",
-        h3_13: "Crodino",
-        p_17: "Antes das refeições",
-        p_18: "Aperitivo sem álcool. Amargo e elegante.",
-        h3_14: "Água com Gás / Natural",
-        p_19: "Acompanha as refeições",
-        p_20: "Água mineral neutra",
+                h1_2: "Massas e Risottos",
+                h2_2: "Sabores Caseiros",
+                h3_8: "Pratos",
+                h3_9: "Harmonização Sugerida",
+                h3_10: "Espaguete à Bolonhesa",
+                p_11: "Chianti Classico, Merlot Tre Fratelli 2020",
+                p_12: "Massa com ragù de carne",
+                h3_11: "Lasanha Napolitana",
+                p_13: "Nero d'Avola, Merlot Tre Fratelli 2020",
+                p_14: "Camadas de carne e queijo",
+                h3_12: "Limonada Italiana",
+                p_15: "Dias quentes",
+                p_16: "Bebida artesanal. Doce e levemente ácida.",
+                h3_13: "Crodino",
+                p_17: "Antes das refeições",
+                p_18: "Aperitivo sem álcool. Amargo e elegante.",
+                h3_14: "Água com Gás / Natural",
+                p_19: "Acompanha as refeições",
+                p_20: "Água mineral neutra",
 
-        h1_3: "Sobremesas",
-        h3_15: "Pratos",
-        h3_16: "Harmonização Sugerida",
-        h3_17: "Tiramisù Tradicional",
-        p_21: "Vin Santo ou Espresso",
-        p_22: "Clássico italiano com café e mascarpone",
-        h3_18: "Panna Cotta com Frutas Vermelhas",
-        p_23: "Limonada Italiana, Moscato Rosé",
-        p_24: "Creme com frutas vermelhas",
-        h3_19: "Cannoli Sicilianos",
-        p_25: "Marsala doce",
-        p_26: "Massa crocante com ricota doce",
+                h1_3: "Sobremesas",
+                h3_15: "Pratos",
+                h3_16: "Harmonização Sugerida",
+                h3_17: "Tiramisù Tradicional",
+                p_21: "Vin Santo ou Espresso",
+                p_22: "Clássico italiano com café e mascarpone",
+                h3_18: "Panna Cotta com Frutas Vermelhas",
+                p_23: "Limonada Italiana, Moscato Rosé",
+                p_24: "Creme com frutas vermelhas",
+                h3_19: "Cannoli Sicilianos",
+                p_25: "Marsala doce",
+                p_26: "Massa crocante com ricota doce",
 
-        h1_4: "CARNES E AVES",
-        h3_20: "Pratos",
-        h3_21: "Saltimbocca à Romana",
-        p_27: "Merlot Tre Fratelli 2020, Chianti",
-        p_28: "Vitela com presunto e sálvia",
-        h3_22: "Frango ao Vinho Branco",
-        p_29: "Tre Chardonnay 2022, Verdicchio",
-        p_30: "Frango com molho de vinho branco",
-        h3_23: "Carne Assada ao Vinho Tinto",
-        p_31: "Barolo, Valpolicella Tre Fratelli 2019",
-        p_32: "Carne cozida lentamente no vinho tinto",
-        h3_24: "Bisteca Grelhada",
-        p_33: "Amarone della Valpolicella",
-        p_34: "Grelhada no fogo de lenha",
+                h1_4: "CARNES E AVES",
+                h3_20: "Pratos",
+                h3_21: "Saltimbocca à Romana",
+                p_27: "Merlot Tre Fratelli 2020, Chianti",
+                p_28: "Vitela com presunto e sálvia",
+                h3_22: "Frango ao Vinho Branco",
+                p_29: "Tre Chardonnay 2022, Verdicchio",
+                p_30: "Frango com molho de vinho branco",
+                h3_23: "Carne Assada ao Vinho Tinto",
+                p_31: "Barolo, Valpolicella Tre Fratelli 2019",
+                p_32: "Carne cozida lentamente no vinho tinto",
+                h3_24: "Bisteca Grelhada",
+                p_33: "Amarone della Valpolicella",
+                p_34: "Grelhada no fogo de lenha",
 
-        h1_5: "BEBIDAS NÃO-ALCOÓLICAS",
-        th_1: "Nome",
-        th_2: "Categoria",
-        th_3: "Características / Sabor",
-        th_4: "Quando Consumir",
-        td_1: "Café Expresso",
-        td_2: "Café",
-        td_3: "Forte e aromático",
-        td_4: "Após as refeições",
-        td_5: "Cappuccino",
-        td_6: "Café com leite",
-        td_7: "Cremoso e equilibrado",
-        td_8: "Café da manhã",
-        td_9: "Suco de Laranja",
-        td_10: "Suco natural",
-        td_11: "Cítrico e refrescante",
-        td_12: "Manhã de verão",
-        td_13: "Limonada Italiana",
-        td_14: "Bebida artesanal",
-        td_15: "Doce e levemente ácida",
-        td_16: "Dias quentes",
-        td_17: "Crodino",
-        td_18: "Aperitivo sem álcool",
-        td_19: "Amargo e elegante",
-        td_20: "Antes das refeições",
-        td_21: "Água com Gás",
-        td_22: "Água Mineral",
-        td_23: "Neutra e purificante",
-        td_24: "Durante as refeições",
+                h1_5: "BEBIDAS NÃO-ALCOÓLICAS",
+                th_1: "Nome",
+                th_2: "Categoria",
+                th_3: "Características / Sabor",
+                th_4: "Quando Consumir",
+                td_1: "Café Expresso",
+                td_2: "Café",
+                td_3: "Forte e aromático",
+                td_4: "Após as refeições",
+                td_5: "Cappuccino",
+                td_6: "Café com leite",
+                td_7: "Cremoso e equilibrado",
+                td_8: "Café da manhã",
+                td_9: "Suco de Laranja",
+                td_10: "Suco natural",
+                td_11: "Cítrico e refrescante",
+                td_12: "Manhã de verão",
+                td_13: "Limonada Italiana",
+                td_14: "Bebida artesanal",
+                td_15: "Doce e levemente ácida",
+                td_16: "Dias quentes",
+                td_17: "Crodino",
+                td_18: "Aperitivo sem álcool",
+                td_19: "Amargo e elegante",
+                td_20: "Antes das refeições",
+                td_21: "Água com Gás",
+                td_22: "Água Mineral",
+                td_23: "Neutra e purificante",
+                td_24: "Durante as refeições",
 
-        p_35: "Tre Fratelli",
+                p_35: "Tre Fratelli",
 
-            // BEBIDAS
-    h1_7: "BEBIDAS NÃO-ALCOÓLICAS",
-    th_1: "Nome",
-    th_2: "Categoria",
-    th_3: "Características / Sabor",
-    th_4: "Quando Consumir",
-    td_1: "Café Expresso",
-    td_2: "Café",
-    td_3: "Forte e aromático",
-    td_4: "Após as refeições",
-    td_5: "Cappuccino",
-    td_6: "Café com leite",
-    td_7: "Cremoso e equilibrado",
-    td_8: "Café da manhã",
-    td_9: "Suco de Laranja Natural",
-    td_10: "Suco natural",
-    td_11: "Cítrico e refrescante",
-    td_12: "Manhãs de verão",
-    td_13: "Limonada Italiana",
-    td_14: "Bebida artesanal",
-    td_15: "Doce e levemente ácida",
-    td_16: "Dias quentes",
-    td_17: "Crodino",
-    td_18: "Aperitivo sem álcool",
-    td_19: "Amargo e elegante",
-    td_20: "Antes das refeições",
-    td_21: "Água com Gás",
-    td_22: "Água Mineral",
-    td_23: "Neutra e purificante",
-    td_24: "Durante as refeições",
-    p_35: "Tre Fratelli",
+                // BEBIDAS
+                h1_7: "BEBIDAS NÃO-ALCOÓLICAS",
+                th_1: "Nome",
+                th_2: "Categoria",
+                th_3: "Características / Sabor",
+                th_4: "Quando Consumir",
+                td_1: "Café Expresso",
+                td_2: "Café",
+                td_3: "Forte e aromático",
+                td_4: "Após as refeições",
+                td_5: "Cappuccino",
+                td_6: "Café com leite",
+                td_7: "Cremoso e equilibrado",
+                td_8: "Café da manhã",
+                td_9: "Suco de Laranja Natural",
+                td_10: "Suco natural",
+                td_11: "Cítrico e refrescante",
+                td_12: "Manhãs de verão",
+                td_13: "Limonada Italiana",
+                td_14: "Bebida artesanal",
+                td_15: "Doce e levemente ácida",
+                td_16: "Dias quentes",
+                td_17: "Crodino",
+                td_18: "Aperitivo sem álcool",
+                td_19: "Amargo e elegante",
+                td_20: "Antes das refeições",
+                td_21: "Água com Gás",
+                td_22: "Água Mineral",
+                td_23: "Neutra e purificante",
+                td_24: "Durante as refeições",
+                p_35: "Tre Fratelli",
 
-    // RESERVAS
-    h1_8: "FAÇA SUA RESERVA",
-    h2_2: "FAÇA SUA RESERVA",
-    h2_3: "FAÇA SUA RESERVA",
-    h3_7: "Número de pessoas",
-    h3_8: "Data",
-    h3_9: "Horário",
-    h3_10: "Agência",
-    p_7: "Selecione agência",
-    p_8: "Agência 1",
-    p_9: "Agência 2",
-    p_10: "Agência 3",
-    btn_5: "Avançar",
-    btn_6: "Voltar",
-    btn_7: "Reservar",
-    h3_11: "Nome completo",
-    h3_12: "CPF",
-    h3_13: "Telefone",
-    h3_14: "Email",
-    h3_15: "Total",
-    p_11: "Método de pagamento",
-    h3_16: "Antecipado",
-    h3_17: "No local",
-    btn_8: "Voltar",
-    btn_9: "Confirmar",
-    img_2: "",
-    img_3: "",
-    img_4: "",
+                // RESERVAS
+                h1_8: "FAÇA SUA RESERVA",
+                h2_2: "FAÇA SUA RESERVA",
+                h2_3: "FAÇA SUA RESERVA",
+                h3_7: "Número de pessoas",
+                h3_8: "Data",
+                h3_9: "Horário",
+                h3_10: "Agência",
+                p_7: "Selecione agência",
+                p_8: "Agência 1",
+                p_9: "Agência 2",
+                p_10: "Agência 3",
+                btn_5: "Avançar",
+                btn_6: "Voltar",
+                btn_7: "Reservar",
+                h3_11: "Nome completo",
+                h3_12: "CPF",
+                h3_13: "Telefone",
+                h3_14: "Email",
+                h3_15: "Total",
+                p_11: "Método de pagamento",
+                h3_16: "Antecipado",
+                h3_17: "No local",
+                btn_8: "Voltar",
+                btn_9: "Confirmar",
+                img_2: "",
+                img_3: "",
+                img_4: "",
 
-    // INFORMAÇÕES
-    h2_4: "Horário",
-    p_12: "Nossa reserva inclui escolher o prato e o horário com antecedência. Horários disponíveis:",
-    p_13: "11:00",
-    p_14: "12:00",
-    p_15: "13:00",
-    p_16: "Cada almoço tem duração de 45 minutos.",
-    h2_5: "Desconto",
-    p_17: "Clientes do restaurante e pacotes gastronômicos têm 5% de desconto nas compras na loja, onde são vendidos os produtos degustados e alguns souvenirs exclusivos.",
-    h2_6: "Reserve com nossos parceiros",
-    p_18: "Reservando por meio de uma de nossas agências parceiras – como o Bernina Express – você tem direito a benefícios exclusivos."
-        
-    }
-};
+                // INFORMAÇÕES
+                h2_4: "Horário",
+                p_12: "Nossa reserva inclui escolher o prato e o horário com antecedência. Horários disponíveis:",
+                p_13: "11:00",
+                p_14: "12:00",
+                p_15: "13:00",
+                p_16: "Cada almoço tem duração de 45 minutos.",
+                h2_5: "Desconto",
+                p_17: "Clientes do restaurante e pacotes gastronômicos têm 5% de desconto nas compras na loja, onde são vendidos os produtos degustados e alguns souvenirs exclusivos.",
+                h2_6: "Reserve com nossos parceiros",
+                p_18: "Reservando por meio de uma de nossas agências parceiras – como o Bernina Express – você tem direito a benefícios exclusivos."
+
+            }
+        };
 
 
-function setLanguage(lang) {
-    const elements = document.querySelectorAll('[id]');
-    const translations = i18n[lang];
+        function setLanguage(lang) {
+            const elements = document.querySelectorAll('[id]');
+            const translations = i18n[lang];
 
-    elements.forEach(el => {
-      const key = el.id;
-      if (translations[key]) {
-        if (/<\/?[a-z][\s\S]*>/i.test(translations[key])) {
-          el.innerHTML = translations[key];
-        } else {
-          el.textContent = translations[key];
+            elements.forEach(el => {
+                const key = el.id;
+                if (translations[key]) {
+                    if (/<\/?[a-z][\s\S]*>/i.test(translations[key])) {
+                        el.innerHTML = translations[key];
+                    } else {
+                        el.textContent = translations[key];
+                    }
+                }
+            });
+
+            localStorage.setItem('lang', lang);
         }
-      }
-    });
 
-    localStorage.setItem('lang', lang);
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    const savedLang = localStorage.getItem('lang') || 'it';
-    setLanguage(savedLang);
-});
-</script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLang = localStorage.getItem('lang') || 'it';
+            setLanguage(savedLang);
+        });
+    </script>
 
 </body>
+
 </html>
