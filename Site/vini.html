@@ -2,766 +2,732 @@
 <html lang="it">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="titulo">Itinerario Turistico - Tre Fratelli</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="app.js" defer></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="titulo">Itinerario Turistico - Tre Fratelli</title>
+    <link rel="icon" href="Site/imagens/Logo de Icone.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <div class="language-selector">
-    <button class="lang-btn" id="btn_1" onclick="toggleDropdown()">
+    <!-- HEADER -->
+    <header>
+        <div class="language-selector">
+            <button class="lang-btn" id="btn_1" onclick="toggleDropdown()">
       <span id="flag"></span>
       <span id="langName">It</span>
       <i class="ph-fill ph-triangle" id="lang-arrow"></i>
     </button>
-    <div class="lang-dropdown" id="langMenu">
-      <button onclick="setLanguage('it')" id="btn_2"><span class="fi fi-it"></span> It</button>
-      <button onclick="setLanguage('en_uk')" id="btn_3"><span class="fi fi-gb"></span> En-Uk</button>
-      <button onclick="setLanguage('pt_br')" id="btn_4"><span class="fi fi-br"></span> Pt-Br</button>
-    </div>
-  </div>
-  <div class="header-icons">
-    <button class="navegacao-btn">
+            <div class="lang-dropdown" id="langMenu">
+                <button onclick="setLanguage('it')" id="btn_2"><span class="fi fi-it"></span> It</button>
+                <button onclick="setLanguage('en_uk')" id="btn_3"><span class="fi fi-gb"></span> En-Uk</button>
+                <button onclick="setLanguage('pt_br')" id="btn_4"><span class="fi fi-br"></span> Pt-Br</button>
+            </div>
+        </div>
+        <div class="header-icons">
+            <button class="navegacao-btn">
       <i class="ph-fill ph-wine"></i>
     </button>
-    <div class="top-menu-icons">
-      <div class="big-circle"></div>
-      <a href="Storia.html" class="menu-item"><i class="ph-fill ph-hourglass-low"></i></a>
-      <a href="AttrazioniTuristiche.html" class="menu-item"><i class="ph-fill ph-map-pin"></i></a>
-      <a href="index.html" class="menu-item"><i class="ph-fill ph-house"></i></a>
-      <a href="vini.html" class="menu-item"><i class="ph-fill ph-wine"></i></a>
-      <a href="Cardapio.html" class="menu-item"><i class="ph-fill ph-fork-knife"></i></a>
-      <a href="chatbot.html" class="menu-item"><i class="ph-fill ph-robot"></i></a>
+            <div class="top-menu-icons">
+                <div class="big-circle"></div>
+                <a href="vini.html" class="menu-item"><i class="ph-fill ph-wine branco"></i></a>
+                <a href="Storia.html" class="menu-item"><i class="ph-fill ph-hourglass-low"></i></a>
+                <a href="AttrazioniTuristiche.html" class="menu-item"><i class="ph-fill ph-map-pin"></i></a>
+                <a href="index.html" class="menu-item"><i class="ph-fill ph-house"></i></a>
+                <a href="Cardapio.html" class="menu-item"><i class="ph-fill ph-fork-knife"></i></a>
+                <a href="chatbot.html" class="menu-item"><i class="ph-fill ph-robot"></i></a>
+            </div>
+        </div>
+        <div class="sup-direita">
+            <img src="imagens/Logo Completa.png" alt="Tre Fratelli" class="logo" />
+            <div class="texto-ao-lado">
+                <p>Tre Fratelli</p>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ====== CONTEÚDO PRINCIPAL ====== -->
+    <!-- 1. Valpolicella Tre Fratelli 2019 -->
+    <div class="slider">
+        <h1 id="h1_1">Vini</h1>
+        <div class="slides">
+            <main class="vini first">
+                <div class="wine-name"><strong>Valpolicella Tre Fratelli 2019</strong></div>
+                <img src="imagens/Vapolicella.jpg" alt="">
+
+                <div class="center-section">
+                    <div id="wineDescription">Tinto vivo e convivial — edição limitada.</div>
+
+                    <div class="wine-details">
+                        <div class="detail-item" id="grapes"><strong>Uvas:</strong> Corvina, Rondinella e Molinara</div>
+                        <div class="detail-item" id="alcohol"><strong>Tenore alcolico:</strong> 13,5%</div>
+                        <div class="detail-item" id="origin"><strong>Origine:</strong> Tirano (SO), Lombardia</div>
+                    </div>
+
+                    <div class="pairing-text" id="pairing">
+                        <strong>Harmonização:</strong> Antipasti mistos, bruschetta al pomodoro, pizzas artesanais, massas ao sugo, queijos médios.
+                    </div>
+                </div>
+            </main>
+
+            <!-- 2. Tre Chardonnay 2022 -->
+            <main class="vini second">
+                <div class="wine-name"><strong>Tre Chardonnay 2022</strong></div>
+                <img src="imagens/TreChardonna.jpg" alt="">
+
+                <div class="center-section">
+                    <div class="wine-description" id="wineDescription_1">Branco fresco, com notas de maçã e flores de montanha.</div>
+
+                    <div class="wine-details">
+                        <div class="detail-item" id="grapes_1"><strong>Uvas:</strong> Chardonnay</div>
+                        <div class="detail-item" id="alcohol_1"><strong>Tenore alcolico:</strong> 13,5%</div>
+                        <div class="detail-item" id="origin_1"><strong>Origine:</strong> Tirano (SO), Lombardia</div>
+                    </div>
+
+                    <div class="pairing-text" id="pairing_1">
+                        <strong>Harmonização:</strong> Caprese, risotto ai funghi, frutos do mar, branzino al forno, saladas frescas.
+                    </div>
+                </div>
+            </main>
+
+            <!-- 3. Merlot Tre Fratelli 2020 -->
+            <main class="vini third">
+                <div class="wine-name"><strong>Merlot Tre Fratelli 2020</strong></div>
+                <img src="imagens/Merlot.jpg" alt="">
+
+                <div class="center-section">
+                    <div class="wine-description" id="wineDescription_2">Frutas maduras, notas de cacau e taninos suaves.</div>
+
+                    <div class="wine-details">
+                        <div class="detail-item" id="grapes_2"><strong>Uvas:</strong> Merlot</div>
+                        <div class="detail-item" id="alcohol_2"><strong>Tenore alcolico:</strong> 13,5%</div>
+                        <div class="detail-item" id="origin_2"><strong>Origine:</strong> Tirano (SO), Lombardia</div>
+                    </div>
+
+                    <div class="pairing-text" id="pairing_2">
+                        <strong>Harmonização:</strong> Lasagna alla napoletana, carnes grelhadas, saltimbocca alla romana, queijos curados.
+                    </div>
+                </div>
+            </main>
+
+            <!-- 4. Barolo -->
+            <main class="vini fourth">
+                <div class="wine-name"><strong>Barolo</strong></div>
+                <img src="imagens/Barolo.jpg" alt="">
+
+                <div class="center-section">
+                    <div class="wine-description" id="wineDescription_3">Encorpado, taninos firmes, aroma de rosas e trufas.</div>
+
+                    <div class="wine-details">
+                        <div class="detail-item" id="grapes_3"><strong>Uvas:</strong> Nebbiolo</div>
+                        <div class="detail-item" id="origin_3"><strong>Origine:</strong> Piemonte</div>
+                    </div>
+
+                    <div class="pairing-text" id="pairing_3">
+                        <strong>Harmonização:</strong> Carnes vermelhas, cordeiro, queijos curados.
+                    </div>
+                </div>
+            </main>
+
+            <!-- 5. Brunello di Montalcino -->
+            <main class="vini fifth">
+                <div class="wine-name"><strong>Brunello di Montalcino</strong></div>
+                <img src="imagens/BrunellodiMontalcino.jpg" alt="">
+
+                <div class="center-section">
+                    <div class="wine-description" id="wineDescription_4">Elegante, intenso, com notas de frutas secas e especiarias.</div>
+
+                    <div class="wine-details">
+                        <div class="detail-item" id="grapes_4"><strong>Uvas:</strong> Sangiovese Grosso</div>
+                        <div class="detail-item" id="origin_4"><strong>Origine:</strong> Toscana</div>
+                    </div>
+
+                    <div class="pairing-text" id="pairing_4">
+                        <strong>Harmonização:</strong> Massas com molho de carne, ossobuco.
+                    </div>
+                </div>
+            </main>
+
+            <!-- 6. Chianti Classico -->
+            <main class="vini sixth">
+                <div class="wine-name"><strong>Chianti Classico</strong></div>
+                <img src="imagens/Chianticlassico.jpg" alt="">
+
+                <div class="center-section">
+                    <div class="wine-description" id="wineDescription_5">Médio corpo, notas de cereja e ervas.</div>
+
+                    <div class="wine-details">
+                        <div class="detail-item" id="grapes_5"><strong>Uvas:</strong> Sangiovese</div>
+                        <div class="detail-item" id="origin_5"><strong>Origine:</strong> Toscana</div>
+                    </div>
+
+                    <div class="pairing-text" id="pairing_5">
+                        <strong>Harmonização:</strong> Massas ao sugo, pizzas, queijos médios.
+                    </div>
+                </div>
+            </main>
+
+            <!-- 7. Amarone della Valpolicella -->
+            <main class="vini seventh">
+                <div class="wine-name"><strong>Amarone della Valpolicella</strong></div>
+                <img src="imagens/AmaronedellaValpolicella.jpg" alt="">
+
+                <div class="center-section">
+                    <div class="wine-description" id="wineDescription_6">Rico, aveludado, com notas de frutas secas e cacau.</div>
+
+                    <div class="wine-details">
+                        <div class="detail-item" id="grapes_6"><strong>Uvas:</strong> Corvina, Rondinella</div>
+                        <div class="detail-item" id="origin_6"><strong>Origine:</strong> Vêneto</div>
+                    </div>
+
+                    <div class="pairing-text" id="pairing_6">
+                        <strong>Harmonização:</strong> Carnes assadas, queijos fortes, risotos.
+                    </div>
+                </div>
+            </main>
+
+            <!-- 8. Montepulciano d’Abruzzo -->
+            <main class="vini eighth">
+                <div class="wine-name"><strong>Montepulciano d'Abruzzo</strong></div>
+                <img src="imagens/Montepulcianodabruzzoe.jpg" alt="">
+
+                <div class="center-section">
+                    <div class="wine-description" id="wineDescription_7">Frutado e macio, taninos suaves.</div>
+
+                    <div class="wine-details">
+                        <div class="detail-item" id="grapes_7"><strong>Uvas:</strong> Montepulciano</div>
+                        <div class="detail-item" id="origin_7"><strong>Origine:</strong> Abruzzo</div>
+                    </div>
+
+                    <div class="pairing-text" id="pairing_7">
+                        <strong>Harmonização:</strong> Lasanhas, carnes grelhadas.
+                    </div>
+                </div>
+            </main>
+
+            <!-- 9. Nero d’Avola -->
+            <main class="vini nineth">
+                <div class="wine-name"><strong>Nero d’Avola</strong></div>
+                <img src="imagens/Nerodavola.jpg" alt="">
+
+                <div class="center-section">
+                    <div class="wine-description" id="wineDescription_8">Frutado e intenso, toques de ameixa e especiarias.</div>
+
+                    <div class="wine-details">
+                        <div class="detail-item" id="grapes_8"><strong>Uvas:</strong> Nero d’Avola</div>
+                        <div class="detail-item" id="origin_8"><strong>Origine:</strong> Sicília</div>
+                    </div>
+
+                    <div class="pairing-text" id="pairing_8">
+                        <strong>Harmonização:</strong> Massas com ragu, carnes ao forno.
+                    </div>
+                </div>
+            </main>
+
+            <!-- 10. Valpolicella Ripasso -->
+            <main class="vini tenth">
+                <div class="wine-name"><strong>Valpolicella Ripasso</strong></div>
+                <img src="imagens/Valpolicellaripasso.jpg" alt="">
+
+                <div class="center-section">
+                    <div class="wine-description" id="wineDescription_9">Médio corpo, notas de cereja e chocolate.</div>
+
+                    <div class="wine-details">
+                        <div class="detail-item" id="grapes_9"><strong>Uvas:</strong> Corvina, Rondinella</div>
+                        <div class="detail-item" id="origin_9"><strong>Origine:</strong> Vêneto</div>
+                    </div>
+
+                    <div class="pairing-text" id="pairing_9">
+                        <strong>Harmonização:</strong> Risotos, carnes brancas, massas ricas.
+                    </div>
+                </div>
+            </main>
+
+            <!-- 11. Primitivo di Manduria -->
+            <main class="vini eleventh">
+                <div class="wine-name"><strong>Primitivo di Manduria</strong></div>
+                <img src="imagens/PrimitivodiManduria.jpg" alt="">
+
+                <div class="center-section">
+                    <div class="wine-description" id="wineDescription_10">Potente, notas de frutas maduras e baunilha.</div>
+
+                    <div class="wine-details">
+                        <div class="detail-item" id="grapes_10"><strong>Uvas:</strong> Primitivo</div>
+                        <div class="detail-item" id="origin_10"><strong>Origine:</strong> Puglia</div>
+                    </div>
+
+                    <div class="pairing-text" id="pairing_10">
+                        <strong>Harmonização:</strong> Churrascos, queijos fortes.
+                    </div>
+                </div>
+            </main>
+
+            <!-- 12. Verdicchio dei Castelli di Jesi -->
+            <main class="vini twelfth">
+                <div class="wine-name"><strong>Verdicchio dei Castelli di Jesi</strong></div>
+                <img src="imagens/VerdicchiodeiCastellidiJesi.jpg" alt="">
+
+                <div class="center-section">
+                    <div class="wine-description" id="wineDescription_11">Branco fresco e cítrico, leve toque amendoado.</div>
+
+                    <div class="wine-details">
+                        <div class="detail-item" id="grapes_11"><strong>Uvas:</strong> Verdicchio</div>
+                        <div class="detail-item" id="origin_11"><strong>Origine:</strong> Marche</div>
+                    </div>
+
+                    <div class="pairing-text" id="pairing_11">
+                        <strong>Harmonização:</strong> Frutos do mar, saladas, peixes grelhados.
+                    </div>
+                </div>
+            </main>
+
+            <!-- 13. Pinot Grigio delle Venezie -->
+            <main class="vini thirteenth">
+                <div class="wine-name"><strong>Pinot Grigio delle Venezie</strong></div>
+                <img src="imagens/Pinotgrigiodellevenezie.jpg" alt="">
+
+                <div class="center-section">
+                    <div class="wine-description" id="wineDescription_12">Branco leve e seco, com notas florais.</div>
+
+                    <div class="wine-details">
+                        <div class="detail-item" id="grapes_12"><strong>Uvas:</strong> Pinot Grigio</div>
+                        <div class="detail-item" id="origin_12"><strong>Origine:</strong> Vêneto / Friuli</div>
+                    </div>
+
+                    <div class="pairing-text" id="pairing_12">
+                        <strong>Harmonização:</strong> Peixes, massas leves, antipastos.
+                    </div>
+                </div>
+            </main>
+
+            <!-- 14. Prosecco -->
+            <main class="vini fourteenth">
+                <div class="wine-name"><strong>Prosecco</strong></div>
+                <img src="imagens/Prosecco.jpg" alt="">
+
+                <div class="center-section">
+                    <div class="wine-description" id="wineDescription_13">Espumante leve e frutado.</div>
+
+                    <div class="wine-details">
+                        <div class="detail-item" id="grapes_13"><strong>Uvas:</strong> Glera</div>
+                        <div class="detail-item" id="origin_13"><strong>Origine:</strong> Vêneto</div>
+                    </div>
+
+                    <div class="pairing-text" id="pairing_13">
+                        <strong>Harmonização:</strong> Aperitivos, frutos do mar, sobremesas leves.
+                    </div>
+                </div>
+            </main>
+
+            <!-- 15. Lambrusco -->
+            <main class="vini fifteenth">
+                <div class="wine-name"><strong>Lambrusco</strong></div>
+                <img src="imagens/Lambrusco.jpg" alt="">
+
+                <div class="center-section">
+                    <div class="wine-description" id="wineDescription_14">Espumante tinto, frutado e refrescante.</div>
+
+                    <div class="wine-details">
+                        <div class="detail-item" id="grapes_14"><strong>Uvas:</strong> Lambrusco</div>
+                        <div class="detail-item" id="origin_14"><strong>Origine:</strong> Emilia-Romagna</div>
+                    </div>
+
+                    <div class="pairing-text" id="pairing_14">
+                        <strong>Harmonização:</strong> Frios, embutidos, pizzas e massas simples.
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Navigation -->
+        <div class="navigation">
+            <button class="nav-button" id="nextBtn" onclick="previousWine()">←</button>
+            <button class="nav-button" id="nextBtn" onclick="nextWine()">→</button>
+        </div>
     </div>
-  </div>
-  <div class="sup-direita">
-    <img src="imagens/Logo Completa.png" alt="Tre Fratelli" class="logo" />
-    <div class="texto-ao-lado">
-      <p>Tre Fratelli</p>
-    </div>
-  </div>
-  </header>
-  <div class="avancar-pagina">
-    <a href="cardapio.html">
-      <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" fill="currentColor"
-        class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-        <path fill-rule="evenodd"
-          d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
-      </svg>
-    </a>
-  </div>
 
-  <!-- ====== CONTEÚDO PRINCIPAL ====== -->
-<!-- 1. Valpolicella Tre Fratelli 2019 -->
-<div class="slider">
-  <h1 id="h1_1">Vini</h1>
-  <div class="slides">
-    <main class="vini first">
-      <div class="wine-name"><strong>Valpolicella Tre Fratelli 2019</strong></div>
-      <img src="imagens/Vapolicella.jpg" alt="">
-      
-      <div class="center-section">
-        <div id="wineDescription">Tinto vivo e convivial — edição limitada.</div>
 
-        <div class="wine-details">
-          <div class="detail-item" id="grapes"><strong>Uvas:</strong> Corvina, Rondinella e Molinara</div>
-          <div class="detail-item" id="alcohol"><strong>Tenore alcolico:</strong> 13,5%</div>
-          <div class="detail-item" id="origin"><strong>Origine:</strong> Tirano (SO), Lombardia</div>
+
+    <footer class="site-footer">
+        <div class="footer-bottom">
+            &copy; 2025 Tre Fratelli. Todos os direitos reservados.
         </div>
-
-        <div class="pairing-text" id="pairing">
-          <strong>Harmonização:</strong>
-          Antipasti mistos, bruschetta al pomodoro, pizzas artesanais, massas ao sugo, queijos médios.
-        </div>
-      </div>
-    </main>
-
-    <!-- 2. Tre Chardonnay 2022 -->
-    <main class="vini second">
-      <div class="wine-name"><strong>Tre Chardonnay 2022</strong></div>
-      <img src="imagens/TreChardonna.jpg" alt="">
-      
-      <div class="center-section">
-        <div class="wine-description" id="wineDescription_1">Branco fresco, com notas de maçã e flores de montanha.</div>
-
-        <div class="wine-details">
-          <div class="detail-item" id="grapes_1"><strong>Uvas:</strong> Chardonnay</div>
-          <div class="detail-item" id="alcohol_1"><strong>Tenore alcolico:</strong> 13,5%</div>
-          <div class="detail-item" id="origin_1"><strong>Origine:</strong> Tirano (SO), Lombardia</div>
-        </div>
-
-        <div class="pairing-text" id="pairing_1">
-          <strong>Harmonização:</strong>
-          Caprese, risotto ai funghi, frutos do mar, branzino al forno, saladas frescas.
-        </div>
-      </div>
-    </main>
-
-    <!-- 3. Merlot Tre Fratelli 2020 -->
-    <main class="vini third">
-      <div class="wine-name"><strong>Merlot Tre Fratelli 2020</strong></div>
-      <img src="imagens/Merlot.jpg" alt="">
-      
-      <div class="center-section">
-        <div class="wine-description" id="wineDescription_2">Frutas maduras, notas de cacau e taninos suaves.</div>
-
-        <div class="wine-details">
-          <div class="detail-item" id="grapes_2"><strong>Uvas:</strong> Merlot</div>
-          <div class="detail-item" id="alcohol_2"><strong>Tenore alcolico:</strong> 13,5%</div>
-          <div class="detail-item" id="origin_2"><strong>Origine:</strong> Tirano (SO), Lombardia</div>
-        </div>
-
-        <div class="pairing-text" id="pairing_2">
-          <strong>Harmonização:</strong>
-          Lasagna alla napoletana, carnes grelhadas, saltimbocca alla romana, queijos curados.
-        </div>
-      </div>
-    </main>
-
-    <!-- 4. Barolo -->
-    <main class="vini fourth">
-      <div class="wine-name"><strong>Barolo</strong></div>
-      <img src="imagens/Barolo.jpg" alt="">
-      
-      <div class="center-section">
-        <div class="wine-description" id="wineDescription_3">Encorpado, taninos firmes, aroma de rosas e trufas.</div>
-
-        <div class="wine-details">
-          <div class="detail-item" id="grapes_3"><strong>Uvas:</strong> Nebbiolo</div>
-          <div class="detail-item" id="origin_3"><strong>Origine:</strong> Piemonte</div>
-        </div>
-
-        <div class="pairing-text" id="pairing_3">
-          <strong>Harmonização:</strong>
-          Carnes vermelhas, cordeiro, queijos curados.
-        </div>
-      </div>
-    </main>
-
-    <!-- 5. Brunello di Montalcino -->
-    <main class="vini fifth">
-      <div class="wine-name"><strong>Brunello di Montalcino</strong></div>
-      <img src="imagens/BrunellodiMontalcino.jpg" alt="">
-      
-      <div class="center-section">
-        <div class="wine-description"  id="wineDescription_4">Elegante, intenso, com notas de frutas secas e especiarias.</div>
-
-        <div class="wine-details">
-          <div class="detail-item" id="grapes_4"><strong>Uvas:</strong> Sangiovese Grosso</div>
-          <div class="detail-item" id="origin_4"><strong>Origine:</strong> Toscana</div>
-        </div>
-
-        <div class="pairing-text" id="pairing_4">
-          <strong>Harmonização:</strong>
-          Massas com molho de carne, ossobuco.
-        </div>
-      </div>
-    </main>
-
-    <!-- 6. Chianti Classico -->
-    <main class="vini sixth">
-      <div class="wine-name"><strong>Chianti Classico</strong></div>
-      <img src="imagens/ChiantiClassico.jpg" alt="">
-      
-      <div class="center-section">
-        <div class="wine-description" id="wineDescription_5">Médio corpo, notas de cereja e ervas.</div>
-
-        <div class="wine-details">
-          <div class="detail-item" id="grapes_5"><strong>Uvas:</strong> Sangiovese</div>
-          <div class="detail-item" id="origin_5"><strong>Origine:</strong> Toscana</div>
-        </div>
-
-        <div class="pairing-text" id="pairing_5">
-          <strong>Harmonização:</strong>
-          Massas ao sugo, pizzas, queijos médios.
-        </div>
-      </div>
-    </main>
-
-    <!-- 7. Amarone della Valpolicella -->
-    <main class="vini seventh">
-      <div class="wine-name"><strong>Amarone della Valpolicella</strong></div>
-      <img src="imagens/AmaronedellaValpolicella.jpg" alt="">
-      
-      <div class="center-section">
-        <div class="wine-description" id="wineDescription_6">Rico, aveludado, com notas de frutas secas e cacau.</div>
-
-        <div class="wine-details">
-          <div class="detail-item" id="grapes_6"><strong>Uvas:</strong> Corvina, Rondinella</div>
-          <div class="detail-item" id="origin_6"><strong>Origine:</strong> Vêneto</div>
-        </div>
-
-        <div class="pairing-text" id="pairing_6">
-          <strong>Harmonização:</strong>
-          Carnes assadas, queijos fortes, risotos.
-        </div>
-      </div>
-    </main>
-
-    <!-- 8. Montepulciano d’Abruzzo -->
-    <main class="vini eighth">
-      <div class="wine-name"><strong>Montepulciano d'Abruzzo</strong></div>
-      <img src="imagens/Montepulcianodabruzzoe.jpg" alt="">
-      
-      <div class="center-section">
-        <div class="wine-description" id="wineDescription_7">Frutado e macio, taninos suaves.</div>
-
-        <div class="wine-details">
-          <div class="detail-item" id="grapes_7"><strong>Uvas:</strong> Montepulciano</div>
-          <div class="detail-item" id="origin_7"><strong>Origine:</strong> Abruzzo</div>
-        </div>
-
-        <div class="pairing-text" id="pairing_7">
-          <strong>Harmonização:</strong>
-          Lasanhas, carnes grelhadas.
-        </div>
-      </div>
-    </main>
-
-    <!-- 9. Nero d’Avola -->
-    <main class="vini nineth">
-      <div class="wine-name"><strong>Nero d’Avola</strong></div>
-      <img src="imagens/NeroDAvola.jpg" alt="">
-      
-      <div class="center-section">
-        <div class="wine-description" id="wineDescription_8">Frutado e intenso, toques de ameixa e especiarias.</div>
-
-        <div class="wine-details">
-          <div class="detail-item" id="grapes_8"><strong>Uvas:</strong> Nero d’Avola</div>
-          <div class="detail-item" id="origin_8"><strong>Origine:</strong> Sicília</div>
-        </div>
-
-        <div class="pairing-text" id="pairing_8">
-          <strong>Harmonização:</strong>
-          Massas com ragu, carnes ao forno.
-        </div>
-      </div>
-    </main>
-
-    <!-- 10. Valpolicella Ripasso -->
-    <main class="vini tenth">
-      <div class="wine-name"><strong>Valpolicella Ripasso</strong></div>
-      <img src="imagens/ValpolicellaRipasso.jpg" alt="">
-      
-      <div class="center-section">
-        <div class="wine-description" id="wineDescription_9">Médio corpo, notas de cereja e chocolate.</div>
-
-        <div class="wine-details">
-          <div class="detail-item" id="grapes_9"><strong>Uvas:</strong> Corvina, Rondinella</div>
-          <div class="detail-item" id="origin_9"><strong>Origine:</strong> Vêneto</div>
-        </div>
-
-        <div class="pairing-text" id="pairing_9">
-          <strong>Harmonização:</strong>
-          Risotos, carnes brancas, massas ricas.
-        </div>
-      </div>
-    </main>
-
-    <!-- 11. Primitivo di Manduria -->
-    <main class="vini eleventh">
-      <div class="wine-name"><strong>Primitivo di Manduria</strong></div>
-      <img src="imagens/PrimitivodiManduria.jpg" alt="">
-      
-      <div class="center-section">
-        <div class="wine-description" id="wineDescription_10">Potente, notas de frutas maduras e baunilha.</div>
-
-        <div class="wine-details">
-          <div class="detail-item" id="grapes_10"><strong>Uvas:</strong> Primitivo</div>
-          <div class="detail-item" id="origin_10"><strong>Origine:</strong> Puglia</div>
-        </div>
-
-        <div class="pairing-text" id="pairing_10">
-          <strong>Harmonização:</strong>
-          Churrascos, queijos fortes.
-        </div>
-      </div>
-    </main>
-
-    <!-- 12. Verdicchio dei Castelli di Jesi -->
-    <main class="vini twelfth">
-      <div class="wine-name"><strong>Verdicchio dei Castelli di Jesi</strong></div>
-      <img src="imagens/VerdicchiodeiCastellidiJesi.jpg" alt="">
-      
-      <div class="center-section">
-        <div class="wine-description" id="wineDescription_11">Branco fresco e cítrico, leve toque amendoado.</div>
-
-        <div class="wine-details">
-          <div class="detail-item" id="grapes_11"><strong>Uvas:</strong> Verdicchio</div>
-          <div class="detail-item" id="origin_11"><strong>Origine:</strong> Marche</div>
-        </div>
-
-        <div class="pairing-text" id="pairing_11">
-          <strong>Harmonização:</strong>
-          Frutos do mar, saladas, peixes grelhados.
-        </div>
-      </div>
-    </main>
-
-    <!-- 13. Pinot Grigio delle Venezie -->
-    <main class="vini thirteenth">
-      <div class="wine-name"><strong>Pinot Grigio delle Venezie</strong></div>
-      <img src="imagens/Pinotgrigiodellevenezie.jpg" alt="">
-      
-      <div class="center-section">
-        <div class="wine-description" id="wineDescription_12">Branco leve e seco, com notas florais.</div>
-
-        <div class="wine-details">
-          <div class="detail-item" id="grapes_12"><strong>Uvas:</strong> Pinot Grigio</div>
-          <div class="detail-item" id="origin_12"><strong>Origine:</strong> Vêneto / Friuli</div>
-        </div>
-
-        <div class="pairing-text" id="pairing_12">
-          <strong>Harmonização:</strong>
-          Peixes, massas leves, antipastos.
-        </div>
-      </div>
-    </main>
-
-    <!-- 14. Prosecco -->
-    <main class="vini fourteenth">
-      <div class="wine-name"><strong>Prosecco</strong></div>
-      <img src="imagens/Prosecco.jpg" alt="">
-      
-      <div class="center-section">
-        <div class="wine-description" id="wineDescription_13">Espumante leve e frutado.</div>
-
-        <div class="wine-details">
-          <div class="detail-item" id="grapes_13"><strong>Uvas:</strong> Glera</div>
-          <div class="detail-item" id="origin_13"><strong>Origine:</strong> Vêneto</div>
-        </div>
-
-        <div class="pairing-text" id="pairing_13">
-          <strong>Harmonização:</strong>
-          Aperitivos, frutos do mar, sobremesas leves.
-        </div>
-      </div>
-    </main>
-
-    <!-- 15. Lambrusco -->
-    <main class="vini fifteenth">
-      <div class="wine-name"><strong>Lambrusco</strong></div>
-      <img src="imagens/Lambrusco.jpg" alt="">
-      
-      <div class="center-section">
-        <div class="wine-description" id="wineDescription_14">Espumante tinto, frutado e refrescante.</div>
-
-        <div class="wine-details">
-          <div class="detail-item" id="grapes_14"><strong>Uvas:</strong> Lambrusco</div>
-          <div class="detail-item" id="origin_14"><strong>Origine:</strong> Emilia-Romagna</div>
-        </div>
-
-        <div class="pairing-text" id="pairing_14">
-          <strong>Harmonização:</strong>
-          Frios, embutidos, pizzas e massas simples.
-        </div>
-      </div>
-    </main>
-  </div>
-
-  <!-- Navigation -->
-  <div class="navigation">
-    <button class="nav-button" id="nextBtn" onclick="previousWine()">←</button>
-    <button class="nav-button" id="nextBtn" onclick="nextWine()">→</button>
-  </div>
-</div>
-
-  <div class="avancar-pagina" style="right: 25px; top: 50%;">
-    <a href="cardapio.html">
-      <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" fill="currentColor"
-        class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-        <path fill-rule="evenodd"
-          d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
-      </svg>
-    </a>
-  </div>
-
-  <footer class="site-footer">
-      <div class="footer-bottom">
-          &copy; 2025 Tre Fratelli. Todos os direitos reservados.
-      </div>
-  </footer>
+    </footer>
 </body>
 
 <style>
-
-  .slider h1{
-    position: relative;
-    left: 4%;
-    margin-top: 100px;
-  }
-
-  .slides{
-    display: flex;
-    overflow: hidden;
-    margin: 0 75px;
-    margin-top: 10px;
-  }
-
-  .slides .vini img{
-    max-height: 566px;
-    transition: 0.3s;
-    margin: 10px 0;
-  }
-
-  .slides .vini img:hover{
-    transform: scale(1.03);
-  }
-
-  .slides .vini:not(:last-child){
-    margin-right: 50px;
-  }
-
-  .slides .first{
-    margin-left: -0%;
-    transition: 1s ease;
-  }
-
-  .wine-name{
-    font-size: 25px;
-  }
-
-  .navigation{
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  .navigation button{
-    cursor: pointer;
-    padding: 5px;
-    border-radius: 5px;
-    color: white;
-    font-size: 17px;
-    background: #6d2030;
-  }
-
-  .navigation button:active{
-    cursor: pointer;
-    padding: 5px;
-    border-radius: 5px;
-    color: white;
-    background: #862135;
-  }
-
+    .slider h1 {
+        position: relative;
+        left: 4%;
+        margin-top: 100px;
+    }
+    
+    .slides {
+        display: flex;
+        overflow: hidden;
+        margin: 0 75px;
+        margin-top: 10px;
+    }
+    
+    .slides .vini img {
+        max-height: 566px;
+        transition: 0.3s;
+        margin: 10px 0;
+    }
+    
+    .slides .vini img:hover {
+        transform: scale(1.03);
+    }
+    
+    .slides .vini:not(:last-child) {
+        margin-right: 50px;
+    }
+    
+    .slides .first {
+        margin-left: -0%;
+        transition: 1s ease;
+    }
+    
+    .wine-name {
+        font-size: 25px;
+    }
+    
+    .navigation {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .navigation button {
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 5px;
+        color: white;
+        font-size: 17px;
+        background: #6d2030;
+    }
+    
+    .navigation button:active {
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 5px;
+        color: white;
+        background: #862135;
+    }
 </style>
 
 <script>
-const i18n = {
-  it: {
-    titulo: "Itinerario Turistico - Tre Fratelli",
-    flag: "<span class='fi fi-it'></span>",
-    langName: "It",
-    btn_2: "<span class='fi fi-it'></span> It",
-    btn_3: "<span class='fi fi-gb'></span> En-Uk",
-    btn_4: "<span class='fi fi-br'></span> Pt-Br",
-    h1_1: "Vini",
-    wineDescription: "Vivace e socievole - edizione limitata",
-    grapes: "<strong>Uve: </strong>Corvina, Rondinella e Molinara",
-    alcohol: "<strong>Tenore alcolico: </strong>13,5%",
-    origin: "<strong>Origine: </strong>Tirano (SO), Lombardia",
-    pairing: "<strong>Abbinamento consigliato: </strong>Antipasti misti, bruschetta al pomodoro, pizze artigianali, paste al sugo, formaggi di media stagionatura",
+    const i18n = {
+        it: {
+            titulo: "Itinerario Turistico - Tre Fratelli",
+            flag: "<span class='fi fi-it'></span>",
+            langName: "It",
+            btn_2: "<span class='fi fi-it'></span> It",
+            btn_3: "<span class='fi fi-gb'></span> En-Uk",
+            btn_4: "<span class='fi fi-br'></span> Pt-Br",
+            h1_1: "Vini",
+            wineDescription: "Vivace e socievole - edizione limitata",
+            grapes: "<strong>Uve: </strong>Corvina, Rondinella e Molinara",
+            alcohol: "<strong>Tenore alcolico: </strong>13,5%",
+            origin: "<strong>Origine: </strong>Tirano (SO), Lombardia",
+            pairing: "<strong>Abbinamento consigliato: </strong>Antipasti misti, bruschetta al pomodoro, pizze artigianali, paste al sugo, formaggi di media stagionatura",
 
-    wineDescription_1: "Bianco fresco, con note di mela e fiori di montagna.",
-    grapes_1: "<strong>Uve:</strong> Chardonnay",
-    alcohol_1: "<strong>Tenore alcolico:</strong> 13,5%",
-    origin_1: "<strong>Origine:</strong> Tirano (SO), Lombardia",
-    pairing_1: "<strong>Abbinamento:</strong> Caprese, risotto ai funghi, frutti di mare, branzino al forno, insalate fresche.",
+            wineDescription_1: "Bianco fresco, con note di mela e fiori di montagna.",
+            grapes_1: "<strong>Uve:</strong> Chardonnay",
+            alcohol_1: "<strong>Tenore alcolico:</strong> 13,5%",
+            origin_1: "<strong>Origine:</strong> Tirano (SO), Lombardia",
+            pairing_1: "<strong>Abbinamento:</strong> Caprese, risotto ai funghi, frutti di mare, branzino al forno, insalate fresche.",
 
-    wineDescription_2: "Frutta matura, note di cacao e tannini morbidi.",
-    grapes_2: "<strong>Uve:</strong> Merlot",
-    alcohol_2: "<strong>Tenore alcolico:</strong> 13,5%",
-    origin_2: "<strong>Origine:</strong> Tirano (SO), Lombardia",
-    pairing_2: "<strong>Abbinamento:</strong> Lasagna alla napoletana, carni grigliate, saltimbocca alla romana, formaggi stagionati.",
+            wineDescription_2: "Frutta matura, note di cacao e tannini morbidi.",
+            grapes_2: "<strong>Uve:</strong> Merlot",
+            alcohol_2: "<strong>Tenore alcolico:</strong> 13,5%",
+            origin_2: "<strong>Origine:</strong> Tirano (SO), Lombardia",
+            pairing_2: "<strong>Abbinamento:</strong> Lasagna alla napoletana, carni grigliate, saltimbocca alla romana, formaggi stagionati.",
 
-    wineDescription_3: "Corposo, tannini decisi, aroma di rose e tartufi.",
-    grapes_3: "<strong>Uve:</strong> Nebbiolo",
-    origin_3: "<strong>Origine:</strong> Piemonte",
-    pairing_3: "<strong>Abbinamento:</strong> Carni rosse, agnello, formaggi stagionati.",
+            wineDescription_3: "Corposo, tannini decisi, aroma di rose e tartufi.",
+            grapes_3: "<strong>Uve:</strong> Nebbiolo",
+            origin_3: "<strong>Origine:</strong> Piemonte",
+            pairing_3: "<strong>Abbinamento:</strong> Carni rosse, agnello, formaggi stagionati.",
 
-    wineDescription_4: "Elegante e intenso, con note di frutta secca e spezie.",
-    grapes_4: "<strong>Uve:</strong> Sangiovese Grosso",
-    origin_4: "<strong>Origine:</strong> Toscana",
-    pairing_4: "<strong>Abbinamento:</strong> Paste al ragù di carne, ossobuco.",
+            wineDescription_4: "Elegante e intenso, con note di frutta secca e spezie.",
+            grapes_4: "<strong>Uve:</strong> Sangiovese Grosso",
+            origin_4: "<strong>Origine:</strong> Toscana",
+            pairing_4: "<strong>Abbinamento:</strong> Paste al ragù di carne, ossobuco.",
 
-    wineDescription_5: "Di medio corpo, note di ciliegia ed erbe.",
-    grapes_5: "<strong>Uve:</strong> Sangiovese",
-    origin_5: "<strong>Origine:</strong> Toscana",
-    pairing_5: "<strong>Abbinamento:</strong> Paste al sugo, pizze, formaggi di media stagionatura.",
+            wineDescription_5: "Di medio corpo, note di ciliegia ed erbe.",
+            grapes_5: "<strong>Uve:</strong> Sangiovese",
+            origin_5: "<strong>Origine:</strong> Toscana",
+            pairing_5: "<strong>Abbinamento:</strong> Paste al sugo, pizze, formaggi di media stagionatura.",
 
-    wineDescription_6: "Ricco e vellutato, con note di frutta secca e cacao.",
-    grapes_6: "<strong>Uve:</strong> Corvina, Rondinella",
-    origin_6: "<strong>Origine:</strong> Veneto",
-    pairing_6: "<strong>Abbinamento:</strong> Carni arrosto, formaggi forti, risotti.",
+            wineDescription_6: "Ricco e vellutato, con note di frutta secca e cacao.",
+            grapes_6: "<strong>Uve:</strong> Corvina, Rondinella",
+            origin_6: "<strong>Origine:</strong> Veneto",
+            pairing_6: "<strong>Abbinamento:</strong> Carni arrosto, formaggi forti, risotti.",
 
-    wineDescription_7: "Fruttato e morbido, tannini delicati.",
-    grapes_7: "<strong>Uve:</strong> Montepulciano",
-    origin_7: "<strong>Origine:</strong> Abruzzo",
-    pairing_7: "<strong>Abbinamento:</strong> Lasagne, carni grigliate.",
+            wineDescription_7: "Fruttato e morbido, tannini delicati.",
+            grapes_7: "<strong>Uve:</strong> Montepulciano",
+            origin_7: "<strong>Origine:</strong> Abruzzo",
+            pairing_7: "<strong>Abbinamento:</strong> Lasagne, carni grigliate.",
 
-    wineDescription_8: "Fruttato e intenso, con tocchi di prugna e spezie.",
-    grapes_8: "<strong>Uve:</strong> Nero d’Avola",
-    origin_8: "<strong>Origine:</strong> Sicilia",
-    pairing_8: "<strong>Abbinamento:</strong> Paste al ragù, carni al forno.",
+            wineDescription_8: "Fruttato e intenso, con tocchi di prugna e spezie.",
+            grapes_8: "<strong>Uve:</strong> Nero d’Avola",
+            origin_8: "<strong>Origine:</strong> Sicilia",
+            pairing_8: "<strong>Abbinamento:</strong> Paste al ragù, carni al forno.",
 
-    wineDescription_9: "Di medio corpo, note di ciliegia e cioccolato.",
-    grapes_9: "<strong>Uve:</strong> Corvina, Rondinella",
-    origin_9: "<strong>Origine:</strong> Veneto",
-    pairing_9: "<strong>Abbinamento:</strong> Risotti, carni bianche, paste ricche.",
+            wineDescription_9: "Di medio corpo, note di ciliegia e cioccolato.",
+            grapes_9: "<strong>Uve:</strong> Corvina, Rondinella",
+            origin_9: "<strong>Origine:</strong> Veneto",
+            pairing_9: "<strong>Abbinamento:</strong> Risotti, carni bianche, paste ricche.",
 
-    wineDescription_10: "Potente, note di frutta matura e vaniglia.",
-    grapes_10: "<strong>Uve:</strong> Primitivo",
-    origin_10: "<strong>Origine:</strong> Puglia",
-    pairing_10: "<strong>Abbinamento:</strong> Grigliate, formaggi forti.",
+            wineDescription_10: "Potente, note di frutta matura e vaniglia.",
+            grapes_10: "<strong>Uve:</strong> Primitivo",
+            origin_10: "<strong>Origine:</strong> Puglia",
+            pairing_10: "<strong>Abbinamento:</strong> Grigliate, formaggi forti.",
 
-    wineDescription_11: "Bianco fresco e agrumato, con leggero tocco di mandorla.",
-    grapes_11: "<strong>Uve:</strong> Verdicchio",
-    origin_11: "<strong>Origine:</strong> Marche",
-    pairing_11: "<strong>Abbinamento:</strong> Frutti di mare, insalate, pesce alla griglia.",
+            wineDescription_11: "Bianco fresco e agrumato, con leggero tocco di mandorla.",
+            grapes_11: "<strong>Uve:</strong> Verdicchio",
+            origin_11: "<strong>Origine:</strong> Marche",
+            pairing_11: "<strong>Abbinamento:</strong> Frutti di mare, insalate, pesce alla griglia.",
 
-    wineDescription_12: "Bianco leggero e secco, con note floreali.",
-    grapes_12: "<strong>Uve:</strong> Pinot Grigio",
-    origin_12: "<strong>Origine:</strong> Veneto / Friuli",
-    pairing_12: "<strong>Abbinamento:</strong> Pesce, paste leggere, antipasti.",
+            wineDescription_12: "Bianco leggero e secco, con note floreali.",
+            grapes_12: "<strong>Uve:</strong> Pinot Grigio",
+            origin_12: "<strong>Origine:</strong> Veneto / Friuli",
+            pairing_12: "<strong>Abbinamento:</strong> Pesce, paste leggere, antipasti.",
 
-    wineDescription_13: "Spumante leggero e fruttato.",
-    grapes_13: "<strong>Uve:</strong> Glera",
-    origin_13: "<strong>Origine:</strong> Veneto",
-    pairing_13: "<strong>Abbinamento:</strong> Aperitivi, frutti di mare, dolci leggeri.",
+            wineDescription_13: "Spumante leggero e fruttato.",
+            grapes_13: "<strong>Uve:</strong> Glera",
+            origin_13: "<strong>Origine:</strong> Veneto",
+            pairing_13: "<strong>Abbinamento:</strong> Aperitivi, frutti di mare, dolci leggeri.",
 
-    wineDescription_14: "Spumante rosso, fruttato e rinfrescante.",
-    grapes_14: "<strong>Uve:</strong> Lambrusco",
-    origin_14: "<strong>Origine:</strong> Emilia-Romagna",
-    pairing_14: "<strong>Abbinamento:</strong> Salumi, affettati, pizze e paste semplici."
-  },
-  en_uk: {
-    titulo: "Tourist Itinerary - Tre Fratelli",
-    flag: "<span class='fi fi-gb'></span>",
-    langName: "En-Uk",
-    btn_2: "<span class='fi fi-it'></span> It",
-    btn_3: "<span class='fi fi-gb'></span> En-Uk",
-    btn_4: "<span class='fi fi-br'></span> Pt-Br",
-    h1_1: "Wines",
-    wineDescription: "Lively and sociable – limited edition",
-    grapes: "<strong>Grapes: </strong>Corvina, Rondinella and Molinara",
-    alcohol: "<strong>Alcohol content: </strong>13.5%",
-    origin: "<strong>Origin: </strong>Tirano (SO), Lombardia",
-    pairing: "<strong>Suggested pairing: </strong>Mixed starters, tomato bruschetta, artisanal pizzas, pasta with sauce, medium-strength cheeses",
+            wineDescription_14: "Spumante rosso, fruttato e rinfrescante.",
+            grapes_14: "<strong>Uve:</strong> Lambrusco",
+            origin_14: "<strong>Origine:</strong> Emilia-Romagna",
+            pairing_14: "<strong>Abbinamento:</strong> Salumi, affettati, pizze e paste semplici."
+        },
+        en_uk: {
+            titulo: "Tourist Itinerary - Tre Fratelli",
+            flag: "<span class='fi fi-gb'></span>",
+            langName: "En-Uk",
+            btn_2: "<span class='fi fi-it'></span> It",
+            btn_3: "<span class='fi fi-gb'></span> En-Uk",
+            btn_4: "<span class='fi fi-br'></span> Pt-Br",
+            h1_1: "Wines",
+            wineDescription: "Lively and sociable – limited edition",
+            grapes: "<strong>Grapes: </strong>Corvina, Rondinella and Molinara",
+            alcohol: "<strong>Alcohol content: </strong>13.5%",
+            origin: "<strong>Origin: </strong>Tirano (SO), Lombardia",
+            pairing: "<strong>Suggested pairing: </strong>Mixed starters, tomato bruschetta, artisanal pizzas, pasta with sauce, medium-strength cheeses",
 
-    wineDescription_1: "Fresh white wine with notes of apple and mountain flowers.",
-    grapes_1: "<strong>Grapes:</strong> Chardonnay",
-    alcohol_1: "<strong>Alcohol content:</strong> 13.5%",
-    origin_1: "<strong>Origin:</strong> Tirano (SO), Lombardia",
-    pairing_1: "<strong>Pairing:</strong> Caprese, mushroom risotto, seafood, baked branzino, fresh salads.",
+            wineDescription_1: "Fresh white wine with notes of apple and mountain flowers.",
+            grapes_1: "<strong>Grapes:</strong> Chardonnay",
+            alcohol_1: "<strong>Alcohol content:</strong> 13.5%",
+            origin_1: "<strong>Origin:</strong> Tirano (SO), Lombardia",
+            pairing_1: "<strong>Pairing:</strong> Caprese, mushroom risotto, seafood, baked branzino, fresh salads.",
 
-    wineDescription_2: "Ripe fruits, cocoa notes and smooth tannins.",
-    grapes_2: "<strong>Grapes:</strong> Merlot",
-    alcohol_2: "<strong>Alcohol content:</strong> 13.5%",
-    origin_2: "<strong>Origin:</strong> Tirano (SO), Lombardia",
-    pairing_2: "<strong>Pairing:</strong> Neapolitan lasagna, grilled meats, saltimbocca alla romana, aged cheeses.",
+            wineDescription_2: "Ripe fruits, cocoa notes and smooth tannins.",
+            grapes_2: "<strong>Grapes:</strong> Merlot",
+            alcohol_2: "<strong>Alcohol content:</strong> 13.5%",
+            origin_2: "<strong>Origin:</strong> Tirano (SO), Lombardia",
+            pairing_2: "<strong>Pairing:</strong> Neapolitan lasagna, grilled meats, saltimbocca alla romana, aged cheeses.",
 
-    wineDescription_3: "Full-bodied, firm tannins, aroma of roses and truffles.",
-    grapes_3: "<strong>Grapes:</strong> Nebbiolo",
-    origin_3: "<strong>Origin:</strong> Piemonte",
-    pairing_3: "<strong>Pairing:</strong> Red meats, lamb, aged cheeses.",
+            wineDescription_3: "Full-bodied, firm tannins, aroma of roses and truffles.",
+            grapes_3: "<strong>Grapes:</strong> Nebbiolo",
+            origin_3: "<strong>Origin:</strong> Piemonte",
+            pairing_3: "<strong>Pairing:</strong> Red meats, lamb, aged cheeses.",
 
-    wineDescription_4: "Elegant and intense, with notes of dried fruits and spices.",
-    grapes_4: "<strong>Grapes:</strong> Sangiovese Grosso",
-    origin_4: "<strong>Origin:</strong> Toscana",
-    pairing_4: "<strong>Pairing:</strong> Pasta with meat sauce, ossobuco.",
+            wineDescription_4: "Elegant and intense, with notes of dried fruits and spices.",
+            grapes_4: "<strong>Grapes:</strong> Sangiovese Grosso",
+            origin_4: "<strong>Origin:</strong> Toscana",
+            pairing_4: "<strong>Pairing:</strong> Pasta with meat sauce, ossobuco.",
 
-    wineDescription_5: "Medium-bodied, with notes of cherry and herbs.",
-    grapes_5: "<strong>Grapes:</strong> Sangiovese",
-    origin_5: "<strong>Origin:</strong> Toscana",
-    pairing_5: "<strong>Pairing:</strong> Tomato-based pasta, pizzas, medium cheeses.",
+            wineDescription_5: "Medium-bodied, with notes of cherry and herbs.",
+            grapes_5: "<strong>Grapes:</strong> Sangiovese",
+            origin_5: "<strong>Origin:</strong> Toscana",
+            pairing_5: "<strong>Pairing:</strong> Tomato-based pasta, pizzas, medium cheeses.",
 
-    wineDescription_6: "Rich and velvety, with notes of dried fruits and cocoa.",
-    grapes_6: "<strong>Grapes:</strong> Corvina, Rondinella",
-    origin_6: "<strong>Origin:</strong> Veneto",
-    pairing_6: "<strong>Pairing:</strong> Roasted meats, strong cheeses, risottos.",
+            wineDescription_6: "Rich and velvety, with notes of dried fruits and cocoa.",
+            grapes_6: "<strong>Grapes:</strong> Corvina, Rondinella",
+            origin_6: "<strong>Origin:</strong> Veneto",
+            pairing_6: "<strong>Pairing:</strong> Roasted meats, strong cheeses, risottos.",
 
-    wineDescription_7: "Fruity and smooth, with soft tannins.",
-    grapes_7: "<strong>Grapes:</strong> Montepulciano",
-    origin_7: "<strong>Origin:</strong> Abruzzo",
-    pairing_7: "<strong>Pairing:</strong> Lasagnas, grilled meats.",
+            wineDescription_7: "Fruity and smooth, with soft tannins.",
+            grapes_7: "<strong>Grapes:</strong> Montepulciano",
+            origin_7: "<strong>Origin:</strong> Abruzzo",
+            pairing_7: "<strong>Pairing:</strong> Lasagnas, grilled meats.",
 
-    wineDescription_8: "Fruity and intense, with hints of plum and spices.",
-    grapes_8: "<strong>Grapes:</strong> Nero d’Avola",
-    origin_8: "<strong>Origin:</strong> Sicilia",
-    pairing_8: "<strong>Pairing:</strong> Pasta with ragu, oven-roasted meats.",
+            wineDescription_8: "Fruity and intense, with hints of plum and spices.",
+            grapes_8: "<strong>Grapes:</strong> Nero d’Avola",
+            origin_8: "<strong>Origin:</strong> Sicilia",
+            pairing_8: "<strong>Pairing:</strong> Pasta with ragu, oven-roasted meats.",
 
-    wineDescription_9: "Medium-bodied, with notes of cherry and chocolate.",
-    grapes_9: "<strong>Grapes:</strong> Corvina, Rondinella",
-    origin_9: "<strong>Origin:</strong> Veneto",
-    pairing_9: "<strong>Pairing:</strong> Risottos, white meats, rich pasta dishes.",
+            wineDescription_9: "Medium-bodied, with notes of cherry and chocolate.",
+            grapes_9: "<strong>Grapes:</strong> Corvina, Rondinella",
+            origin_9: "<strong>Origin:</strong> Veneto",
+            pairing_9: "<strong>Pairing:</strong> Risottos, white meats, rich pasta dishes.",
 
-    wineDescription_10: "Powerful, with notes of ripe fruits and vanilla.",
-    grapes_10: "<strong>Grapes:</strong> Primitivo",
-    origin_10: "<strong>Origin:</strong> Puglia",
-    pairing_10: "<strong>Pairing:</strong> Barbecues, strong cheeses.",
+            wineDescription_10: "Powerful, with notes of ripe fruits and vanilla.",
+            grapes_10: "<strong>Grapes:</strong> Primitivo",
+            origin_10: "<strong>Origin:</strong> Puglia",
+            pairing_10: "<strong>Pairing:</strong> Barbecues, strong cheeses.",
 
-    wineDescription_11: "Fresh and citrusy white wine, with a slight almond touch.",
-    grapes_11: "<strong>Grapes:</strong> Verdicchio",
-    origin_11: "<strong>Origin:</strong> Marche",
-    pairing_11: "<strong>Pairing:</strong> Seafood, salads, grilled fish.",
+            wineDescription_11: "Fresh and citrusy white wine, with a slight almond touch.",
+            grapes_11: "<strong>Grapes:</strong> Verdicchio",
+            origin_11: "<strong>Origin:</strong> Marche",
+            pairing_11: "<strong>Pairing:</strong> Seafood, salads, grilled fish.",
 
-    wineDescription_12: "Light and dry white wine, with floral notes.",
-    grapes_12: "<strong>Grapes:</strong> Pinot Grigio",
-    origin_12: "<strong>Origin:</strong> Veneto / Friuli",
-    pairing_12: "<strong>Pairing:</strong> Fish, light pasta, antipasti.",
+            wineDescription_12: "Light and dry white wine, with floral notes.",
+            grapes_12: "<strong>Grapes:</strong> Pinot Grigio",
+            origin_12: "<strong>Origin:</strong> Veneto / Friuli",
+            pairing_12: "<strong>Pairing:</strong> Fish, light pasta, antipasti.",
 
-    wineDescription_13: "Light and fruity sparkling wine.",
-    grapes_13: "<strong>Grapes:</strong> Glera",
-    origin_13: "<strong>Origin:</strong> Veneto",
-    pairing_13: "<strong>Pairing:</strong> Aperitifs, seafood, light desserts.",
+            wineDescription_13: "Light and fruity sparkling wine.",
+            grapes_13: "<strong>Grapes:</strong> Glera",
+            origin_13: "<strong>Origin:</strong> Veneto",
+            pairing_13: "<strong>Pairing:</strong> Aperitifs, seafood, light desserts.",
 
-    wineDescription_14: "Red sparkling wine, fruity and refreshing.",
-    grapes_14: "<strong>Grapes:</strong> Lambrusco",
-    origin_14: "<strong>Origin:</strong> Emilia-Romagna",
-    pairing_14: "<strong>Pairing:</strong> Cold cuts, cured meats, pizzas and simple pasta dishes."
-  },
-  pt_br: {
-    titulo: "Itinerário Turístico - Tre Fratelli",
-    flag: "<span class='fi fi-br'></span>",
-    langName: "Pt-Br",
-    btn_2: "<span class='fi fi-it'></span> It",
-    btn_3: "<span class='fi fi-gb'></span> En-Uk",
-    btn_4: "<span class='fi fi-br'></span> Pt-Br",
-    h1_1: "Vinhos",
-    wineDescription: "Vivo e sociável - edição limitada",
-    grapes: "<strong>Uvas: </strong>Corvina, Rondinella e Molinara",
-    alcohol: "<strong>Teor alcoólico: </strong>13,5%",
-    origin: "<strong>Origem: </strong>Tirano (SO), Lombardia",
-    pairing: "<strong>Harmonização sugerida: </strong>Entradas mistas, bruschetta de tomate, pizzas artesanais, massas ao molho, queijos médios",
-    
-    wineDescription_1: "Branco fresco, com notas de maçã e flores de montanha.",
-    grapes_1: "<strong>Uvas:</strong> Chardonnay",
-    alcohol_1: "<strong>Teor alcoólico:</strong> 13,5%",
-    origin_1: "<strong>Origem:</strong> Tirano (SO), Lombardia",
-    pairing_1: "<strong>Harmonização:</strong> Caprese, risoto de cogumelos, frutos do mar, branzino assado, saladas frescas.",
-    
-    wineDescription_2: "Frutas maduras, notas de cacau e taninos suaves.",
-    grapes_2: "<strong>Uvas:</strong> Merlot",
-    alcohol_2: "<strong>Teor alcoólico:</strong> 13,5%",
-    origin_2: "<strong>Origem:</strong> Tirano (SO), Lombardia",
-    pairing_2: "<strong>Harmonização:</strong> Lasanha napolitana, carnes grelhadas, saltimbocca alla romana, queijos curados.",
-    
-    wineDescription_3: "Encorpado, taninos firmes, aroma de rosas e trufas.",
-    grapes_3: "<strong>Uvas:</strong> Nebbiolo",
-    origin_3: "<strong>Origem:</strong> Piemonte",
-    pairing_3: "<strong>Harmonização:</strong> Carnes vermelhas, cordeiro, queijos curados.",
-    
-    wineDescription_4: "Elegante, intenso, com notas de frutas secas e especiarias.",
-    grapes_4: "<strong>Uvas:</strong> Sangiovese Grosso",
-    origin_4: "<strong>Origem:</strong> Toscana",
-    pairing_4: "<strong>Harmonização:</strong> Massas com molho de carne, ossobuco.",
-    
-    wineDescription_5: "Médio corpo, notas de cereja e ervas.",
-    grapes_5: "<strong>Uvas:</strong> Sangiovese",
-    origin_5: "<strong>Origem:</strong> Toscana",
-    pairing_5: "<strong>Harmonização:</strong> Massas ao sugo, pizzas, queijos médios.",
-    
-    wineDescription_6: "Rico, aveludado, com notas de frutas secas e cacau.",
-    grapes_6: "<strong>Uvas:</strong> Corvina, Rondinella",
-    origin_6: "<strong>Origem:</strong> Vêneto",
-    pairing_6: "<strong>Harmonização:</strong> Carnes assadas, queijos fortes, risotos.",
-    
-    wineDescription_7: "Frutado e macio, taninos suaves.",
-    grapes_7: "<strong>Uvas:</strong> Montepulciano",
-    origin_7: "<strong>Origem:</strong> Abruzzo",
-    pairing_7: "<strong>Harmonização:</strong> Lasanhas, carnes grelhadas.",
-    
-    wineDescription_8: "Frutado e intenso, toques de ameixa e especiarias.",
-    grapes_8: "<strong>Uvas:</strong> Nero d’Avola",
-    origin_8: "<strong>Origem:</strong> Sicília",
-    pairing_8: "<strong>Harmonização:</strong> Massas com ragu, carnes ao forno.",
-    
-    wineDescription_9: "Médio corpo, notas de cereja e chocolate.",
-    grapes_9: "<strong>Uvas:</strong> Corvina, Rondinella",
-    origin_9: "<strong>Origem:</strong> Vêneto",
-    pairing_9: "<strong>Harmonização:</strong> Risotos, carnes brancas, massas ricas.",
-    
-    wineDescription_10: "Potente, notas de frutas maduras e baunilha.",
-    grapes_10: "<strong>Uvas:</strong> Primitivo",
-    origin_10: "<strong>Origem:</strong> Puglia",
-    pairing_10: "<strong>Harmonização:</strong> Churrascos, queijos fortes.",
-    
-    wineDescription_11: "Branco fresco e cítrico, leve toque amendoado.",
-    grapes_11: "<strong>Uvas:</strong> Verdicchio",
-    origin_11: "<strong>Origem:</strong> Marche",
-    pairing_11: "<strong>Harmonização:</strong> Frutos do mar, saladas, peixes grelhados.",
-    
-    wineDescription_12: "Branco leve e seco, com notas florais.",
-    grapes_12: "<strong>Uvas:</strong> Pinot Grigio",
-    origin_12: "<strong>Origem:</strong> Vêneto / Friuli",
-    pairing_12: "<strong>Harmonização:</strong> Peixes, massas leves, antipastos.",
-    
-    wineDescription_13: "Espumante leve e frutado.",
-    grapes_13: "<strong>Uvas:</strong> Glera",
-    origin_13: "<strong>Origem:</strong> Vêneto",
-    pairing_13: "<strong>Harmonização:</strong> Aperitivos, frutos do mar, sobremesas leves.",
-    
-    wineDescription_14: "Espumante tinto, frutado e refrescante.",
-    grapes_14: "<strong>Uvas:</strong> Lambrusco",
-    origin_14: "<strong>Origem:</strong> Emilia-Romagna",
-    pairing_14: "<strong>Harmonização:</strong> Frios, embutidos, pizzas e massas simples."
-  }
-};
+            wineDescription_14: "Red sparkling wine, fruity and refreshing.",
+            grapes_14: "<strong>Grapes:</strong> Lambrusco",
+            origin_14: "<strong>Origin:</strong> Emilia-Romagna",
+            pairing_14: "<strong>Pairing:</strong> Cold cuts, cured meats, pizzas and simple pasta dishes."
+        },
+        pt_br: {
+            titulo: "Itinerário Turístico - Tre Fratelli",
+            flag: "<span class='fi fi-br'></span>",
+            langName: "Pt-Br",
+            btn_2: "<span class='fi fi-it'></span> It",
+            btn_3: "<span class='fi fi-gb'></span> En-Uk",
+            btn_4: "<span class='fi fi-br'></span> Pt-Br",
+            h1_1: "Vinhos",
+            wineDescription: "Vivo e sociável - edição limitada",
+            grapes: "<strong>Uvas: </strong>Corvina, Rondinella e Molinara",
+            alcohol: "<strong>Teor alcoólico: </strong>13,5%",
+            origin: "<strong>Origem: </strong>Tirano (SO), Lombardia",
+            pairing: "<strong>Harmonização sugerida: </strong>Entradas mistas, bruschetta de tomate, pizzas artesanais, massas ao molho, queijos médios",
 
-function setLanguage(lang) {
-  const elements = document.querySelectorAll('[id]');
-  const translations = i18n[lang];
+            wineDescription_1: "Branco fresco, com notas de maçã e flores de montanha.",
+            grapes_1: "<strong>Uvas:</strong> Chardonnay",
+            alcohol_1: "<strong>Teor alcoólico:</strong> 13,5%",
+            origin_1: "<strong>Origem:</strong> Tirano (SO), Lombardia",
+            pairing_1: "<strong>Harmonização:</strong> Caprese, risoto de cogumelos, frutos do mar, branzino assado, saladas frescas.",
 
-  elements.forEach(el => {
-    const key = el.id;
-    if (translations[key]) {
-      if (/<\/?[a-z][\s\S]*>/i.test(translations[key])) {
-        el.innerHTML = translations[key];
-      } else {
-        el.textContent = translations[key];
-      }
+            wineDescription_2: "Frutas maduras, notas de cacau e taninos suaves.",
+            grapes_2: "<strong>Uvas:</strong> Merlot",
+            alcohol_2: "<strong>Teor alcoólico:</strong> 13,5%",
+            origin_2: "<strong>Origem:</strong> Tirano (SO), Lombardia",
+            pairing_2: "<strong>Harmonização:</strong> Lasanha napolitana, carnes grelhadas, saltimbocca alla romana, queijos curados.",
+
+            wineDescription_3: "Encorpado, taninos firmes, aroma de rosas e trufas.",
+            grapes_3: "<strong>Uvas:</strong> Nebbiolo",
+            origin_3: "<strong>Origem:</strong> Piemonte",
+            pairing_3: "<strong>Harmonização:</strong> Carnes vermelhas, cordeiro, queijos curados.",
+
+            wineDescription_4: "Elegante, intenso, com notas de frutas secas e especiarias.",
+            grapes_4: "<strong>Uvas:</strong> Sangiovese Grosso",
+            origin_4: "<strong>Origem:</strong> Toscana",
+            pairing_4: "<strong>Harmonização:</strong> Massas com molho de carne, ossobuco.",
+
+            wineDescription_5: "Médio corpo, notas de cereja e ervas.",
+            grapes_5: "<strong>Uvas:</strong> Sangiovese",
+            origin_5: "<strong>Origem:</strong> Toscana",
+            pairing_5: "<strong>Harmonização:</strong> Massas ao sugo, pizzas, queijos médios.",
+
+            wineDescription_6: "Rico, aveludado, com notas de frutas secas e cacau.",
+            grapes_6: "<strong>Uvas:</strong> Corvina, Rondinella",
+            origin_6: "<strong>Origem:</strong> Vêneto",
+            pairing_6: "<strong>Harmonização:</strong> Carnes assadas, queijos fortes, risotos.",
+
+            wineDescription_7: "Frutado e macio, taninos suaves.",
+            grapes_7: "<strong>Uvas:</strong> Montepulciano",
+            origin_7: "<strong>Origem:</strong> Abruzzo",
+            pairing_7: "<strong>Harmonização:</strong> Lasanhas, carnes grelhadas.",
+
+            wineDescription_8: "Frutado e intenso, toques de ameixa e especiarias.",
+            grapes_8: "<strong>Uvas:</strong> Nero d’Avola",
+            origin_8: "<strong>Origem:</strong> Sicília",
+            pairing_8: "<strong>Harmonização:</strong> Massas com ragu, carnes ao forno.",
+
+            wineDescription_9: "Médio corpo, notas de cereja e chocolate.",
+            grapes_9: "<strong>Uvas:</strong> Corvina, Rondinella",
+            origin_9: "<strong>Origem:</strong> Vêneto",
+            pairing_9: "<strong>Harmonização:</strong> Risotos, carnes brancas, massas ricas.",
+
+            wineDescription_10: "Potente, notas de frutas maduras e baunilha.",
+            grapes_10: "<strong>Uvas:</strong> Primitivo",
+            origin_10: "<strong>Origem:</strong> Puglia",
+            pairing_10: "<strong>Harmonização:</strong> Churrascos, queijos fortes.",
+
+            wineDescription_11: "Branco fresco e cítrico, leve toque amendoado.",
+            grapes_11: "<strong>Uvas:</strong> Verdicchio",
+            origin_11: "<strong>Origem:</strong> Marche",
+            pairing_11: "<strong>Harmonização:</strong> Frutos do mar, saladas, peixes grelhados.",
+
+            wineDescription_12: "Branco leve e seco, com notas florais.",
+            grapes_12: "<strong>Uvas:</strong> Pinot Grigio",
+            origin_12: "<strong>Origem:</strong> Vêneto / Friuli",
+            pairing_12: "<strong>Harmonização:</strong> Peixes, massas leves, antipastos.",
+
+            wineDescription_13: "Espumante leve e frutado.",
+            grapes_13: "<strong>Uvas:</strong> Glera",
+            origin_13: "<strong>Origem:</strong> Vêneto",
+            pairing_13: "<strong>Harmonização:</strong> Aperitivos, frutos do mar, sobremesas leves.",
+
+            wineDescription_14: "Espumante tinto, frutado e refrescante.",
+            grapes_14: "<strong>Uvas:</strong> Lambrusco",
+            origin_14: "<strong>Origem:</strong> Emilia-Romagna",
+            pairing_14: "<strong>Harmonização:</strong> Frios, embutidos, pizzas e massas simples."
+        }
+    };
+
+    function setLanguage(lang) {
+        const elements = document.querySelectorAll('[id]');
+        const translations = i18n[lang];
+
+        elements.forEach(el => {
+            const key = el.id;
+            if (translations[key]) {
+                if (/<\/?[a-z][\s\S]*>/i.test(translations[key])) {
+                    el.innerHTML = translations[key];
+                } else {
+                    el.textContent = translations[key];
+                }
+            }
+        });
+
+        localStorage.setItem('lang', lang);
     }
-  });
 
-  localStorage.setItem('lang', lang);
-}
+    document.addEventListener('DOMContentLoaded', () => {
+        const savedLang = localStorage.getItem('lang') || 'it';
+        setLanguage(savedLang);
+    });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const savedLang = localStorage.getItem('lang') || 'it';
-  setLanguage(savedLang);
-});
+    const firstVini = document.querySelector(".first");
+    let numVini = 0;
 
-const firstVini = document.querySelector(".first");
-let numVini = 0;
+    const viniWidth = firstVini.clientWidth;
+    const viniMargin = parseInt(window.getComputedStyle(firstVini).marginRight);
+    const viniSize = viniWidth + viniMargin;
 
-const viniWidth = firstVini.clientWidth;
-const viniMargin = parseInt(window.getComputedStyle(firstVini).marginRight);
-const viniSize = viniWidth + viniMargin;
+    function nextWine() {
+        if (numVini < 12) {
+            numVini += 1;
+            firstVini.style.marginLeft = `-${numVini * viniSize}px`;
+        } else if (numVini < 13) {
+            numVini += 1;
+            firstVini.style.marginLeft = `-${(numVini * viniSize) - (viniSize / 2)}px`;
+        }
+    }
 
-function nextWine(){
-  if (numVini < 12){
-    numVini += 1;
-    firstVini.style.marginLeft = `-${numVini * viniSize}px`;
-  }
-  else if (numVini < 13){
-    numVini += 1;
-    firstVini.style.marginLeft = `-${(numVini * viniSize) - (viniSize / 2)}px`;
-  }
-}
-
-function previousWine(){
-  if (numVini > 0){
-    numVini -= 1;
-    firstVini.style.marginLeft = `-${numVini * viniSize}px`;
-  }
-}
-
+    function previousWine() {
+        if (numVini > 0) {
+            numVini -= 1;
+            firstVini.style.marginLeft = `-${numVini * viniSize}px`;
+        }
+    }
 </script>
 
 </html>

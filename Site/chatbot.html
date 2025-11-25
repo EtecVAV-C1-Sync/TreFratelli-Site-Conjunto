@@ -2,171 +2,464 @@
 <html lang="it">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="titulo">Chatbot - Tre Fratelli</title>
-
-  <link rel="stylesheet" href="style.css">
-  <script src="app.js" defer></script>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="titulo">Chatbot - Tre Fratelli</title>
+    <link rel="icon" href="Site/imagens/Logo de Icone.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"> </head>
 
 <body class="chatbot">
-
-  <!-- HEADER -->
-  <header>
-    <div class="language-selector">
-      <button class="lang-btn" id="btn_1" onclick="toggleDropdown()">
-        <span id="flag"></span>
-        <span id="langName">It</span>
-        <i class="ph-fill ph-triangle" id="lang-arrow"></i>
-      </button>
-      <div class="lang-dropdown" id="langMenu">
-        <button onclick="setLanguage('it')" id="btn_2"><span class="fi fi-it"></span> It</button>
-        <button onclick="setLanguage('en_uk')" id="btn_3"><span class="fi fi-gb"></span> En-Uk</button>
-        <button onclick="setLanguage('pt_br')" id="btn_4"><span class="fi fi-br"></span> Pt-Br</button>
-      </div>
-    </div>
-    <div class="header-icons">
-      <button class="navegacao-btn">
-        <i class="ph-fill ph-robot"></i>
-      </button>
-      <div class="top-menu-icons">
-        <div class="big-circle"></div>
-        <a href="Storia.html" class="menu-item"><i class="ph-fill ph-hourglass-low"></i></a>
-        <a href="AttrazioniTuristiche.html" class="menu-item"><i class="ph-fill ph-map-pin"></i></a>
-        <a href="index.html" class="menu-item"><i class="ph-fill ph-house"></i></a>
-        <a href="vini.html" class="menu-item"><i class="ph-fill ph-wine"></i></a>
-        <a href="Cardapio.html" class="menu-item"><i class="ph-fill ph-fork-knife"></i></a>
-        <a href="chatbot.html" class="menu-item"><i class="ph-fill ph-robot"></i></a>
-      </div>
-    </div>
-    <div class="sup-direita">
-      <img src="imagens/Logo Completa.png" alt="Tre Fratelli" class="logo" />
-      <div class="texto-ao-lado">
-        <p>Tre Fratelli</p>
-      </div>
-    </div>
-
-  </header>
-  <div class="avancar-pagina">
-    <a href="storia.html">
-      <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" fill="currentColor"
-        class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-        <path fill-rule="evenodd"
-          d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
-      </svg>
-    </a>
-  </div>
-
-  <!-- ========================== CHATBOT ========================== -->
-  <main class="chatbot-main">
-
-    <!-- TÍTULO CENTRAL -->
-    <div class="chatbot-title">
-      <h1 id="h1_1">Cantina e Ristorante</h1>
-      <h2 id="h2_1">Tre Fratelli</h2>
-    </div>
-
-    <!-- BLOCO DO CHATBOT -->
-    <div class="chatbot-box">
-      <button class="add-btn" id="btn_6"></button>
-
-      <div class="chatbot-input-wrapper">
-        <input type="text" class="chatbot-input" id="input_1"
-          placeholder="Raccontami il tuo umore o il piatto che hai scelto">
-        <button class="mic-btn" id="btn_7">
-          <i class="ph-fill ph-microphone"></i>
-        </button>
-        <button class="send-btn" id="btn_8"></button>
-
-      </div>
-    </div>
-  </main>
-  <!-- Imagens decorativas -->
-  <img src="imagens/Nerodavola.jpg" alt="" class="chatbot-grapes-left" style="margin-bottom: 120px">
-  <img src="imagens/Valpolicellaripasso.jpg" alt="" class="chatbot-grapes-right" style="margin-bottom: 120px">
-  <footer class="site-footer" style="margin-top: 20px !important;">
-    <div class="footer-bottom">
-      &copy; 2025 Tre Fratelli. Todos os direitos reservados.
-    </div>
-  </footer>
+    <!-- HEADER -->
+    <header>
+        <div class="language-selector"> <button class="lang-btn" id="btn_1" onclick="toggleDropdown()"> <span id="flag"></span> <span id="langName">It</span> <i class="ph-fill ph-triangle" id="lang-arrow"></i> </button>
+            <div class="lang-dropdown" id="langMenu"> <button onclick="setLanguage('it')" id="btn_2"><span class="fi fi-it"></span> It</button> <button onclick="setLanguage('en_uk')" id="btn_3"><span class="fi fi-gb"></span> En-Uk</button> <button onclick="setLanguage('pt_br')" id="btn_4"><span class="fi fi-br"></span> Pt-Br</button>                </div>
+        </div>
+        <div class="header-icons"> <button class="navegacao-btn"> <i class="ph-fill ph-robot"></i> </button>
+            <div class="top-menu-icons">
+                <div class="big-circle"></div> <a href="chatbot.html" class="menu-item"><i class="ph-fill ph-robot branco"></i></a> <a href="Storia.html" class="menu-item"><i class="ph-fill ph-hourglass-low"></i></a> <a href="AttrazioniTuristiche.html" class="menu-item"><i class="ph-fill ph-map-pin"></i></a>                <a href="index.html" class="menu-item"><i class="ph-fill ph-house"></i></a> <a href="vini.html" class="menu-item"><i class="ph-fill ph-wine"></i></a> <a href="Cardapio.html" class="menu-item"><i class="ph-fill ph-fork-knife"></i></a> </div>
+        </div>
+        <div class="sup-direita"> <img src="imagens/Logo Completa.png" alt="Tre Fratelli" class="logo" />
+            <div class="texto-ao-lado">
+                <p>Tre Fratelli</p>
+            </div>
+        </div>
+    </header>
+    <!-- ========================== CHATBOT ========================== -->
+    <main class="chatbot-main">
+        <!-- TÍTULO CENTRAL -->
+        <div class="chatbot-title">
+            <h1 id="h1_1">Cantina e Ristorante</h1>
+            <h2 id="h2_1">Tre Fratelli</h2>
+        </div>
+        <div class="chat-messages" id="chatMessages"></div>
+        <div class="chatbot-input-wrapper">
+            <!-- BLOCO DO CHATBOT -->
+            <div class="chatbot-box">
+                <input type="text" class="chatbot-input" id="input_1" placeholder="Raccontami il tuo umore o il piatto che hai scelto">
+                <button class="send-btn" id="btn_8"></button>
+            </div>
+        </div>
+    </main>
+    <!-- Imagens decorativas --><img src="imagens/Nerodavola.jpg" alt="" class="chatbot-grapes-left" style="margin-bottom: 120px"> <img src="imagens/Valpolicellaripasso.jpg" alt="" class="chatbot-grapes-right" style="margin-bottom: 120px">
+    <footer class="site-footer" style="margin-top: 20px !important;">
+        <div class="footer-bottom"> &copy; 2025 Tre Fratelli. Todos os direitos reservados. </div>
+    </footer>
 </body>
-<script>
-  const i18n = {
-    it: {
-      titulo: "Chatbot - Tre Fratelli",
-      flag: "<span class='fi fi-it'></span>",
-      langName: "It",
-      btn_2: "<span class='fi fi-it'></span> It",
-      btn_3: "<span class='fi fi-gb'></span> En-Uk",
-      btn_4: "<span class='fi fi-br'></span> Pt-Br",
-
-      h1_1: "Cantina e Ristorante",
-      h2_1: "Tre Fratelli",
-      p_1: "Tre Fratelli",
-      input_1: "Raccontami il tuo umore o il piatto che hai scelto"
-    },
-
-    en_uk: {
-      titulo: "Chatbot - Tre Fratelli",
-      flag: "<span class='fi fi-gb'></span>",
-      langName: "En-Uk",
-      btn_2: "<span class='fi fi-it'></span> It",
-      btn_3: "<span class='fi fi-gb'></span> En-Uk",
-      btn_4: "<span class='fi fi-br'></span> Pt-Br",
-
-      h1_1: "Winery and Restaurant",
-      h2_1: "Tre Fratelli",
-      p_1: "Tre Fratelli",
-      input_1: "Tell me your mood or chosen dish"
-    },
-
-    pt_br: {
-      titulo: "Chatbot - Tre Fratelli",
-      flag: "<span class='fi fi-br'></span>",
-      langName: "Pt-Br",
-      btn_2: "<span class='fi fi-it'></span> It",
-      btn_3: "<span class='fi fi-gb'></span> En-Uk",
-      btn_4: "<span class='fi fi-br'></span> Pt-Br",
-
-      h1_1: "Vinícola e Restaurante",
-      h2_1: "Tre Fratelli",
-      p_1: "Tre Fratelli",
-      input_1: "Conte-me seu humor ou prato escolhido"
+<style>
+    .chat-messages {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto 20px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
-  };
+    
+    .msg {
+        padding: 12px 18px;
+        border-radius: 20px;
+        font-size: 1.1rem;
+        width: fit-content;
+        max-width: 90%;
+    }
+    
+    .msg.user {
+        align-self: flex-end;
+        background: #ffffffcc;
+    }
+    
+    .msg.bot {
+        align-self: flex-start;
+        background: #4d001b;
+        color: #fff;
+    }
+    /* ===== SCROLL PARA AS MENSAGENS ===== */
+    
+    .chat-messages {
+        max-height: 260px;
+        /* altura da área de chat */
+        overflow-y: auto;
+        /* ativa scroll vertical */
+        padding-right: 10px;
+        /* espaço para a barra */
+        scroll-behavior: smooth;
+    }
+    /* deixa a barra de scroll bonita */
+    
+    .chat-messages::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+    .chat-messages::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    
+    .chat-messages::-webkit-scrollbar-thumb {
+        background: #6b0028;
+        border-radius: 10px;
+    }
+    
+    .chatbot-input-wrapper {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .chatbot-box {
+        display: flex;
+        align-items: center;
+        background: #ffffffcc;
+        padding: 8px 14px;
+        border-radius: 30px;
+        box-shadow: 0 0 12px #00000022;
+    }
+    
+    .chatbot-input {
+        flex: 1;
+        border: none;
+        background: transparent;
+        font-size: 1.1rem;
+        padding: 6px;
+        outline: none;
+    }
+    
+    .send-btn {
+        width: 32px;
+        height: 32px;
+        border: none;
+        border-radius: 50%;
+        background: #6b0028;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+</style>
 
-  function setLanguage(lang) {
-    const elements = document.querySelectorAll('[id]');
-    const translations = i18n[lang];
-
-    elements.forEach(el => {
-      const key = el.id;
-      if (translations[key]) {
-        if (/<\/?[a-z][\s\S]*>/i.test(translations[key])) {
-          el.innerHTML = translations[key];
-        } else {
-          el.textContent = translations[key];
+<script>
+    /* =========================
+                                                                               I18N / Traduções
+                                                                               ========================= */
+    const i18n = {
+        it: {
+            titulo: "Chatbot - Tre Fratelli",
+            flag: "<span class='fi fi-it'></span>",
+            langName: "It",
+            h1_1: "Cantina e Ristorante",
+            h2_1: "Tre Fratelli",
+            input_1: "Raccontami il tuo umore o il piatto che hai scelto",
+            unknown: "Non ho capito bene, ma ti consiglio:",
+            sendingPlaceholder: "Sto pensandoci..."
+        },
+        en_uk: {
+            titulo: "Chatbot - Tre Fratelli",
+            flag: "<span class='fi fi-gb'></span>",
+            langName: "En-Uk",
+            h1_1: "Winery and Restaurant",
+            h2_1: "Tre Fratelli",
+            input_1: "Tell me your mood or chosen dish",
+            unknown: "I didn't quite understand, but I recommend:",
+            sendingPlaceholder: "Thinking..."
+        },
+        pt_br: {
+            titulo: "Chatbot - Tre Fratelli",
+            flag: "<span class='fi fi-br'></span>",
+            langName: "Pt-Br",
+            h1_1: "Vinícola e Restaurante",
+            h2_1: "Tre Fratelli",
+            input_1: "Conte-me seu humor ou prato escolhido",
+            unknown: "Não entendi muito bem, mas recomendo:",
+            sendingPlaceholder: "Pensando..."
         }
-      }
+    };
+
+    function setLanguage(lang) {
+        const translations = i18n[lang] || i18n.it;
+        // elementos por id
+        const ids = ["titulo", "h1_1", "h2_1"];
+        ids.forEach(id => {
+            const el = document.getElementById(id);
+            if (el && translations[id]) el.textContent = translations[id];
+        });
+
+        const flag = document.getElementById("flag");
+        const langName = document.getElementById("langName");
+        if (flag) flag.innerHTML = translations.flag;
+        if (langName) langName.textContent = translations.langName;
+
+        const input = document.getElementById("input_1");
+        if (input) input.placeholder = translations.input_1;
+
+        localStorage.setItem("lang", lang);
+    }
+
+    function toggleDropdown() {
+        const d = document.getElementById("langMenu");
+        d.style.display = (d.style.display === "block") ? "none" : "block";
+    }
+
+    document.addEventListener('click', (e) => {
+        const menu = document.getElementById("langMenu");
+        const btn = document.getElementById("btn_1");
+        if (!menu) return;
+        if (!btn.contains(e.target) && !menu.contains(e.target)) menu.style.display = "none";
     });
 
-    const input = document.getElementById('input_1');
-    if (input && translations['input_1']) input.placeholder = translations['input_1'];
+    document.addEventListener("DOMContentLoaded", () => {
+        const saved = localStorage.getItem("lang") || "it";
+        setLanguage(saved);
+    });
 
-    localStorage.setItem('lang', lang);
-  }
+    /* =========================
+       VINHOS / DADOS
+       ========================= */
 
-  document.addEventListener('DOMContentLoaded', () => {
-    const savedLang = localStorage.getItem('lang') || 'it';
-    setLanguage(savedLang);
-  });
+    const vinhosDaCasa = [{
+        nome: "Valpolicella Tre Fratelli 2019",
+        harmonizacao: "Antipasti, bruschetta, pizzas, massas ao sugo, queijos médios."
+    }, {
+        nome: "Tre Chardonnay 2022",
+        harmonizacao: "Caprese, frutos do mar, risotto, saladas frescas."
+    }, {
+        nome: "Merlot Tre Fratelli 2020",
+        harmonizacao: "Lasagna, carnes grelhadas, queijos curados."
+    }];
+
+    const vinhosClassicos = {
+        barolo: {
+            it: "Barolo — ideale con carni rosse e formaggi stagionati.",
+            en_uk: "Barolo — ideal with red meats and aged cheeses.",
+            pt_br: "Barolo — ideal com carnes vermelhas e queijos curados."
+        },
+        primitivo: {
+            it: "Primitivo di Manduria — ideale per carni alla griglia.",
+            en_uk: "Primitivo di Manduria — ideal for barbecue.",
+            pt_br: "Primitivo di Manduria — ideal para churrasco."
+        },
+        prosecco: {
+            it: "Prosecco — perfetto per aperitivi e dessert leggeri.",
+            en_uk: "Prosecco — perfect for aperitifs and light desserts.",
+            pt_br: "Prosecco — perfeito para aperitivos e sobremesas leves."
+        },
+        chianti: {
+            it: "Chianti Classico — ottimo con pasta al sugo e pizza.",
+            en_uk: "Chianti Classico — great with tomato pasta and pizza.",
+            pt_br: "Chianti Classico — ótimo com massas ao sugo e pizzas."
+        },
+        ripasso: {
+            it: "Valpolicella Ripasso — ideale per risotti e carni bianche.",
+            en_uk: "Valpolicella Ripasso — great for risottos and white meats.",
+            pt_br: "Valpolicella Ripasso — ótimo para risotos e carnes brancas."
+        },
+        pinot: {
+            it: "Pinot Grigio — leggero, perfetto con antipasti e pesce.",
+            en_uk: "Pinot Grigio — light, perfect with antipasti and fish.",
+            pt_br: "Pinot Grigio — leve, combina com antipastos e peixes."
+        },
+        lambrusco: {
+            it: "Lambrusco — frizzante e adatto a pizza e salumi.",
+            en_uk: "Lambrusco — fizzy, great with pizza and cold cuts.",
+            pt_br: "Lambrusco — ótimo com pizzas, frios e massas simples."
+        },
+        verdicchio: {
+            it: "Verdicchio — fresco e agrumato, ideale per frutti di mare.",
+            en_uk: "Verdicchio — fresh and citrusy, ideal for seafood.",
+            pt_br: "Verdicchio — fresco, perfeito para frutos do mar."
+        }
+    };
+
+    /* palavras-chave multi-idioma (humor e pratos) */
+    const humorVinhos = [{
+        palavras: ["feliz", "felicidade", "alegre", "animado", "happy", "joy", "felice"],
+        vinhoKey: "prosecco"
+    }, {
+        palavras: ["triste", "down", "sad", "saddness", "tristezza"],
+        vinhoKey: "merlot_comfort"
+    }, {
+        palavras: ["raiva", "bravo", "irritado", "angry", "furioso"],
+        vinhoKey: "lambrusco"
+    }, {
+        palavras: ["romântico", "amor", "apaixonado", "romantic", "love"],
+        vinhoKey: "brunello"
+    }, {
+        palavras: ["relaxado", "calmo", "paz", "relaxed", "calm"],
+        vinhoKey: "pinot"
+    }];
+
+    // pratos traduzidos e sinônimos
+    const pratosVinhos = [{
+        palavras: ["massa", "pasta", "macarrão", "spaghetti", "pasta"],
+        vinhoKey: "chianti"
+    }, {
+        palavras: ["carne", "meat", "bife", "steak", "beef"],
+        vinhoKey: "barolo"
+    }, {
+        palavras: ["pizza"],
+        vinhoKey: "lambrusco"
+    }, {
+        palavras: ["frango", "pollo", "chicken"],
+        vinhoKey: "ripasso"
+    }, {
+        palavras: ["peixe", "pesce", "fish"],
+        vinhoKey: "pinot"
+    }, {
+        palavras: ["frutos do mar", "marisco", "seafood"],
+        vinhoKey: "verdicchio"
+    }, {
+        palavras: ["sobremesa", "doce", "dessert", "dolce"],
+        vinhoKey: "prosecco"
+    }, {
+        palavras: ["risoto", "risotto"],
+        vinhoKey: "ripasso"
+    }, {
+        palavras: ["churrasco", "barbecue", "bbq", "grill", "churrasco", "grigliata"],
+        vinoKey: "primitivo",
+        vinhoKey: "primitivo"
+    }];
+
+    // respostas especiais (não-klassic key -> text differs per language)
+    const specialResponses = {
+        prosecco: {
+            it: "Prosecco — perfetto per celebrare!",
+            en_uk: "Prosecco — perfect for celebrations!",
+            pt_br: "Prosecco — celebração pede borbulhas!"
+        },
+        lambrusco: {
+            it: "Lambrusco — leggero e rinfrescante.",
+            en_uk: "Lambrusco — light and refreshing.",
+            pt_br: "Lambrusco — leve, refrescante e relaxante."
+        },
+        pinot: {
+            it: "Pinot Grigio — fresco e delicato.",
+            en_uk: "Pinot Grigio — fresh and delicate.",
+            pt_br: "Pinot Grigio — leve, fresco e suave."
+        },
+        brunello: {
+            it: "Brunello di Montalcino — elegante e avvolgente.",
+            en_uk: "Brunello di Montalcino — elegant and enveloping.",
+            pt_br: "Brunello di Montalcino — elegante e intenso."
+        },
+        merlot_comfort: {
+            it: "Merlot Tre Fratelli 2020 — morbido e confortante.",
+            en_uk: "Merlot Tre Fratelli 2020 — soft and comforting.",
+            pt_br: "Merlot Tre Fratelli 2020 — macio e reconfortante."
+        },
+        primitivo: {
+            it: "Primitivo di Manduria — ideale per le grigliate.",
+            en_uk: "Primitivo di Manduria — ideal for barbecue.",
+            pt_br: "Primitivo di Manduria — ideal para churrasco."
+        }
+    };
+
+    /* =========================
+       UTILIDADES E LÓGICA DE ANÁLISE
+       ========================= */
+
+    // normaliza e verifica se alguma palavra-chave aparece
+    function includesAny(text, list) {
+        return list.some(p => text.includes(p));
+    }
+
+    function analisarMensagem(texto, lang) {
+        texto = texto.toLowerCase();
+
+        // 1. Humor
+        for (const h of humorVinhos) {
+            if (includesAny(texto, h.palavras)) {
+                const key = h.vinhoKey;
+                if (specialResponses[key]) return specialResponses[key][lang];
+                // fallback to classico map if exists
+                if (vinhosClassicos[key]) return vinhosClassicos[key][lang];
+            }
+        }
+
+        // 2. Pratos
+        for (const p of pratosVinhos) {
+            if (includesAny(texto, p.palavras)) {
+                const key = p.vinhoKey || p.vinhoKey; // compat
+                if (vinhosClassicos[key]) return vinhosClassicos[key][lang];
+                if (specialResponses[key]) return specialResponses[key][lang];
+            }
+        }
+
+        // 3. Menção direta de vinhos clássicos (ex: "barolo")
+        for (const k in vinhosClassicos) {
+            if (texto.includes(k)) return vinhosClassicos[k][lang];
+        }
+
+        // 4. fallback: vinho da casa aleatório (com harmonização)
+        const aleatorio = vinhosDaCasa[Math.floor(Math.random() * vinhosDaCasa.length)];
+        return `${i18n[lang].unknown} ${aleatorio.nome} — ${aleatorio.harmonizacao}`;
+    }
+
+    /* =========================
+       UI: mensagens flutuantes sem empurrar a caixa
+       ========================= */
+    const chatBox = document.getElementById("chatMessages");
+
+    function addMessage(text, sender = "bot") {
+        const div = document.createElement("div");
+        div.className = "msg " + (sender === "user" ? "user" : "bot");
+        div.textContent = text;
+
+        chatBox.appendChild(div);
+
+        // mantém apenas últimas N mensagens
+        const msgs = chatBox.querySelectorAll(".msg");
+        if (msgs.length > 6) {
+            msgs[0].remove();
+        }
+
+        // scroll automático para a última mensagem
+        chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+
+    /* simula digitação (substitui placeholder enquanto pensa) */
+    function botReplyWithDelay(userText, lang) {
+        const input = document.getElementById("input_1");
+        const originalPlaceholder = input.placeholder;
+        input.placeholder = i18n[lang].sendingPlaceholder;
+        input.disabled = true;
+
+        setTimeout(() => {
+            const resposta = analisarMensagem(userText, lang);
+            addMessage(resposta, "bot");
+            input.placeholder = originalPlaceholder;
+            input.disabled = false;
+        }, 450); // pequeno delay agradável
+    }
+
+    /* =========================
+       Eventos: clique e Enter
+       ========================= */
+    document.getElementById("btn_8").addEventListener("click", () => {
+        const input = document.getElementById("input_1");
+        const texto = input.value.trim();
+        if (!texto) return;
+
+        const lang = localStorage.getItem("lang") || "it";
+        addMessage(texto, "user");
+        input.value = "";
+        botReplyWithDelay(texto, lang);
+    });
+
+    document.getElementById("input_1").addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+            e.preventDefault();
+            document.getElementById("btn_8").click();
+        }
+    });
+
+    /* ===== pequenas melhorias: limpar histórico com clique longo (opcional) ===== */
+    // Expor função para limpar
+    function clearChat() {
+        document.getElementById("chatMessages").innerHTML = "";
+    }
+    window.clearChat = clearChat;
 </script>
 
 </html>
