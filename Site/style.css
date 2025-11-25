@@ -118,8 +118,8 @@ i.ph-triangle.rotate {
 }
 
 .sfondo-vigneto img {
-  width: 100%;
-  height: 100%;
+  width: 120%;
+  height: 110%;
   object-fit: cover;
 }
 
@@ -243,7 +243,7 @@ i.ph-triangle.rotate {
 
 /* SLIDE 2 - COLTIVAZIONE */
 .slide-coltivazione {
-  background-color: #936285;
+  background-color: #834155;
   padding: 70px 50px 100px;
   position: relative;
   overflow: hidden;
@@ -1945,4 +1945,414 @@ main.vini {
     color: #F5F0E8;
     font-size: 16px;
     line-height: 1.6;
+}
+
+/* === LAYOUT DEL FORMULARIO === */
+.layout-container {
+    display: grid; 
+    grid-template-columns: 1.2fr 1fr; 
+    gap: 50px; 
+    align-items: start; 
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 40px 20px; 
+}
+
+/* === IMMAGINE A SINISTRA (1ª COLONNA) === */
+.layout-container img {
+    width: 100%;
+    height: auto; 
+    border-radius: 12px; 
+    object-fit: cover; 
+}
+
+/* === FORMULARIO A DESTRA (2ª COLONNA) === */
+#form-container-step1,
+#form-container-step2,
+#form-container-step3 {
+    width: 100%; 
+    max-width: 380px; 
+    margin-top: 40px;
+}
+
+/* === Contenitore generale dell’ultima sezione (itinerario) === */
+.giornata-wrapper {
+  max-width: 1200px;
+  margin: 40px auto 80px;
+  padding: 0 20px;
+}
+
+/* Layout a due colonne: testo a sinistra, card con foto a destra */
+.giornata-layout {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+/* Colonna di testo libera, fuori dalla card */
+.giornata-testo {
+  color: #F5F0E8;           
+}
+
+/* Titoli e paragrafi dentro la colonna di testo */
+.giornata-testo .section-title {
+  font-size: 18px;
+  text-transform: none;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+.giornata-testo .hour-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.giornata-testo .text-block {
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
+
+/* Card SOLO per l’immagine, con bordo giallo */
+.giornata-card {
+  background: #f5f0e8;
+  border-radius: 22px;
+  border: 4px solid #8ed36b;      
+  padding: 18px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+  display: flex;
+}
+
+.giornata-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;            
+}
+
+/* ============================================================
+   RESPONSIVE DESIGN – BREAKPOINT PRINCIPALI
+   Aggiungi questo blocco in fondo al file style.css
+   ============================================================ */
+
+/* ================================
+   max-width: 1200px (schermi grandi / laptop)
+   Adattamenti leggeri di padding e spazi
+   ================================ */
+@media (max-width: 1200px) {
+
+  /* Sezioni con contenuto centrato */
+  .contenuto-inizio,
+  .slide-coltivazione,
+  .container,
+  .itineraries-wrapper,
+  #info,
+  #prenotazione {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  /* Griglia del testo iniziale */
+  .griglia-inizio {
+    max-width: 1000px;
+  }
+
+  /* Griglia coltivazione (meno spazio tra colonne) */
+  .griglia-coltivazione {
+    gap: 20px;
+  }
+
+  /* Layout timeline molto largo: restringe un po’ */
+  .timeline-content {
+    width: 100%;
+    font-size: 32px;
+  }
+}
+
+/* =====================================
+   max-width: 992px (tablet orizzontale)
+   Layout a colonna singola dove necessario
+   ===================================== */
+@media (max-width: 992px) {
+
+  /* --- SLIDE 1: INIZIO --- */
+  .titolo-principale h1,
+  .titolo-principale h2 {
+    font-size: 34px;
+  }
+
+  .griglia-inizio {
+    grid-template-columns: 1fr; /* Testo e bottiglia uno sotto l’altro */
+    gap: 30px;
+    text-align: center;
+  }
+
+  .colonna-testo {
+    padding-left: 0;
+  }
+
+  .testo-poetico {
+    margin: 0 auto;
+  }
+
+  .colonna-bottiglia {
+    min-height: auto;
+  }
+
+  /* --- SLIDE 2: COLTIVAZIONE --- */
+  .header-coltivazione {
+    grid-template-columns: 1fr; /* Titolo sopra, immagine sotto */
+    gap: 25px;
+  }
+
+  .titolo-coltivazione {
+    font-size: 52px;
+    text-align: left;
+  }
+
+  .img-vigneto {
+    justify-self: center;
+  }
+
+  .griglia-coltivazione {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 colonne invece di 4 */
+  }
+
+  /* --- CHATBOT --- */
+  .chatbot-main {
+    padding: 30px 20px;
+  }
+
+  .chatbot-title h1,
+  .chatbot-title h2 {
+    font-size: 36px;
+  }
+
+  .chatbot-box {
+    max-width: 100%;
+  }
+
+  /* --- MENU / CARDAPIO --- */
+  .container {
+    padding: 40px 25px;
+  }
+
+  .menu-hero h1 {
+    font-size: 44px;
+  }
+
+  .menu-layout,
+  .menu-layout.reverse {
+    grid-template-columns: 1fr; /* Immagine sopra, testo sotto */
+    gap: 30px;
+  }
+
+  .menu-image {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+  /* --- ATTRAZIONI TURISTICHE (INTRO + ITINERARI) --- */
+  .intro-layout {
+    grid-template-columns: 1fr; /* Testo sopra, galleria sotto */
+  }
+
+  .itineraries-row {
+    grid-template-columns: 1fr; /* Una card per riga */
+  }
+
+  .itinerary-block,
+  .itinerary-block.right-img {
+    grid-template-columns: 1fr;  /* Testo e immagine in colonna */
+  }
+
+  .itinerary-block.right-img .itinerary-img,
+  .itinerary-block.right-img .itinerary-text {
+    order: initial; /* Ordine naturale nel mobile */
+  }
+
+  /* --- FORMULARIO DI PRENOTAZIONE / IMMAGINE LATO --- */
+  .layout-container {
+    grid-template-columns: 1fr; /* Foto e form in colonna */
+    gap: 30px;
+  }
+
+  /* Immagine prenotazione (pagina attrazioni) */
+  .prenotazione-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  #form-container-step1,
+  #form-container-step2,
+  #form-container-step3 {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+
+  /* --- CARD GIORNATA (ultima parte attrazioni) --- */
+  .giornata-layout {
+    grid-template-columns: 1fr; /* Testo sopra, card immagine sotto */
+  }
+
+  .giornata-card {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  /* --- SEZIONE INFO --- */
+  #info {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+/* =====================================
+   max-width: 768px (tablet verticale / telefoni grandi)
+   Tipografia ridotta e spazi ottimizzati
+   ===================================== */
+@media (max-width: 768px) {
+
+  /* Spostiamo leggermente il menu lingua e il bottone radiale */
+  .language-selector {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .header-icons {
+    top: 10px;
+  }
+
+  /* Titoli principali delle pagine */
+  .attrazioni-page #h1_1,
+  #prenotazione h1,
+  .menu-hero h1 {
+    padding: 0 20px;
+    font-size: 34px;
+  }
+
+  /* Sezioni introduttive */
+  .intro-attractions {
+    padding: 25px 20px;
+    margin: 20px auto 40px;
+  }
+
+  .main-title {
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+
+  .itineraries-wrapper {
+    padding: 40px 20px 60px;
+  }
+
+  /* Tabella bevande – scroll orizzontale per evitare overflow */
+  .beverages-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto; /* Permette di scorrere lateralmente */
+    font-size: 13px;
+  }
+
+  .beverages-table th,
+  .beverages-table td {
+    white-space: nowrap; /* Evita che il testo vada a capo in modo brutto */
+  }
+
+  /* Timeline – più compatta */
+  .timeline {
+    padding-bottom: 120px;
+  }
+
+  .timeline-content {
+    height: auto;
+    font-size: 26px;
+  }
+
+  /* Chatbot input più stretto sui lati */
+  .chatbot-box {
+    padding: 0 5px;
+  }
+
+  .chatbot-input {
+    font-size: 16px;
+  }
+}
+
+/* =====================================
+   max-width: 480px (smartphone piccoli)
+   Tutto centrato e molto compatto
+   ===================================== */
+@media (max-width: 480px) {
+
+  /* Margini generali */
+  body {
+    font-size: 14px;
+  }
+
+  .contenuto-inizio {
+    padding: 20px 15px;
+  }
+
+  .titolo-principale h1,
+  .titolo-principale h2 {
+    font-size: 26px;
+  }
+
+  .titolo-inizio {
+    font-size: 38px;
+  }
+
+  /* Coltivazione */
+  .slide-coltivazione {
+    padding: 50px 18px 70px;
+  }
+
+  .titolo-coltivazione {
+    font-size: 40px;
+  }
+
+  /* Chatbot */
+  .chatbot-main {
+    padding: 20px 15px;
+  }
+
+  .chatbot-title h1,
+  .chatbot-title h2 {
+    font-size: 28px;
+  }
+
+  /* Menu */
+  .menu-hero h1 {
+    font-size: 32px;
+  }
+
+  .menu-hero h2 {
+    font-size: 18px;
+  }
+
+  /* Prenotazione */
+  #prenotazione {
+    padding: 50px 18px;
+  }
+
+  #prenotazione button {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  /* Attrazioni – testo dell’itinerario finale */
+  .giornata-testo .section-title {
+    font-size: 16px;
+  }
+
+  .giornata-testo .hour-title {
+    font-size: 13px;
+  }
+
+  .giornata-testo .text-block {
+    font-size: 12px;
+  }
 }

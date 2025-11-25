@@ -65,7 +65,7 @@
   <section id="storia" class="storia-section">
 
     <!-- Título -->
-    <h1 id="h1_1" class="storia-title">La nostra storia e il tuo piacere.</h1>
+    <h1 id="h1_1" class="storia-title" style="margin-left: 250px; margin-top: 40px !important; color: white">La nostra storia e il tuo piacere.</h1>
 
     <!-- ========================= LINHA DO TEMPO (APENAS OS 4 PINS) ========================= -->
 <div class="timeline">
@@ -82,36 +82,36 @@
     </svg>
 
     <button class="timeline-pin" data-target="item1">
-        <img src="imagens/pin.png" alt="Pin">
+        <img src="imagens/Mapa.png" alt="Pin">
         <h3 id="h3_1">I. Le Origini e la prima crisi</h3>
     </button>
     <button class="timeline-pin" data-target="item2">
-        <img src="imagens/pin.png" alt="Pin">
+        <img src="imagens/Mapa.png" alt="Pin">
         <h3 id="h3_2">II. Il ritorno alla crescita e la seconda crisi</h3>
     </button>
     <button class="timeline-pin" data-target="item3">
-        <img src="imagens/pin.png" alt="Pin">
+        <img src="imagens/Mapa.png" alt="Pin">
         <h3 id="h3_3">III. Ritorno dovuto al turismo e alla migrazione giovanile</h3>
     </button>
     <button class="timeline-pin" data-target="item4">
-        <img src="imagens/pin.png" alt="Pin">
+        <img src="imagens/Mapa.png" alt="Pin">
         <h3 id="h3_4">IV. Tra Tradizione e ispirazione creativa</h3>
     </button>
 
     <div id="content-container">
-        <div id="item1" class="timeline-content">
+        <div id="item1" class="timeline-content" style="margin-left: -60px;">
             <img class="timeline-image" src="imagens/storia.jpg" alt="Origini foto">
             <p id="p_1" class="timeline-text">
                 La Cantina e Ristorante Tre Fratelli aprì ufficialmente nel 1925, ma la vita non fu mai facile. Nel 1930, rischiò di chiudere a causa della crisi economica e dei debiti che aumentarono.
             </p>
         </div>
-        <div id="item2" class="timeline-content">
+        <div id="item2" class="timeline-content" style="margin-left: -10px;">
             <img class="timeline-image" src="imagens/storia4.jpg" alt="Crescita foto">
             <p id="p_2" class="timeline-text">
                 Per salvare il posto, la madre dei fratelli, Teresa, aprì una piccola cucina rustica per servire i viaggiatori della ferrovia di Tirano, combinando vino e cibo locale. Grazie a questo, riuscirono a mantenere la proprietà. Quando finalmente iniziarono a realizzare un piccolo profitto, scoppiò la Seconda Guerra Mondiale, che fu un duro colpo, sia per l' azienda che per la famiglia.
             </p>
         </div>
-        <div id="item3" class="timeline-content">
+        <div id="item3" class="timeline-content" style="margin-left: -8px;">
             <img class="timeline-image" src="imagens/storia2.jpg" alt="Turismo foto">
             <p id="p_3" class="timeline-text">
                 Negli anni '60 e '70, con il boom turistico nelle Alpi, vissero una nuova fase, raccogliendo i frutti della pazienza e della perseverança. Fu un periodo molto positivo. — Ma durante a crise degli anni '80, il ristorante rischiò di chiudere di nuovo a causa della concorrenza e dell'emigrazione dei giovani.
@@ -128,6 +128,14 @@
 
     <style>
 
+      body{ 
+
+              background-image: url("imagens/Fundostoria.jpeg"); 
+    background-size: cover;              
+    background-position: center;         
+
+      }
+
 :root {
     /* VARIÁVEL DE ESCALA: Defina a largura máxima do seu layout aqui. */
     /* Mudar este valor irá escalar todo o posicionamento e o tamanho da fonte */
@@ -137,7 +145,7 @@
     --pin-color: #c95143; /* Cor do pin (vermelho/laranja) */
     --text-color: black; /* Cor do texto (marrom) */
     --path-color: #5d3a24; /* Cor do caminho tracejado */
-    --pin-max-size: 90px; /* Variável para o tamanho máximo da imagem do pin */
+    --pin-max-size: 3500px; /* Variável para o tamanho máximo da imagem do pin */
 }
 
 /* ========================================= */
@@ -155,10 +163,7 @@
     
     margin: 5vh auto; /* Centraliza horizontalmente e adiciona margem vertical */
     
-    /* Estilo de fundo opcional para replicar o 'papel antigo' */
-    background-image: url('caminho/para/sua/imagem_de_fundo.jpg'); /* Altere o caminho */
-    background-size: cover;
-    background-position: center;
+
 }
 
 /* ========================================= */
@@ -173,7 +178,7 @@
     border: none;
     cursor: pointer;
     text-align: center;
-    width: 15%; /* Largura relativa do elemento completo */
+    width: 25%; /* Largura relativa do elemento completo */
     padding: 0;
     z-index: 10; /* Garante que os pins fiquem acima do caminho SVG */
 }
@@ -181,28 +186,28 @@
 /* 4. Posicionamento Específico de Cada Pin (usando PORCENTAGENS) */
 .timeline-pin[data-target="item1"] {
     /* Pin I: Canto superior esquerdo */
-    top: 30%; 
-    left: 8%;
+    top: 18%; 
+    left: 5%;
     transform: translateX(-50%); 
 }
 
 .timeline-pin[data-target="item2"] {
     /* Pin II: Centro inferior */
-    top: 75%; 
-    left: 30%;
+    top: 50%; 
+    left: 33%;
     transform: translateX(-50%);
 }
 
 .timeline-pin[data-target="item3"] {
     /* Pin III: Centro superior direito (pico da curva) */
-    top: 15%; 
-    left: 60%;
+    top: 0%; 
+    left: 61.3%;
     transform: translateX(-50%);
 }
 
 .timeline-pin[data-target="item4"] {
     /* Pin IV: Canto inferior direito */
-    top: 60%; 
+    top: 40%; 
     left: 85%;
     transform: translateX(-50%);
 }
@@ -227,7 +232,8 @@
     color: var(--text-color);
     font-family: serif; 
     font-weight: normal;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7); 
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+    font-weight: bold; 
 }
 
 /* ========================================= */
@@ -249,8 +255,8 @@
 .timeline svg path {
     stroke: var(--path-color); /* Cor do traço */
     fill: none; /* O caminho não deve ser preenchido */
-    stroke-width: 0.7; /* Espessura do traço (ajuste o valor se for muito fino/grosso) */
-    stroke-dasharray: 1.5, 1.5; /* Cria o efeito tracejado (1.5 de traço, 1.5 de espaço) */
+    stroke-width: 0.5; /* Espessura do traço (ajuste o valor se for muito fino/grosso) */
+    stroke-dasharray: 1, 1; /* Cria o efeito tracejado (1.5 de traço, 1.5 de espaço) */
     stroke-linecap: round; /* Deixa as pontas dos traços arredondadas */
 }
 
@@ -272,6 +278,7 @@
     
     /* Define a largura máxima do pop-up para que não ocupe a tela toda */
     width: 300px;
+    height: 450px;
     max-width: 90vw; /* Responsividade em telas pequenas */
 }
 
