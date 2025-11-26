@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="titulo">Itinerario Turistico - Tre Fratelli</title>
-    <link rel="icon" href="Site/imagens/Logo de Icone.jpeg" type="image/x-icon">
+    <link rel="icon" href="imagens/Logo Completa.png" type="icon">
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
@@ -709,7 +709,10 @@
     let numVini = 0;
 
     const viniWidth = firstVini.clientWidth;
-    const viniMargin = parseInt(window.getComputedStyle(firstVini).marginRight);
+    let viniMargin = parseInt(window.getComputedStyle(firstVini).marginRight);
+    if (viniMargin == 0){
+        viniMargin = 50;
+    }
     const viniSize = viniWidth + viniMargin;
 
     function nextWine() {

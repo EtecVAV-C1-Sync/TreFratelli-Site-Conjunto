@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="titulo">Chatbot - Tre Fratelli</title>
-    <link rel="icon" href="Site/imagens/Logo de Icone.jpeg" type="image/x-icon">
+    <link rel="icon" href="imagens/Logo Completa.png" type="icon">
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
@@ -137,12 +137,14 @@
         background-repeat: no-repeat;
         background-position: center;
     }
+
+    .chatbot-input-wrapper{
+        background-color: transparent;
+    }
 </style>
 
 <script>
-    /* =========================
-                                                                               I18N / Traduções
-                                                                               ========================= */
+
     const i18n = {
         it: {
             titulo: "Chatbot - Tre Fratelli",
@@ -273,10 +275,10 @@
 
     /* palavras-chave multi-idioma (humor e pratos) */
     const humorVinhos = [{
-        palavras: ["feliz", "felicidade", "alegre", "animado", "happy", "joy", "felice"],
+        palavras: ["feliz", "felicidade", "alegre", "animado", "happy", "joy", "felice", "contente"],
         vinhoKey: "prosecco"
     }, {
-        palavras: ["triste", "down", "sad", "saddness", "tristezza"],
+        palavras: ["triste", "down", "sad", "saddness", "tristezza", "depressão", "solitario"],
         vinhoKey: "merlot_comfort"
     }, {
         palavras: ["raiva", "bravo", "irritado", "angry", "furioso"],

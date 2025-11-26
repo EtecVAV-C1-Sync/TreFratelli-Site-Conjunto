@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title id="titulo">Cardapio - Tre Fratelli</title>
-    <link rel="icon" href="Site/imagens/Logo de Icone.jpeg" type="image/x-icon">
+    <link rel="icon" href="imagens/Logo Completa.png" type="icon">
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
 
@@ -348,131 +348,104 @@
             </div>
         </section>
 
-        <!-- FAÇA SUA RESERVA -->
-        <section id="prenotazione">
-            <div id="step1" class="layout-container" style="display: flex; flex-direction: row;">
-                <div>
-                    <h1 id="h1_8">FAI LA TUA<br>PRENOTAZIONE</h1>
-                    <img src="imagens/stradadelvini.png" alt="img_2" style="width: 100%; height: auto; object-fit: contain; border-radius: 12px;">
-                </div>
+<form action="salvar_reserva.php" method="POST">
 
-                <div id="form-container-step1">
+<section id="prenotazione">
+    <div id="step1" class="layout-container" style="display: flex; flex-direction: row;">
+        <div>
+            <h1 id="h1_8">FAI LA TUA<br>PRENOTAZIONE</h1>
+            <img src="imagens/stradadelvini.png" alt="img_2" 
+                 style="width: 100%; height: auto; object-fit: contain; border-radius: 12px;">
+        </div>
 
-                    <label id="h3_7" for="numPeople">Numero di persone</label>
-                    <div class="input-wrapper select-like">
-                        <input type="number" id="numPeople" placeholder="Es. 2" min="1" value="1">
-                        <span class="icon arrow">&#x2304;</span>
-                    </div>
+        <div id="form-container-step2">
 
-                    <label id="h3_8" for="date">Data</label>
-                    <div class="input-wrapper">
-                        <input type="date" id="date">
-                        <span class="icon calendar">&#x1F4C5;</span>
-                    </div>
-
-                    <label id="h3_9" for="time">Orario</label>
-                    <div class="input-wrapper">
-                        <input type="time" id="time">
-                        <span class="icon clock">&#x23F1;</span>
-                    </div>
-
-                    <label id="h3_10" for="agency">Agenzia</label>
-                    <div class="input-wrapper">
-                        <select id="agency">
-                            <option id="p_7" value="" disabled selected>Seleziona agenzia</option>
-                            <option value="agency1" id="p_8">Agenzia 1</option>
-                            <option value="agency2" id="p_9">Agenzia 2</option>
-                            <option value="agency3" id="p_10">Agenzia 3</option>
-                        </select>
-                        <span class="icon building">&#x1F3E2;</span>
-                    </div>
-
-                    <button id="btn_5" class="main-button" onclick="goToStep(2)">Avanzare</button>
-                </div>
+            <label for="numPeople">quantità di persone</label>
+            <div class="input-wrapper select-like">
+                <input type="number" id="numPeople" name="pessoas" placeholder="Es. 2" required>
             </div>
-        </section>
-        <section id="prenotazione">
-            <div id="step2" class="layout-container" style="display: flex; flex-direction: row;">
-                <div>
-                    <h2 id="h2_2">FAI LA TUA<br>PRENOTAZIONE</h2>
-                    <img src="imagens/stradadelvini.png" alt="img_3" style="width: 100%; height: auto; object-fit: contain; border-radius: 12px;">
 
-                </div>
-                <div id="form-container-step2">
-
-
-
-                    <label id="h3_11" for="fullName">Nome completo</label>
-                    <div class="input-wrapper">
-                        <input type="text" id="fullName" placeholder="Es. Giovanni Rossi">
-                        <span class="icon person">&#x1F464;</span>
-                    </div>
-
-                    <label id="h3_12" for="cpf">CPF</label>
-                    <div class="input-wrapper">
-                        <input type="text" id="cpf" placeholder="Es. 123.456.789-00">
-                        <span class="icon id-card">&#x1F4B3;</span>
-                    </div>
-
-                    <label id="h3_13" for="phone">Telefono</label>
-                    <div class="input-wrapper">
-                        <input type="tel" id="phone" placeholder="Es. +39 123 456 7890">
-                        <span class="icon phone-icon">&#x1F4DE;</span>
-                    </div>
-
-                    <label id="h3_14" for="email">Email</label>
-                    <div class="input-wrapper">
-                        <input type="email" id="email" placeholder="Es. giovanni@example.com">
-                        <span class="icon envelope">&#x2709;</span>
-                    </div>
-
-                    <div class="buttons-group">
-                        <button id="btn_7" class="main-button" onclick="goToStep(3)">Prenotare</button>
-                    </div>
-
-                </div>
+            <label for="fullName">nome del prenotante</label>
+            <div class="input-wrapper">
+                <input type="text" id="fullName" name="nome" placeholder="Es. Giovanni Rossi" required>
+                <span class="icon person">&#x1F464;</span>
             </div>
-        </section>
-        <section id="pagamento">
 
-            <div id="step3" class="layout-container" style="display: flex; flex-direction: row;">
-                <div>
-                    <h2 id="h2_3">FAI LA TUA<br>PRENOTAZIONE</h2>
-                    <img src="imagens/stradadelvini.png" alt="img_4" style="width: 100%; height: auto; object-fit: contain; border-radius: 12px;">
-
-                </div>
-                <div style="display: flex; flex-direction: column;">
-
-                    <label id="h3_15" for="total">Totale</label>
-                    <div class="input-wrapper">
-                        <input type="text" id="total" placeholder="€ 0.00">
-                        <span class="icon currency">&#x1F4B0;</span>
-                    </div>
-
-                    <p id="p_11" class="payment-title" style="color: white;">Metodo di pagamento</p>
-
-                    <div class="payment-options">
-
-                        <label id="h3_16" class="payment-card">
-                            <input type="radio" name="payment" value="anticipato" checked>
-                            <span class="card-content">
-                                Anticipato
-                                <span class="check-icon">&#x2713;</span>
-                            </span>
-                        </label>
-
-                        <label id="h3_17" class="payment-card">
-                            <input type="radio" name="payment" value="sul_posto">
-                            <span class="card-content">
-                                Sul posto
-                                <span class="check-icon">&#x2713;</span>
-                            </span>
-                        </label>
-
-                    </div>
-                </div>
+            <label for="cpf">CPF</label>
+            <div class="input-wrapper">
+                <input type="text" id="cpf" name="cpf" placeholder="Es. 123.456.789-00" required>
+                <span class="icon id-card">&#x1F4B3;</span>
             </div>
-        </section>
+
+            <label for="phone">Telefono</label>
+            <div class="input-wrapper">
+                <input type="tel" id="phone" name="telefone" placeholder="Es. +39 123 456 7890" required>
+                <span class="icon phone-icon">&#x1F4DE;</span>
+            </div>
+
+            <label for="email">Email</label>
+            <div class="input-wrapper">
+                <input type="email" id="email" name="email" placeholder="Es. giovanni@example.com" required>
+                <span class="icon envelope">&#x2709;</span>
+            </div>
+
+            <label for="date">data</label>
+            <div class="input-wrapper">
+                <input type="date" id="date" name="data" required>
+                <span class="icon calendar">&#x1F4C5;</span>
+            </div>
+
+            <div class="buttons-group">
+                <button type="submit" id="btn_7" class="main-button">Reservar</button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+</form>
+
+<!-- MENSAGEM -->
+<div id="mensagem-reserva"
+     style="display:none;
+            position:fixed;
+            top:20px;
+            left:50%;
+            transform:translateX(-50%);
+            background:#77c96b;
+            color:white;
+            padding:15px 25px;
+            border-radius:8px;
+            font-size:18px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.2);
+            z-index:9999;">
+</div>
+
+<!-- MENSAGEM -->
+<div id="mensagem-reserva"
+     style="display:none;
+            position:fixed;
+            top:20px;
+            left:50%;
+            transform:translateX(-50%);
+            background:#77c96b;
+            color:white;
+            padding:15px 25px;
+            border-radius:8px;
+            font-size:18px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.2);
+            z-index:9999;">
+</div>
+
+<!-- SCRIPT PARA MOSTRAR A NOTIFICAÇÃO -->
+
+
+
+        </div>
+    </div>
+</section>
+
+</form>
 
 
     </main>
@@ -482,6 +455,16 @@
         </div>
     </footer>
     <script>
+      
+     // Mostra mensagem se a URL tiver ?reserva=ok
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("reserva") === "ok") {
+        alert("Sua reserva foi feita com sucesso!");
+        // Remove o parâmetro da URL para não repetir
+        window.history.replaceState({}, document.title, window.location.pathname);
+    }
+
+         
         const i18n = {
 
             /* ============================================================
@@ -604,11 +587,11 @@
                 info_13: "13:00",
                 info_duracao: "Ogni pranzo ha una durata di 45 minuti.",
 
-                info_sconto: "Sconto",
-                info_sconto_txt: "I clienti del ristorante avranno uno sconto del 5%...",
+                h2_5: "Sconto",
+                p_17: "I clienti del ristorante avranno uno sconto del 5%...",
 
-                info_parceiros: "Prenota con i nostri partner",
-                info_parceiros_txt: "Prenotando tramite agenzie partner hai vantaggi esclusivi."
+                h2_6: "Prenota con i nostri partner",
+                p_18: "Prenotando tramite agenzie partner hai vantaggi esclusivi."
             },
 
             en_uk: {
@@ -721,18 +704,18 @@
                 btn_9: "Confirm",
 
                 /* INFORMAÇÕES */
-                info_horario: "Schedule",
+                h2_4: "Schedule",
                 info_desc: "Our reservation includes choosing the dish and time in advance.",
                 info_11: "11:00",
                 info_12: "12:00",
                 info_13: "13:00",
-                info_duracao: "Each lunch lasts 45 minutes.",
+                p_16: "Each lunch lasts 45 minutes.",
 
-                info_sconto: "Discount",
-                info_sconto_txt: "Restaurant customers get a 5% discount...",
+                h2_5: "Discount",
+                p_17: "Restaurant customers get a 5% discount...",
 
-                info_parceiros: "Book with our partners",
-                info_parceiros_txt: "Booking through partner agencies gives you exclusive benefits."
+                h2_6: "Book with our partners",
+                p_18: "Booking through partner agencies gives you exclusive benefits."
             },
 
 
@@ -846,18 +829,18 @@
                 btn_9: "Confirmar",
 
                 /* INFORMAÇÕES */
-                info_horario: "Horário",
+                h2_4: "Horário",
                 info_desc: "Nossa reserva inclui a escolha antecipada do prato e do horário.",
                 info_11: "11:00",
                 info_12: "12:00",
                 info_13: "13:00",
                 info_duracao: "Cada almoço tem duração de 45 minutos.",
 
-                info_sconto: "Desconto",
-                info_sconto_txt: "Clientes do restaurante terão 5% de desconto...",
+                h2_5: "Desconto",
+                p_17: "Clientes do restaurante terão 5% de desconto...",
 
-                info_parceiros: "Reserve com nossos parceiros",
-                info_parceiros_txt: "Reservando por agências parceiras você ganha vantagens exclusivas."
+                h2_6: "Reserve com nossos parceiros",
+                p_18: "Reservando por agências parceiras você ganha vantagens exclusivas."
             },
         };
 
