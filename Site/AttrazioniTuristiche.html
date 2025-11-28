@@ -15,7 +15,7 @@
 
 <body class="attrazioni-page">
 
-    <!-- HEADER -->
+    <!-- INTESTAZIONE -->
     <header>
         <div class="language-selector">
             <button class="lang-btn" id="btn_1" onclick="toggleDropdown()">
@@ -51,7 +51,7 @@
         </div>
     </header>
 
-    <!-- TITULO PRINCIPAL -->
+    <!-- TITOLO PRINCIPALE -->
     <h1 id="h1_1">Attrazioni turistiche</h1>
 
     <!-- INTRODUZIONE COM LAYOUT GRID -->
@@ -83,7 +83,7 @@
         <h2 id="h2_2">Principali itinerari turistici</h2>
     </section>
 
-    <!-- ITINERARIOS COM IMAGENS E TEXTO -->
+    <!-- ITINERÁRIOS CON IMMAGINI E TESTO -->
     <div class="itineraries-wrapper">
         <!-- BERNINA EXPRESS -->
         <div class="itinerary-block">
@@ -211,7 +211,7 @@
         </div>
     </div>
 
-    <!-- ====== CARTÃO DO ROTEIRO  ====== -->
+    <!-- ====== CARTA DEL PERCORSO  ====== -->
     <section class="giornata-wrapper">
 
         <div class="giornata-layout">
@@ -276,7 +276,7 @@
 
             </div>
 
-            <!-- CARD SOLO COM A IMAGEM (BORDA AMARELA) -->
+            <!-- CARTA SOLO CON I'IMMAGINE (BORDO GIALLO -->
             <div class="giornata-card">
                 <img src="imagens/transporte.png" alt="Milano Tram">
             </div>
@@ -290,19 +290,19 @@
             text-align: right;
             margin-bottom: 20px;
             margin-right: 20px;
-            /* distância do fundo */
+            /* DISTANZA DALLO SFONDO */
             right: 20px;
-            /* distância da direita */
+            /* DISTANZA DA DESTRA */
             z-index: 999;
         }
         
         .avancar-pagina2 a svg {
             cursor: pointer;
             color: #000;
-            /* opcional */
+            /* OPZIONALE */
             transition: transform 0.2s;
             color: lightgreen;
-            /* garante que fique por cima de outros elementos */
+            /* ASSICURATI CHE SIA SOPRA GIL ALTRI ELEMENTI */
         }
         
         .avancar-pagina2 a svg:hover {
@@ -479,7 +479,7 @@
         }
     };
 
-    // Função para trocar idioma
+    // FUNZIONE PER CAMBIARE LINGUA
     function setLanguage(lang) {
         const elements = document.querySelectorAll('[id]');
         const translations = i18n[lang];

@@ -15,7 +15,7 @@
 
 <body>
 
-    <!-- HEADER -->
+    <!-- INTESTAZIONE -->
     <header>
         <div class="language-selector">
             <button class="lang-btn" id="btn_1" onclick="toggleDropdown()">
@@ -51,10 +51,10 @@
         </div>
     </header>
 
-    <!-- ========================= PÁGINA: CARDÁPIO ========================= -->
+    <!-- ========================= PÁGINA: MENU ========================= -->
     <main class="menu-page">
 
-        <!-- ====== SEÇÃO: ANTIPASTI & FORMAGGI ====== -->
+    <!-- ====== SEZIONE: ANTIPASTI & FORMAGGI ====== -->
         <section id="antipasti" class="menu-section menu-antipasti">
             <div class="container">
 
@@ -109,7 +109,7 @@
             </div>
         </section>
 
-        <!-- ====== SEÇÃO: PASTE E RISOTTI ====== -->
+        <!-- ====== SEZIONE: PASTE E RISOTTI ====== -->
         <section id="paste" class="menu-section menu-paste">
             <div class="container">
 
@@ -163,7 +163,7 @@
             </div>
         </section>
 
-        <!-- ====== SEÇÃO: DESSERTS ====== -->
+        <!-- ====== SEZIONE: DOLCI ====== -->
         <section id="desserts" class="menu-section menu-desserts">
             <div class="container">
 
@@ -209,7 +209,7 @@
             </div>
         </section>
 
-        <!-- ====== SEÇÃO: CARNI E POLLAME ====== -->
+        <!-- ====== SEZIONE: CARNI E POLLAME ====== -->
         <section id="carni" class="menu-section menu-carni">
             <div class="container">
 
@@ -256,7 +256,7 @@
             </div>
         </section>
 
-        <!-- BEVANDE -->
+        <!-- SEZIONE: BEVANDE -->
         <section id="bevande">
             <div class="menu-layout">
                 <div>
@@ -316,9 +316,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Fim do resto da página -->
-
 
 
         <!-- INFORMAZIONI ORARIO E SCONTO -->
@@ -405,7 +402,7 @@
 
 </form>
 
-<!-- MENSAGEM -->
+<!-- MESSAGGIO DI CONFERMA -->
 <div id="mensagem-reserva"
      style="display:none;
             position:fixed;
@@ -421,7 +418,7 @@
             z-index:9999;">
 </div>
 
-<!-- MENSAGEM -->
+<!-- MESSAGGIO DI CONFERMA -->
 <div id="mensagem-reserva"
      style="display:none;
             position:fixed;
@@ -437,7 +434,7 @@
             z-index:9999;">
 </div>
 
-<!-- SCRIPT PARA MOSTRAR A NOTIFICAÇÃO -->
+<!-- SCRIPT PER MOSTRARE LA NOTIFICA -->
 
 
 
@@ -456,11 +453,11 @@
     </footer>
     <script>
       
-     // Mostra mensagem se a URL tiver ?reserva=ok
+      // MOSTRA MESSAGGIO SE LA URL CONTIENE ?reserva=ok
     const params = new URLSearchParams(window.location.search);
     if (params.get("reserva") === "ok") {
         alert("Sua reserva foi feita com sucesso!");
-        // Remove o parâmetro da URL para não repetir
+        // Rimuovi il parametro dall’URL per non ripeterlo
         window.history.replaceState({}, document.title, window.location.pathname);
     }
 
@@ -471,7 +468,7 @@
                ======================== ITALIANO ===========================
                ============================================================ */
             it: {
-                /* HEADER */
+                /* INTESTAZIONE */
                 titulo: "Cantina e Ristorante Tre Fratelli",
                 flag: "<span class='fi fi-it'></span>",
                 langName: "It",
@@ -512,7 +509,7 @@
                 p_13: "Nero d'Avola, Merlot Tre Fratelli 2020",
                 p_14: "Strati con carne e formaggio",
 
-                /* BEVANDE (só 1 versão, sem duplicação!) */
+                /* BEVANDE */
                 h1_5: "BEVANDE ANALCOLICHE",
                 th_1: "Nome",
                 th_2: "Categoria",

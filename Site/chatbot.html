@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="it">
 
 <head>
@@ -10,45 +10,77 @@
     <script src="app.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"> </head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"> 
+</head>
 
 <body class="chatbot">
-    <!-- HEADER -->
+    <!-- INTESTAZIONE -->
     <header>
-        <div class="language-selector"> <button class="lang-btn" id="btn_1" onclick="toggleDropdown()"> <span id="flag"></span> <span id="langName">It</span> <i class="ph-fill ph-triangle" id="lang-arrow"></i> </button>
-            <div class="lang-dropdown" id="langMenu"> <button onclick="setLanguage('it')" id="btn_2"><span class="fi fi-it"></span> It</button> <button onclick="setLanguage('en_uk')" id="btn_3"><span class="fi fi-gb"></span> En-Uk</button> <button onclick="setLanguage('pt_br')" id="btn_4"><span class="fi fi-br"></span> Pt-Br</button>                </div>
+        <div class="language-selector"> 
+            <button class="lang-btn" id="btn_1" onclick="toggleDropdown()"> 
+                <span id="flag"></span> 
+                <span id="langName">It</span> 
+                <i class="ph-fill ph-triangle" id="lang-arrow"></i> 
+            </button>
+            <div class="lang-dropdown" id="langMenu"> 
+                <button onclick="setLanguage('it')" id="btn_2"><span class="fi fi-it"></span> It</button> 
+                <button onclick="setLanguage('en_uk')" id="btn_3"><span class="fi fi-gb"></span> En-Uk</button> 
+                <button onclick="setLanguage('pt_br')" id="btn_4"><span class="fi fi-br"></span> Pt-Br</button>                
+            </div>
         </div>
-        <div class="header-icons"> <button class="navegacao-btn"> <i class="ph-fill ph-robot"></i> </button>
+
+        <div class="header-icons"> 
+            <button class="navegacao-btn"> <i class="ph-fill ph-robot"></i> </button>
             <div class="top-menu-icons">
-                <div class="big-circle"></div> <a href="chatbot.html" class="menu-item"><i class="ph-fill ph-robot branco"></i></a> <a href="Storia.html" class="menu-item"><i class="ph-fill ph-hourglass-low"></i></a> <a href="AttrazioniTuristiche.html" class="menu-item"><i class="ph-fill ph-map-pin"></i></a>                <a href="index.html" class="menu-item"><i class="ph-fill ph-house"></i></a> <a href="vini.html" class="menu-item"><i class="ph-fill ph-wine"></i></a> <a href="Cardapio.html" class="menu-item"><i class="ph-fill ph-fork-knife"></i></a> </div>
+                <div class="big-circle"></div> 
+                <a href="chatbot.html" class="menu-item"><i class="ph-fill ph-robot branco"></i></a> 
+                <a href="Storia.html" class="menu-item"><i class="ph-fill ph-hourglass-low"></i></a> 
+                <a href="AttrazioniTuristiche.html" class="menu-item"><i class="ph-fill ph-map-pin"></i></a>                
+                <a href="index.html" class="menu-item"><i class="ph-fill ph-house"></i></a> 
+                <a href="vini.html" class="menu-item"><i class="ph-fill ph-wine"></i></a> 
+                <a href="Cardapio.html" class="menu-item"><i class="ph-fill ph-fork-knife"></i></a> 
+            </div>
         </div>
-        <div class="sup-direita"> <img src="imagens/Logo Completa.png" alt="Tre Fratelli" class="logo" />
+
+        <div class="sup-direita"> 
+            <img src="imagens/Logo Completa.png" alt="Tre Fratelli" class="logo" />
             <div class="texto-ao-lado">
                 <p>Tre Fratelli</p>
             </div>
         </div>
+
     </header>
+
     <!-- ========================== CHATBOT ========================== -->
     <main class="chatbot-main">
-        <!-- TÍTULO CENTRAL -->
+        <!-- TITOLO CENTRALE -->
         <div class="chatbot-title">
             <h1 id="h1_1">Cantina e Ristorante</h1>
             <h2 id="h2_1">Tre Fratelli</h2>
         </div>
+
         <div class="chat-messages" id="chatMessages"></div>
+
         <div class="chatbot-input-wrapper">
-            <!-- BLOCO DO CHATBOT -->
+            <!-- BLOCCO DEL CHATBOT -->
             <div class="chatbot-box">
                 <input type="text" class="chatbot-input" id="input_1" placeholder="Raccontami il tuo umore o il piatto che hai scelto">
                 <button class="send-btn" id="btn_8"></button>
             </div>
         </div>
     </main>
-    <!-- Imagens decorativas --><img src="imagens/Nerodavola.jpg" alt="" class="chatbot-grapes-left" style="margin-bottom: 120px"> <img src="imagens/Valpolicellaripasso.jpg" alt="" class="chatbot-grapes-right" style="margin-bottom: 120px">
+
+    <!-- IMMAGINI DECORATIVE -->
+    <img src="imagens/Nerodavola.jpg" alt="" class="chatbot-grapes-left" style="margin-bottom: 120px"> 
+    <img src="imagens/Valpolicellaripasso.jpg" alt="" class="chatbot-grapes-right" style="margin-bottom: 120px">
+
     <footer class="site-footer" style="margin-top: 20px !important;">
-        <div class="footer-bottom"> &copy; 2025 Tre Fratelli. Todos os direitos reservados. </div>
+        <div class="footer-bottom"> 
+            &copy; 2025 Tre Fratelli. Todos os direitos reservados. 
+        </div>
     </footer>
 </body>
+
 <style>
     .chat-messages {
         width: 100%;
@@ -77,19 +109,15 @@
         background: #4d001b;
         color: #fff;
     }
-    /* ===== SCROLL PARA AS MENSAGENS ===== */
-    
+
+    /* SCORRIMENTO PER I MESSAGGI */
     .chat-messages {
         max-height: 260px;
-        /* altura da área de chat */
         overflow-y: auto;
-        /* ativa scroll vertical */
         padding-right: 10px;
-        /* espaço para a barra */
         scroll-behavior: smooth;
     }
-    /* deixa a barra de scroll bonita */
-    
+
     .chat-messages::-webkit-scrollbar {
         width: 8px;
     }
@@ -180,7 +208,7 @@
 
     function setLanguage(lang) {
         const translations = i18n[lang] || i18n.it;
-        // elementos por id
+        // ELEMENTI PER ID
         const ids = ["titulo", "h1_1", "h2_1"];
         ids.forEach(id => {
             const el = document.getElementById(id);
@@ -216,7 +244,7 @@
     });
 
     /* =========================
-       VINHOS / DADOS
+       VINI / DATI
        ========================= */
 
     const vinhosDaCasa = [{
@@ -273,7 +301,7 @@
         }
     };
 
-    /* palavras-chave multi-idioma (humor e pratos) */
+    /* PAROLE-CHIAVE MULTILINGUE (UMORE E PIATTI) */
     const humorVinhos = [{
         palavras: ["feliz", "felicidade", "alegre", "animado", "happy", "joy", "felice", "contente"],
         vinhoKey: "prosecco"
@@ -291,7 +319,7 @@
         vinhoKey: "pinot"
     }];
 
-    // pratos traduzidos e sinônimos
+    /* PIATTI TRADOTTI E SINONIMI */
     const pratosVinhos = [{
         palavras: ["massa", "pasta", "macarrão", "spaghetti", "pasta"],
         vinhoKey: "chianti"
@@ -322,7 +350,7 @@
         vinhoKey: "primitivo"
     }];
 
-    // respostas especiais (não-klassic key -> text differs per language)
+    /* RISPOSTE SPECIALI */
     const specialResponses = {
         prosecco: {
             it: "Prosecco — perfetto per celebrare!",
@@ -356,11 +384,7 @@
         }
     };
 
-    /* =========================
-       UTILIDADES E LÓGICA DE ANÁLISE
-       ========================= */
-
-    // normaliza e verifica se alguma palavra-chave aparece
+    /* UTILITÀ E ANALISI DEL TESTO */
     function includesAny(text, list) {
         return list.some(p => text.includes(p));
     }
@@ -368,59 +392,50 @@
     function analisarMensagem(texto, lang) {
         texto = texto.toLowerCase();
 
-        // 1. Humor
+        // 1. UMORE
         for (const h of humorVinhos) {
             if (includesAny(texto, h.palavras)) {
                 const key = h.vinhoKey;
                 if (specialResponses[key]) return specialResponses[key][lang];
-                // fallback to classico map if exists
                 if (vinhosClassicos[key]) return vinhosClassicos[key][lang];
             }
         }
 
-        // 2. Pratos
+        // 2. PIATTI
         for (const p of pratosVinhos) {
             if (includesAny(texto, p.palavras)) {
-                const key = p.vinhoKey || p.vinhoKey; // compat
+                const key = p.vinhoKey;
                 if (vinhosClassicos[key]) return vinhosClassicos[key][lang];
                 if (specialResponses[key]) return specialResponses[key][lang];
             }
         }
 
-        // 3. Menção direta de vinhos clássicos (ex: "barolo")
+        // 3. CITA DIRETTA DI VINI
         for (const k in vinhosClassicos) {
             if (texto.includes(k)) return vinhosClassicos[k][lang];
         }
 
-        // 4. fallback: vinho da casa aleatório (com harmonização)
+        // 4. FALLBACK: VINO ALCASO
         const aleatorio = vinhosDaCasa[Math.floor(Math.random() * vinhosDaCasa.length)];
         return `${i18n[lang].unknown} ${aleatorio.nome} — ${aleatorio.harmonizacao}`;
     }
 
-    /* =========================
-       UI: mensagens flutuantes sem empurrar a caixa
-       ========================= */
+    /* INTERFACCIA: AGGIUNTA MESSAGGI */
     const chatBox = document.getElementById("chatMessages");
 
     function addMessage(text, sender = "bot") {
         const div = document.createElement("div");
         div.className = "msg " + (sender === "user" ? "user" : "bot");
         div.textContent = text;
-
         chatBox.appendChild(div);
 
-        // mantém apenas últimas N mensagens
         const msgs = chatBox.querySelectorAll(".msg");
-        if (msgs.length > 6) {
-            msgs[0].remove();
-        }
+        if (msgs.length > 6) msgs[0].remove();
 
-        // scroll automático para a última mensagem
         chatBox.scrollTop = chatBox.scrollHeight;
     }
 
-
-    /* simula digitação (substitui placeholder enquanto pensa) */
+    /* SIMULA DIGITAZIONE */
     function botReplyWithDelay(userText, lang) {
         const input = document.getElementById("input_1");
         const originalPlaceholder = input.placeholder;
@@ -432,12 +447,10 @@
             addMessage(resposta, "bot");
             input.placeholder = originalPlaceholder;
             input.disabled = false;
-        }, 450); // pequeno delay agradável
+        }, 450);
     }
 
-    /* =========================
-       Eventos: clique e Enter
-       ========================= */
+    /* EVENTI: CLICK E INVIO */
     document.getElementById("btn_8").addEventListener("click", () => {
         const input = document.getElementById("input_1");
         const texto = input.value.trim();
@@ -456,12 +469,12 @@
         }
     });
 
-    /* ===== pequenas melhorias: limpar histórico com clique longo (opcional) ===== */
-    // Expor função para limpar
+    /* MIGLIORIA: PULIZIA STORICO */
     function clearChat() {
         document.getElementById("chatMessages").innerHTML = "";
     }
     window.clearChat = clearChat;
+
 </script>
 
 </html>

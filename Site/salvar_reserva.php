@@ -11,7 +11,7 @@ if ($conexao->connect_error) {
 
 $conexao->set_charset("utf8mb4");
 
-// Recebendo dados do POST
+// Ricezione dei dati dal POST
 $nome = $_POST['nome'] ?? '';
 $telefone = $_POST['telefone'] ?? '';
 $cpf = $_POST['cpf'] ?? '';
@@ -19,7 +19,7 @@ $email = $_POST['email'] ?? '';
 $data_reserva = $_POST['data'] ?? '';
 $qtd = $_POST['pessoas'] ?? '';
 
-// Validação simples
+// Validazione semplice
 if (!$nome || !$telefone || !$cpf || !$email || !$data_reserva || !$qtd) {
     echo "<script>
             alert('Por favor, preencha todos os campos.');
@@ -28,7 +28,7 @@ if (!$nome || !$telefone || !$cpf || !$email || !$data_reserva || !$qtd) {
     exit;
 }
 
-// Inserir no banco
+// Inserire nel database
 $stmt = $conexao->prepare("INSERT INTO reservas (nome, telefone, cpf, email, data_reserva, qtd) VALUES (?, ?, ?, ?, ?, ?)");
 $stmt->bind_param("sssssi", $nome, $telefone, $cpf, $email, $data_reserva, $qtd);
 

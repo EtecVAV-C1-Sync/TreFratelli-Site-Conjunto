@@ -16,7 +16,7 @@
 
 <body>
 
-    <!-- HEADER -->
+    <!-- INTESTAZIONE -->
     <header>
         <div class="language-selector">
             <button class="lang-btn" id="btn_1" onclick="toggleDropdown()">
@@ -53,13 +53,13 @@
     </header>
 
 
-    <!-- ========================= SECTION: STORIA ========================= -->
+    <!-- ========================= SEZIONE: STORIA ========================= -->
     <section id="storia" class="storia-section">
 
         <!-- Título -->
         <h1 id="h1_1" class="storia-title" style="margin-left: 250px; margin-top: 40px !important; color: white">La nostra storia e il tuo piacere.</h1>
 
-        <!-- ========================= LINHA DO TEMPO (APENAS OS 4 PINS) ========================= -->
+        <!-- ========================= LINEA DEL TEMPO ========================= -->
         <div class="timeline">
 
             <svg class="timeline-path" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -128,101 +128,92 @@
             }
             
             :root {
-                /* VARIÁVEL DE ESCALA: Defina a largura máxima do seu layout aqui. */
-                /* Mudar este valor irá escalar todo o posicionamento e o tamanho da fonte */
+                /* VARIABILE DI SCALA */
+              
                 --timeline-max-width: 1300px;
-                /* VARIÁVEIS DE COR */
+                /* COLORI  */
                 --pin-color: #c95143;
-                /* Cor do pin (vermelho/laranja) */
                 --text-color: black;
-                /* Cor do texto (marrom) */
                 --path-color: #5d3a24;
-                /* Cor do caminho tracejado */
                 --pin-max-size: 3500px;
-                /* Variável para o tamanho máximo da imagem do pin */
+                
             }
             /* ========================================= */
-            /* 1. CONTAINER PRINCIPAL (.timeline) */
+            /* 1. CONTENITORE TIMELINE (.timeline) */
             /* ========================================= */
             
             .timeline {
-                /* 1. Contêiner principal para posicionamento */
                 position: relative;
-                /* 2. Define o tamanho máximo e centraliza */
                 max-width: var(--timeline-max-width);
-                /* A altura é crucial para a curva. Ajuste 'height' para esticar ou comprimir o layout. */
-                /* Mantendo a proporção 60% da largura: */
                 height: calc(var(--timeline-max-width) * 0.6);
                 margin: 5vh auto;
-                /* Centraliza horizontalmente e adiciona margem vertical */
+               
             }
             /* ========================================= */
             /* 2. MARCADORES (PINS) */
             /* ========================================= */
             
             .timeline-pin {
-                /* 3. Posicionamento Absoluto para o layout curvo */
                 position: absolute;
-                /* Estilos base do botão/marcador */
+                /* STILI DI BASE DEL PULSANTE/MARCATORE*/
                 background: transparent;
                 border: none;
                 cursor: pointer;
                 text-align: center;
                 width: 25%;
-                /* Largura relativa do elemento completo */
+                /* LARGHEZZA RELATIVA DELL'ELEMENTO COMPLETO */
                 padding: 0;
                 z-index: 10;
-                /* Garante que os pins fiquem acima do caminho SVG */
             }
-            /* 4. Posicionamento Específico de Cada Pin (usando PORCENTAGENS) */
+            /* 4. POSIZIONAMENTO SPECIFICO DI OGNI PIN (UTILIZZANDO PERCENTUALI) */
             
             .timeline-pin[data-target="item1"] {
-                /* Pin I: Canto superior esquerdo */
+                
                 top: 18%;
                 left: 5%;
                 transform: translateX(-50%);
             }
             
             .timeline-pin[data-target="item2"] {
-                /* Pin II: Centro inferior */
+               
                 top: 50%;
                 left: 33%;
                 transform: translateX(-50%);
             }
             
             .timeline-pin[data-target="item3"] {
-                /* Pin III: Centro superior direito (pico da curva) */
+               
                 top: 0%;
                 left: 61.3%;
                 transform: translateX(-50%);
             }
             
             .timeline-pin[data-target="item4"] {
-                /* Pin IV: Canto inferior direito */
+               
                 top: 40%;
                 left: 85%;
                 transform: translateX(-50%);
             }
             /* ========================================= */
-            /* 3. ESTILOS INTERNOS DOS PINS */
+            /* 3. STILI INTERNI DEI PIN */
             /* ========================================= */
-            /* 5. Estilizando a Imagem do Pin */
+            /*  STILIZZAZIONE DELL'IMMAGINE DEL PIN */
             
             .timeline-pin img {
                 width: 100%;
-                /* A imagem preenche a largura do contêiner .timeline-pin */
+                /* L'IMMAGINE RIEMPIE LA LARGHEZZA DEL CONTENITORE .timeline-pin */
                 max-width: var(--pin-max-size);
-                /* Usando a variável */
+          
                 height: auto;
                 display: block;
                 margin: 0 auto 5px;
-                /* Centraliza a imagem e adiciona espaço abaixo */
+              
             }
-            /* 6. Estilizando o Texto */
+            /* 6. STILIZZAZIONE DELL'TESTO*/
             
             .timeline-pin h3 {
                 font-size: 1.2vw;
-                /* Tamanho da fonte RELATIVO à largura da viewport (VW) */
+                /* DIMENSIONE DEL CARATTERE RELATIVA ALLA LARGHEZZA DELLA VIEWPORT (VW) */
                 line-height: 1.2;
                 color: var(--text-color);
                 font-family: serif;
@@ -231,9 +222,9 @@
                 font-weight: bold;
             }
             /* ========================================= */
-            /* 4. ESTILO DO CAMINHO SVG (Novo e Corrigido) */
+            /* 4. STILE DEL PERCORSO SVG (NUOVO E CORRETTO) */
             /* ========================================= */
-            /* 7. Estilo do Contêiner SVG */
+            /* 7. ESTILE DEL CONTENITORE SVG*/
             
             .timeline svg {
                 position: absolute;
@@ -242,46 +233,44 @@
                 width: 100%;
                 height: 100%;
                 z-index: 1;
-                /* Coloca o caminho atrás dos pins */
                 pointer-events: none;
-                /* Garante que o SVG não bloqueie o clique nos pins */
+                /* GARANTISCE CHE L'SVG NON BLOCCI IL CLIC SUI PIN */
             }
-            /* 8. Estilo do PATH (A Linha Desenhada) */
+            /* 8. STILE DEL PERCORSO (LA LINEA DISEGnata) */
             
             .timeline svg path {
                 stroke: var(--path-color);
-                /* Cor do traço */
+                
                 fill: none;
-                /* O caminho não deve ser preenchido */
+              
                 stroke-width: 0.5;
-                /* Espessura do traço (ajuste o valor se for muito fino/grosso) */
+                /* SPESSORE DEL TRATTO */
                 stroke-dasharray: 1, 1;
-                /* Cria o efeito tracejado (1.5 de traço, 1.5 de espaço) */
+                /* CREA L'EFFETTO TRATTEGGIATO (1.5 DI TRATTO, 1.5 DI SPAZIO) */
                 stroke-linecap: round;
-                /* Deixa as pontas dos traços arredondadas */
+                /* RENDE LE ESTREMITÀ DEI TRATTI ARROTONDATE */
             }
             
-            .timeline-content {
-                display: none;
-                /* Configuração para o container de descrição */
-                position: absolute;
-                /* Z-index alto para garantir que ele apareça sobre a timeline */
-                z-index: 100;
-                /* Estilos visuais do pop-up */
-                background-color: #f7f3e8;
-                /* Cor de fundo clara para contraste */
-                border: 2px solid var(--text-color);
-                border-radius: 10px;
-                padding: 15px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                /* Define a largura máxima do pop-up para que não ocupe a tela toda */
-                width: 300px;
-                height: 450px;
-                max-width: 90vw;
-                /* Responsividade em telas pequenas */
-            }
-            /* Estilo para quando a descrição estiver ATIVA */
-            
+          .timeline-content {
+    display: none;
+    /* CONFIGURAZIONE PER IL CONTENITORE DELLA DESCRIZIONE */
+    position: absolute;
+    /* Z-INDEX ALTO PER GARANTIRE CHE APPAIA SOPRA LA TIMELINE */
+    z-index: 100;
+    /* STILI VISIVI DEL POP-UP */
+    background-color: #f7f3e8;
+    /* COLORE DI SFONDO CHIARO PER CONTRASTO */
+    border: 2px solid var(--text-color);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* DEFINISCE LA LARGHEZZA MASSIMA DEL POP-UP PER NON OCCUPARE L'INTERA SCHERMATA */
+    width: 300px;
+    height: 450px;
+    max-width: 90vw;
+    /* RESPONSIVITÀ SU SCHERMI PICCOLI */
+}
+/* STILE PER QUANDO LA DESCRIZIONE È ATTIVA */
             .timeline-content.active {
                 display: block;
             }
@@ -301,9 +290,9 @@
             }
         </style>
 
-        <!-- ========================= CONTEÚDOS ========================= -->
+        <!-- ========================= CONTENUTI ========================= -->
 
-        <!-- Item 1 -->
+        
         <div id="item1" class="timeline-content">
             <img class="timeline-image" src="imagens/storia.jpg" alt="Origini foto">
             <p id="p_1" class="timeline-text">
@@ -311,7 +300,6 @@
             </p>
         </div>
 
-        <!-- Item 2 -->
         <div id="item2" class="timeline-content">
             <img class="timeline-image" src="imagens/storia4.jpg" alt="Crescita foto">
             <p id="p_2" class="timeline-text">
@@ -320,7 +308,6 @@
             </p>
         </div>
 
-        <!-- Item 3 -->
         <div id="item3" class="timeline-content">
             <img class="timeline-image" src="imagens/storia2.jpg" alt="Turismo foto">
             <p id="p_3" class="timeline-text">
@@ -329,16 +316,13 @@
             </p>
         </div>
 
-        <!-- Item 4 -->
+ 
         <div id="item4" class="timeline-content">
             <img class="timeline-image" src="imagens/storia3.jpg" alt="Tradizione foto">
             <p id="p_4" class="timeline-text">
                 Fu allora che uno dei pronipoti, Alessandro, laureato in enologia a Milano, portò nuove idee, unendo tradizione e innovazione. Quest'anno compie 100 anni ed è stata acquistata dalla famiglia Zanarelli, che promette di ristrutturare il ristorante.
             </p>
         </div>
-
-        <!-- RODAPÉ -->
-
 
     </section>
     <footer class="site-footer" style="margin-top: 500px;">
@@ -433,80 +417,81 @@
         // Mantenha esta variável sincronizada com o CSS
         const DESCRIPTION_WIDTH = 300;
 
-        // NOTA: As variáveis 'activeContent' e 'activePin' foram removidas, 
-        // pois a nova lógica permite múltiplos conteúdos ativos simultaneamente.
+        // NOTA: LE VARIABILI 'activeContent' E 'activePin' SONO STATE RIMOSSE, 
+        // PERCHÉ LA NUOVA LOGICA PERMETTE PIÙ CONTENUTI ATTIVI SIMULTANEAMENTE.
 
-        pins.forEach(pin => {
-            pin.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('data-target');
-                const targetContent = document.getElementById(targetId);
+       pins.forEach(pin => {
+    pin.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('data-target');
+        const targetContent = document.getElementById(targetId);
 
-                // =========================================================
-                //  PARÂMETROS DE AJUSTE DE POSIÇÃO (CUSTOMIZAÇÃO)
-                //  Seus valores de teste: X_OFFSET = -100, Y_SPACING = -110
-                // =========================================================
-                // Use estes para ajustar a posição horizontal e vertical
-                const X_OFFSET = -100;
-                const Y_SPACING = -110;
-                // =========================================================
+        // =========================================================
+        //  PARAMETRI DI REGOLAZIONE DELLA POSIZIONE (PERSONALIZZAZIONE)
+        //  I TUOI VALORI DI TEST: X_OFFSET = -100, Y_SPACING = -110
+        // =========================================================
+        //  USA QUESTI PER REGOLARE LA POSIZIONE ORIZZONTALE E VERTICALE
+        const X_OFFSET = -100;
+        const Y_SPACING = -110;
+        // =========================================================
 
-                // 1. Lógica de Alternância (MOSTRAR / ESCONDER)
-                // Se o conteúdo de destino já estiver visível (tem a classe 'active'), esconda-o e pare.
-                // Esta é a nova lógica de "fechar ao clicar na mesma seta".
-                if (targetContent.classList.contains('active')) {
-                    targetContent.classList.remove('active');
-                    return;
-                }
+        // 1. LOGICA DI ALTERNANZA (MOSTRARE / NASCONDERE)
+        // SE IL CONTENUTO DI DESTINAZIONE È GIÀ VISIBILE (HA LA CLASSE 'active'), NASCONDILO E INTERROMPI.
+        // QUESTA È LA NUOVA LOGICA PER "CHIUDERE CLICCANDO SULLA STESSA FRECCIA".
+        if (targetContent.classList.contains('active')) {
+            targetContent.classList.remove('active');
+            return;
+        }
 
-                // O PASSO 2 (Esconder o conteúdo anterior) foi INTENCIONALMENTE REMOVIDO 
-                // para permitir que outras descrições permaneçam abertas.
+        // IL PASSO 2 (NASCONDERE IL CONTENUTO PRECEDENTE) È STATO RIMOSSO INTENZIONALMENTE
+        // PER PERMETTERE CHE ALTRE DESCRIZIONI RIMANGANO APERTE.
 
-                // 2. Posiciona o conteúdo
-                const pinRect = this.getBoundingClientRect();
-                const scrollY = window.scrollY || window.pageYOffset;
+        // 2. POSIZIONA IL CONTENUTO
+        const pinRect = this.getBoundingClientRect();
+        const scrollY = window.scrollY || window.pageYOffset;
 
-                // Cálculo para CENTRALIZAÇÃO horizontal: (Centro do Pin) - (Metade da Largura da Descrição) + (Ajuste)
-                const pinCenterHorizontal = pinRect.left + (pinRect.width / 2);
-                let contentLeft = pinCenterHorizontal - (DESCRIPTION_WIDTH / 2) + X_OFFSET;
+        // CALCOLO PER LA CENTRALIZZAZIONE ORIZZONTALE: (CENTRO DEL PIN) - (METÀ DELLA LARGHEZZA DELLA DESCRIZIONE) + (REGOLAZIONE)
+        const pinCenterHorizontal = pinRect.left + (pinRect.width / 2);
+        let contentLeft = pinCenterHorizontal - (DESCRIPTION_WIDTH / 2) + X_OFFSET;
 
-                // Tratamento de Borda (Responsividade: evita que o pop-up saia da tela)
-                if (contentLeft < 5) {
-                    contentLeft = 5;
-                }
-                if (contentLeft + DESCRIPTION_WIDTH > window.innerWidth - 5) {
-                    contentLeft = window.innerWidth - DESCRIPTION_WIDTH - 5;
-                }
+        // TRATTAMENTO DEI BORDI (RESPONSIVITÀ: EVITA CHE IL POP-UP ESCA DALLO SCHERMO)
+        if (contentLeft < 5) {
+            contentLeft = 5;
+        }
+        if (contentLeft + DESCRIPTION_WIDTH > window.innerWidth - 5) {
+            contentLeft = window.innerWidth - DESCRIPTION_WIDTH - 5;
+        }
 
-                // Posição Vertical (Y): Usa o Y_SPACING
-                const contentTop = pinRect.bottom + scrollY + Y_SPACING;
+        // POSIZIONE VERTICALE (Y): USA Y_SPACING
+        const contentTop = pinRect.bottom + scrollY + Y_SPACING;
 
-                // Aplica as posições
-                targetContent.style.top = `${contentTop}px`;
-                targetContent.style.left = `${contentLeft}px`;
+        // APPLICA LE POSIZIONI
+        targetContent.style.top = `${contentTop}px`;
+        targetContent.style.left = `${contentLeft}px`;
 
-                // 3. Mostra o NOVO conteúdo
-                targetContent.classList.add('active');
+        // 3. MOSTRA IL NUOVO CONTENUTO
+        targetContent.classList.add('active');
 
-                // NOTA: As linhas de atualização de estado ativo (activeContent = targetContent; activePin = this;) 
-                // foram removidas, pois não precisamos rastrear um único estado ativo.
-            });
-        });
-
-        // Opcional: Esconder todas as descrições ao clicar fora
-        // Esta função foi modificada para buscar todos os conteúdos ativos e fechá-los.
-        document.addEventListener('click', function(e) {
-            // Seleciona todos os conteúdos que estão abertos no momento
-            const activeContents = document.querySelectorAll('.timeline-content.active');
-
-            // Verifica se o clique não foi em um pin e nem em um conteúdo ativo
-            if (!e.target.closest('.timeline-pin') && !e.target.closest('.timeline-content')) {
-                activeContents.forEach(content => {
-                    content.classList.remove('active');
-                });
-            }
-        });
+        // NOTA: LE RIGHE PER AGGIORNARE LO STATO ATTIVO (activeContent = targetContent; activePin = this;)
+        // SONO STATE RIMOSSE, PERCHÉ NON È NECESSARIO TRACCIARE UN UNICO STATO ATTIVO.
     });
+});
+
+// OPZIONALE: NASCONDERE TUTTE LE DESCRIZIONI QUANDO SI CLICCA ALL'ESTERNO
+// QUESTA FUNZIONE È STATA MODIFICATA PER CERCARE TUTTI I CONTENUTI ATTIVI E CHIUDERLI.
+document.addEventListener('click', function(e) {
+
+    // SELEZIONA TUTTI I CONTENUTI CHE SONO ATTUALMENTE APERTI
+    const activeContents = document.querySelectorAll('.timeline-content.active');
+
+    // VERIFICA SE IL CLICK NON È SU UN PIN E NEMMENO SU UN CONTENUTO ATTIVO
+    if (!e.target.closest('.timeline-pin') && !e.target.closest('.timeline-content')) {
+        activeContents.forEach(content => {
+            content.classList.remove('active');
+        });
+    }
+});
+});
 </script>
 
 </html>
