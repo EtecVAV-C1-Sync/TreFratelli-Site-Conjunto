@@ -1,6 +1,8 @@
 # 📘 **VZ Data Intelligence Brasil**
 
-Trata-se de uma empresa fictícia criada para fins acadêmicos, com o objetivo de integrar múltiplas áreas da tecnologia em um único sistema web.
+Trata-se de uma empresa fictícia criada pelo professor Ronildo para fins acadêmicos, com o objetivo de integrar múltiplas áreas da tecnologia em um único sistema web.
+
+Este é um trabalho fruto de um projeto de alunos do primeiro ano do curso de Desenvolvimento de Sistemas.
 
 ---
 
@@ -11,7 +13,6 @@ Responsável pela coordenação geral, integração entre grupos e organização
 ---
 
 # 🧩 **Grupos Desenvolvimentistas**
-Este é um trabalho fruto de um projeto do curso de Desenvolvimento de Sistemas.
 A seguir estão listados todos os grupos participantes, seus gerentes, membros e atribuições no projeto.
 
 ---
