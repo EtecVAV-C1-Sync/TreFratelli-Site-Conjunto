@@ -1,3 +1,16 @@
+# 📁 Sobre o Repositório
+
+Este repositório foi criado para um trabalho escolar desenvolvido por estudantes do curso técnico de Informática do ensino médio. O projeto consiste na apresentação de uma **vinícola fictícia**, elaborada por meio de um **site**, **narrativa institucional** e **materiais gráficos**, simulando o atendimento de uma empresa de informática a um cliente do ramo vinícola.
+
+O site foi projetado para demonstrar habilidades técnicas e criativas, incluindo:
+
+- 🌐 **Multilinguismo**: disponível em **três idiomas** — *italiano* (idioma original do projeto), *inglês britânico* e *português do Brasil*;
+- 💼 **Simulação profissional**: abordagem inspirada no desenvolvimento real de soluções digitais para empresas;
+- 🎨 **Identidade visual e conteúdo próprio**: criação de história, estética e materiais que compõem o universo da vinícola fictícia.
+
+Este repositório reúne todos os arquivos relacionados ao projeto, servindo tanto como documentação quanto como demonstração das competências adquiridas ao longo do curso.
+
+
 # 📘 **VZ Data Intelligence Brasil**
 
 Trata-se de uma empresa fictícia criada pelo professor Ronildo para fins acadêmicos, com o objetivo de integrar múltiplas áreas da tecnologia em um único sistema web.
